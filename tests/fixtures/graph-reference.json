@@ -1,0 +1,32 @@
+{
+  "input_manifest": "manifest.json",
+  "description": "Binary and XML outputs from the previous writers after reading frozen pion fixtures. XML.bin is the binary output after reading that XML.",
+  "format3_reference": "Redstar b194fdfcfe93742ba6887e4374fd5a32a002415f saved validated library",
+  "format4_reference": "Installed ADAT 161bc77d serial-codec checkpoint before graph extraction",
+  "files": {
+    "legacy-v3.bin": {
+      "sha256": "435ffcc6523a2426f346a27d39d29d0d24a0b04e906483bbfb3540d54e63c07e",
+      "bytes": 1710
+    },
+    "legacy-v3.xml": {
+      "sha256": "19b868cdff5536dfd076b4c150783d94d4ce4ef4356b44d44a635d96435d89eb",
+      "bytes": 13884
+    },
+    "legacy-v3.xml.bin": {
+      "sha256": "48e89b77f0294739658ac740d7031a9ec77bf47668cf9ed4ab5b95df88691666",
+      "bytes": 1710
+    },
+    "legacy-v4.bin": {
+      "sha256": "1f5cc4a33b89b11bb0e002afb6b3bed03dbc23ea69fa6044da3b479eafe07358",
+      "bytes": 1698
+    },
+    "legacy-v4.xml": {
+      "sha256": "9a8259741fea2c4fb857e75a5dee531de21d52ba522cd9f5442834a9287a7878",
+      "bytes": 13521
+    },
+    "legacy-v4.xml.bin": {
+      "sha256": "9e4a61356c164fe71af8c3314d73d7b2d9f395b9fca41620dde0537277b28602",
+      "bytes": 1698
+    }
+  }
+}

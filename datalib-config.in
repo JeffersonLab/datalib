@@ -1,0 +1,19 @@
+#!/bin/sh
+case "$1" in
+ --cxxflags) echo '-I@prefix@/include @XPATH_CXXFLAGS@ @CXXFLAGS@ @DATALIB_XML_CFLAGS@';;
+ --ldflags) echo '-L@prefix@/lib @LDFLAGS@';;
+ --libs) echo '-ldatalib_serial @DATALIB_DEP_LIBS@';;
+ --filedb-cxxflags|--filedb-ldflags|--filedb-libs)
+   if test -z '@FILEDB_LIBS@'; then
+     echo 'FILEDB flags require configuring datalib with --with-filedb=DIR' >&2
+     exit 1
+   fi
+   case "$1" in
+     --filedb-cxxflags) echo '@FILEDB_CXXFLAGS@';;
+     --filedb-ldflags) echo '@FILEDB_LDFLAGS@';;
+     --filedb-libs) echo '@FILEDB_LIBS@';;
+   esac;;
+ --prefix) echo '@prefix@';;
+ --backend) echo serial;;
+ *) echo 'usage: datalib-config --cxxflags|--ldflags|--libs|--prefix|--backend|--filedb-cxxflags|--filedb-ldflags|--filedb-libs' >&2; exit 1;;
+esac

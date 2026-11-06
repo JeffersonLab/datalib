@@ -1,0 +1,13 @@
+{
+  "adat_commit": "161bc77dac89c1f7474a370ecbef5b8846b0b0b5",
+  "filedb_commit": "db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693",
+  "source_files": {
+    "lib/io/key_val_db.h": "4d00b15c98161df51dba9dad1fc6898ac5c5b125a29fb222af69642f1a3c7f93",
+    "lib/io/superb_kv.h": "38a4754d48f1053e2460c394c9fe8ae51bbc19abacb310683d3ae7491db03feb"
+  },
+  "extracted_header_sha256": "a96542462ebda3394ad315473755d61a5ee9dc3c5c24aff3c4f645f437c92771",
+  "encoding": "Existing key modes, serial IDs, value checksums, configuration indices and metadata",
+  "binary_header_before_sha256": "0c80f18853734947ec89605ba0494d6d245079cf798e69c99021b417d59cdbb0",
+  "binary_header_after_sha256": "cc1fb6d571c0ba4fd66475c6bb21050b966ad34a2a6d193300de4cfccc866eed",
+  "legacy_trailer": "Accept end of buffer after a complete payload. A present CRC still requires four bytes and must match. Preserve strict binary short reads."
+}

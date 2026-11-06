@@ -1,0 +1,199 @@
+{
+  "base": "161bc77dac89c1f7474a370ecbef5b8846b0b0b5",
+  "files": [
+    {
+      "source": "lib/hadron/corr_graph.h",
+      "destination": "include/datalib/graph/corr_graph.h",
+      "source_sha256": "90ea6e54795f530843d7752037a61710e9e7777b05cec080760d5e545819924f",
+      "extracted_sha256": "58ebe35919b988cac7bbc764f20924820b7a8a7d24b3eea47746bcbba0d42641"
+    },
+    {
+      "source": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+      "destination": "include/datalib/graph/hadron_class_npart_npt_conn_graph.h",
+      "source_sha256": "ca7e8262c2813cc67b2fe67d27ef21f63aa2d21620c592ff622bcc4ebdd59599",
+      "extracted_sha256": "ccec21ec6dfc364091509d5d4830b74c7e662702990e28e3173d5ee1cbe1005a"
+    },
+    {
+      "source": "lib/hadron/hadron_sun_class_npart_npt_corr.h",
+      "destination": "include/datalib/graph/hadron_sun_class_npart_npt_corr.h",
+      "source_sha256": "782622183abeab024c0eea57388f41a3afa78279705c1bd56967842e5adb0319",
+      "extracted_sha256": "a3c5c27fe8d333361b9d97cb3831cf373d92f07e1b57bf07ffcbf8cfce2fca58"
+    },
+    {
+      "source": "lib/hadron/hadron_timeslice.h",
+      "destination": "include/datalib/graph/hadron_timeslice.h",
+      "source_sha256": "2be4cbdaa79e14c7ecf9edc00ec4e2a4aea110c8241b0d450477bc0c87318d6d",
+      "extracted_sha256": "0411594995ceb9862898791c207571cc7ec289a02e2f79f3983b30d1970520e5"
+    },
+    {
+      "source": "lib/hadron/single_hadron_coeffs.h",
+      "destination": "include/datalib/graph/single_hadron_coeffs.h",
+      "source_sha256": "0697652d433c471e5da9ad3ba4ed76dac3a3812580d0a5dc99359e0555578bb1",
+      "extracted_sha256": "dbbc1fc2027d2e9897f248c580ccb69813a4d8dcb8b5030dd128f0f305e7effe"
+    },
+    {
+      "source": "lib/hadron/hadron_disp_vertex.h",
+      "destination": "include/datalib/graph/hadron_disp_vertex.h",
+      "source_sha256": "07eee3f2b283ad0b90df525ed00ed5cb222841dad2adf8f69fe68ba6ee7b18e1",
+      "extracted_sha256": "c2b09eca53c30eb7b04299661243d2663426c94d09a6bd943e6acb39f6707172"
+    },
+    {
+      "source": "lib/hadron/hadron_adj_map.h",
+      "destination": "include/datalib/graph/hadron_adj_map.h",
+      "source_sha256": "38c43e5de8530c23e7eb87b7fbfacca9c5c18803a98c9f87d6a308a415ffc863",
+      "extracted_sha256": "ca0d3028fd17e8a4c99b64fe01170cb9390bac2d7e348cdad0aa716ee323e4f2"
+    },
+    {
+      "source": "lib/hadron/hadron_sun_class_npart_irrep_op.h",
+      "destination": "include/datalib/graph/hadron_sun_class_npart_irrep_op.h",
+      "source_sha256": "ef23f7e3cb43b2ead0b3894cd92bcc5610b3abac8c35a61e34fbd1c01ae39547",
+      "extracted_sha256": "491f8f165c7a23fe63a6e85248a58336ff8acb2adef56816675d08e84dfc97e6"
+    },
+    {
+      "source": "lib/hadron/hadron_sun_class_npart_irrep.h",
+      "destination": "include/datalib/graph/hadron_sun_class_npart_irrep.h",
+      "source_sha256": "cf2d7776560c9040d301d8911da6229041bb95c2455bcd227b732b9691558f4b",
+      "extracted_sha256": "f9e5a8f6831661a2438b49c4777830166a4f6fd7ca9d3a1498ed40f26739e76d"
+    },
+    {
+      "source": "lib/hadron/hadron_diagram_time.h",
+      "destination": "include/datalib/graph/hadron_diagram_time.h",
+      "source_sha256": "024204cf9841ae40eb48f2f22cab0bdb5f63c099089006bb4dbdfe30e48b7fe8",
+      "extracted_sha256": "0b40fcc5522496bd820d329e9458d14a7fd5d1b2369775a9df41793c94295e33"
+    },
+    {
+      "source": "lib/hadron/particle_class_op.h",
+      "destination": "include/datalib/graph/particle_class_op.h",
+      "source_sha256": "98edcd130c02573f5b5832273bd014bc58415cc961efb1671dc862d0b5f4837d",
+      "extracted_sha256": "4856775fb2ac7e5311feda276681b20f70bc3ad08a3df19698ff109f8b897aa7"
+    },
+    {
+      "source": "lib/hadron/hadron_sun_class_npart_version.h",
+      "destination": "include/datalib/graph/hadron_sun_class_npart_version.h",
+      "source_sha256": "0993a86e2e0fb8bf8d367cd983ddebc106d76e26c8be0189374c030d548ba0a5",
+      "extracted_sha256": "769025930c4fc47f6be33285b5fbb3c82f987cb37afc22ddd856236fc4fbd014"
+    },
+    {
+      "source": "lib/hadron/cgc_su3.h",
+      "destination": "include/datalib/graph/cgc_su3.h",
+      "source_sha256": "c6befce13e8d015e8b7557402184c1717894b5d6f05d2939afa768a82ff5829b",
+      "extracted_sha256": "829ec010c66b40dfccfd7aea5bf98bbffc9a5f4068e621ba80763c88e0ade35a"
+    },
+    {
+      "source": "lib/hadron/cgc_irrep_mom.h",
+      "destination": "include/datalib/graph/cgc_irrep_mom.h",
+      "source_sha256": "9067f985b5dacef1ee139d0f987522c6dbc1b1d57364ef6718cb33af2dde2e23",
+      "extracted_sha256": "90fd7bea04a2bc3c25da96383f0a9da6c9723f4f6b1d44307960ded3b1f6ab3b"
+    },
+    {
+      "source": "lib/adat/map_obj.h",
+      "destination": "include/datalib/model/map_obj.h",
+      "source_sha256": "a244814f798d7718c2cb8081acd5ead400bacbfb1d18acfb83e9bc01ca03caaf",
+      "extracted_sha256": "44b97c4d26b97ee247ba3ff1c00a1296aa7a7500771ad8961b68bd7a84283886"
+    },
+    {
+      "source": "lib/io/superb_options.h",
+      "destination": "include/datalib/codec/superb_options.h",
+      "source_sha256": "9e525b85747ccbc87572631ca4f730ccc8cf4c9fb704e456fa0670b0928e1344",
+      "extracted_sha256": "2f9b5d7fd2bba4d1342ac7c445e708d054677fb51a2719d9580758011f6f8dcc"
+    },
+    {
+      "source": "lib/hadron/corr_graph.cc",
+      "destination": "src/corr_graph.cc",
+      "source_sha256": "0b6a28e3214a46ceed2d76f88e3dc47183266406e609ed35eb664a273ab69e8d",
+      "extracted_sha256": "1d8f7fbbe4c125bd73ab5cece5c3a7ad4f6dfe9db201511ad80e5d5bb73dd72d"
+    },
+    {
+      "source": "lib/hadron/hadron_class_npart_npt_conn_graph.cc",
+      "destination": "src/hadron_class_npart_npt_conn_graph.cc",
+      "source_sha256": "32c726a0cfc89993c3a1d68a1cc3276a61a693f10273d935af021b8ad9a964f2",
+      "extracted_sha256": "49d3d0d3912836c37d6c18a732b6720bfd281bc66db6c13e294de074b7396a74"
+    },
+    {
+      "source": "lib/hadron/hadron_sun_class_npart_npt_corr.cc",
+      "destination": "src/hadron_sun_class_npart_npt_corr.cc",
+      "source_sha256": "368e46e7f894c9403d17ac25f969dc6ad03a0f19a159be782221dfa98f86e5af",
+      "extracted_sha256": "71a2deee2668299be53b0c65cccfadc7b6ed45d5fc9019fa6dc27b9c58a4b4de"
+    },
+    {
+      "source": "lib/hadron/hadron_timeslice.cc",
+      "destination": "src/hadron_timeslice.cc",
+      "source_sha256": "604042c535c6d4d50fe30ebf47abee66c3d0cc6c8d0845cb716ce1507e865198",
+      "extracted_sha256": "7186fb45d50997a3b571fe01f18f89955a96cfa5ed747c99bdd1724896c72384"
+    },
+    {
+      "source": "lib/hadron/single_hadron_coeffs.cc",
+      "destination": "src/single_hadron_coeffs.cc",
+      "source_sha256": "aa7148a6b927346d5b022b5015be55dc92857c42815418205be852245f386434",
+      "extracted_sha256": "190f720e1c4441a2505edea882a68a42ee7fb02c6123a6d141cb94800e27bffa"
+    },
+    {
+      "source": "lib/hadron/hadron_disp_vertex.cc",
+      "destination": "src/hadron_disp_vertex.cc",
+      "source_sha256": "131507dcddb5a8ca0a6bebd583777bda2453ae7101631af4e4e95fec5c3ba028",
+      "extracted_sha256": "43df868c64a06d97f9d3fd275fb6462250c1359a0e46f2a98a4b89ea70618b05"
+    },
+    {
+      "source": "lib/hadron/hadron_adj_map.cc",
+      "destination": "src/hadron_adj_map.cc",
+      "source_sha256": "8e994ce83e9fe19555d443135a625e95a5a0b4c6d95f597b1543a4ca8c419fb8",
+      "extracted_sha256": "caf7046b5a59888a523656de104e8a5f71a19a90d6e6a50dadcd29aabf787cb6"
+    },
+    {
+      "source": "lib/hadron/hadron_sun_class_npart_irrep_op.cc",
+      "destination": "src/hadron_sun_class_npart_irrep_op.cc",
+      "source_sha256": "1b057e0c8c66442198e6549a263d678f353c42a2683a0f30b3d37affbaf08b5f",
+      "extracted_sha256": "30f7f88aa3c7a510275acf5a3617fe5a3af2713e0c53bb3e9fef3a7881154ab5"
+    },
+    {
+      "source": "lib/hadron/hadron_sun_class_npart_irrep.cc",
+      "destination": "src/hadron_sun_class_npart_irrep.cc",
+      "source_sha256": "94ad0b82e0f27fb1cbea96371079163c409de7750d24b4e715b339f1d2cffd79",
+      "extracted_sha256": "43e43c148bbaf14099c20c8daa903e84feb049834f2adedce94755dfefde9265"
+    },
+    {
+      "source": "lib/hadron/hadron_diagram_time.cc",
+      "destination": "src/hadron_diagram_time.cc",
+      "source_sha256": "82b82b8f4069787c9525f9ba94e78fba94db2fac18badcf8204a7b66de5ccd15",
+      "extracted_sha256": "e1b6dea2d0ddb25188d9b4b76f31dcd7ec22fb99110310e4b2ed7c4665060a25"
+    },
+    {
+      "source": "lib/hadron/particle_class_op.cc",
+      "destination": "src/particle_class_op.cc",
+      "source_sha256": "d7551869533fb6e056b3fd28d039ec8965ec1cd8a326e5436c476ef8860af1e2",
+      "extracted_sha256": "12987af7f1a869a883f11ad4d800c0804ed3e557748c6520b79e6da928c96d08"
+    },
+    {
+      "source": "lib/hadron/cgc_su3.cc",
+      "destination": "src/cgc_su3.cc",
+      "source_sha256": "8a9b1af74576c0b33622721a51ff4848c969164b108afa7089aa10042e140bad",
+      "extracted_sha256": "052f6232dbfa3bc611944e03f5c1757787194668ed8f0b37b9605eb94a31f43a"
+    },
+    {
+      "source": "lib/hadron/cgc_irrep_mom.cc",
+      "destination": "src/cgc_irrep_mom.cc",
+      "source_sha256": "e99b0955b6a5f6c39d566c1ed33e5deef1b8d5dd95086c4acbb41d8a1b7f69b5",
+      "extracted_sha256": "be9b5b7bf9fb40683aab8424aab3af1ea28bf09fdce3ca1d03ea4c8c591566a7"
+    },
+    {
+      "source": "lib/hadron/irrep_util.cc",
+      "destination": "src/graph_momentum.cc",
+      "source_sha256": "27791405c5eebaa5f7f310affbdb88eaa5f36ffac577537ff6730c7b9cc26da0",
+      "extracted_sha256": "322cce9e9c628f58b3a60e1a9d3479606be579c6e96ce7d366caca790afa76e4"
+    }
+  ],
+  "legacy_v3": {
+    "commit": "b194fdfcfe93742ba6887e4374fd5a32a002415f",
+    "paths": [
+      "lib/hadron_corr_util.h",
+      "lib/hadron_corr_util.cc",
+      "lib/process_corrs.h",
+      "lib/process_corrs.cc",
+      "lib/op_params.cc"
+    ],
+    "targets": [
+      "include/datalib/graph/corr_graph_v3.h",
+      "src/corr_graph.cc"
+    ]
+  }
+}

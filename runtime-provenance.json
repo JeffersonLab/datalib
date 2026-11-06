@@ -1,0 +1,14 @@
+{
+  "graph_format": 4,
+  "graph_api": "datalib/graph/process_corrs.h",
+  "legacy_graph_fixture_use": "rejection tests",
+  "adapters": {
+    "experimental_adat": "817f7e200aa29fa4474c7ac4eeda0658af08869d",
+    "devel_native_storage_and_baryon_metadata": "7b1d36f574bce5d77f1c5d0ed985d06d97f5be1f",
+    "notes": "Ported the no_1pt evaluator and typed I/O. Preserved the canonical baryon metadata suffix and native glue, tetraquark and checked DISCO adapters. Removed ENSEM from the shared evaluator output and used the Dirac-Pauli phases from ensem_primspinmat.h for gamma projection."
+  },
+  "xml": {
+    "xpath_reader": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
+    "notes": "Parser and writer implementation isolated under Datalib::Serial::Detail. The legacy XMLArray headers remain a compile-time dependency."
+  }
+}

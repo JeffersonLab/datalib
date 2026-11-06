@@ -1,0 +1,25 @@
+{
+  "producer": "unmodified canonical ADAT 161bc77d serial sources, compiled directly without libadat",
+  "files": {
+    "primitives.bin": {
+      "sha256": "9abf66747e97b4dd6d95d739e4c4eb725a94b1a60cc2e955551eda9da9f3a017",
+      "bytes": 233
+    },
+    "metadata.xml": {
+      "sha256": "2ac5c19d5b47b905b3d57125629fe1b0bbe0cccac2453e960b164d3c5a8eff8d",
+      "bytes": 263
+    },
+    "graph-v3.bin": {
+      "sha256": "452e8cfd9861d59c033d47b4869e63ff18911e51172b5fb58c6d653ab1fb4137",
+      "bytes": 1710,
+      "purpose": "Frozen graph/key wire baseline; graph-specific serializer remains in ADAT in this checkpoint",
+      "source": "recorded merged devel pion graph"
+    },
+    "graph-v4.bin": {
+      "sha256": "936f5789359d22eac0bd76c99610bc80b31b410b99ff4c165fdadbf80b69f811",
+      "bytes": 1698,
+      "purpose": "Frozen graph/key wire baseline; graph-specific serializer remains in ADAT in this checkpoint",
+      "source": "recorded Eloy-based experimental pion graph"
+    }
+  }
+}

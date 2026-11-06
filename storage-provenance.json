@@ -1,0 +1,11 @@
+{
+  "source_commit": "161bc77dac89c1f7474a370ecbef5b8846b0b0b5",
+  "source_path": "lib/io/corr_storage.h",
+  "source_sha256": "1bcb61a4494aa5608a9ee70ef4588d45030d8911b84e04117b679f30ff7ed783",
+  "extracted_sha256": "a8aa656e1163f18ee25f98d30b6d8203b0495abf0ef57df18a902ea81fd747a2",
+  "changes": [
+    "Standalone namespace and self-contained standard library includes",
+    "Store dictionary leaves at the matching branch and reject incomplete keys",
+    "Close a partially opened file on constructor failure and use data() for possibly empty strings"
+  ]
+}

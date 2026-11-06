@@ -1,0 +1,13 @@
+{
+  "description": "Version-0 storage fixture from canonical ADAT and a byte-swapped fixture from an independent packer checked against the original writer.",
+  "files": {
+    "correlator-v0-big.bin": {
+      "bytes": 356,
+      "sha256": "470936708b16b3fe346af050a8baf555e1ff32ab278d5d61d9d2f0a284eaf90b"
+    },
+    "correlator-v0-little.bin": {
+      "bytes": 356,
+      "sha256": "17df9d9e85506f86f2a37722a9e2266f7ed8eb68bae0b498bd7019c7a150a5df"
+    }
+  }
+}

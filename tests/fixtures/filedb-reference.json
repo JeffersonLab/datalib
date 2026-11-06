@@ -1,0 +1,19 @@
+{
+  "producer": "Pre-extraction ADAT key and value serializers from the storage checkpoint",
+  "independent_check": "Big-endian primitive encoding and zlib CRC32",
+  "files": {
+    "filedb-key.bin": {
+      "bytes": 8,
+      "sha256": "97bc2a965be7dcbe3fd184bfc41193ecc6b780ab040214ba893e09bf5e685e96"
+    },
+    "filedb-legacy-key.bin": {
+      "bytes": 4,
+      "sha256": "88185d128d9922e0e6bcd32b07b6c7f20f27968eab447a1d8d1cdf250f79f7d3"
+    },
+    "filedb-value.bin": {
+      "bytes": 40,
+      "sha256": "e8c3464e1cb3d2c791949e31c0b7ebdafa3593a1c3da6a69370ab912a8b613f3"
+    }
+  },
+  "reference_database_sha256": "71a9c7bcced426a0b278edb420e8ed4eca7efcdbb0bd84984b37d68363983c0a"
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+
+<Fixture>
+  <integer>-1234567</integer>
+  <real>-1.23456789012345</real>
+  <complex>
+    <re>2.5</re>
+    <im>-3.25</im>
+  </complex>
+  <values>1.25 -2.5</values>
+  <one_based>-4 0 12</one_based>
+  <label>xml-safe label</label>
+</Fixture>
