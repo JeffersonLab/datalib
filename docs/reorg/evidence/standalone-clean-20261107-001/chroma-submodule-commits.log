@@ -1,0 +1,4 @@
+ 5a14dd16ba57aeed0166a22158116be5e499a5aa other_libs/cpp_wilson_dslash (chroma3-36-1-37-g5a14dd1)
+ 2b0b713efecf3d02aa172c2d01d3320775e80fb0 other_libs/qdp-lapack (chroma3-36-1-41-g2b0b713)
+ 0f9e5ed76589ce5f4bdd314990999b818a7a6c22 other_libs/sse_wilson_dslash (chroma3-36-1-11-g0f9e5ed)
+ cad7edd92e5b6a6871856e9dbff9cf269e32440c other_libs/wilsonmg (heads/rge/devel-datalib-reorg)

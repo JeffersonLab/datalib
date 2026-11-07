@@ -112,3 +112,46 @@ EXTRA_DIST += \
     docs/reorg/evidence/no1pt-reorg-runtime-001/verification.json \
     docs/reorg/evidence/no1pt-reorg-runtime-001/verify-gamma.log \
     docs/reorg/evidence/no1pt-reorg-runtime-001/verify-omp.log
+
+# Clean standalone build verification records; no binaries or numerical databases.
+EXTRA_DIST += \
+    docs/reorg/STANDALONE-CLEAN-BUILD.md \
+    docs/reorg/evidence/standalone-clean-20261107-001/audit-driver.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/audit.py \
+    docs/reorg/evidence/standalone-clean-20261107-001/build.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/build.py \
+    docs/reorg/evidence/standalone-clean-20261107-001/chroma-clean-checkout.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/chroma-dynamic-libraries.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/chroma-link.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/chroma-submodule-commits.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/chroma.sb \
+    docs/reorg/evidence/standalone-clean-20261107-001/data-provenance.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/datalib-clean-checkout.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/datalib-core-dynamic-libraries.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/datalib-core-test-suite.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/datalib-filedb-dynamic-libraries.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/datalib-filedb-test-suite.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/datalib.sb \
+    docs/reorg/evidence/standalone-clean-20261107-001/environments.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/finish.py \
+    docs/reorg/evidence/standalone-clean-20261107-001/openmp-build.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/openmp.cc \
+    docs/reorg/evidence/standalone-clean-20261107-001/openmp.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/openmp.py \
+    docs/reorg/evidence/standalone-clean-20261107-001/prepare.py \
+    docs/reorg/evidence/standalone-clean-20261107-001/protected-before.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/readback-build.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/readback-command.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/readback-dynamic-libraries.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/readback.cc \
+    docs/reorg/evidence/standalone-clean-20261107-001/report.py \
+    docs/reorg/evidence/standalone-clean-20261107-001/sandbox-canaries.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/smoke/3pi/readback.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/smoke/nuc_nuc_3pt/readback.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/smoke/pion/readback.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/smoke-driver.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/smoke.json \
+    docs/reorg/evidence/standalone-clean-20261107-001/smoke.py \
+    docs/reorg/evidence/standalone-clean-20261107-001/toolchain.log \
+    docs/reorg/evidence/standalone-clean-20261107-001/toolchain.py \
+    docs/reorg/evidence/standalone-clean-20261107-001/verification.json

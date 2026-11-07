@@ -1,8 +1,9 @@
 # Datalib reorganization validation
 
 These reports record the macOS build and regression tests performed on
-6 November 2026 with the matching `rge/devel-datalib-reorg` source branches.
+November 2026 with the matching `rge/devel-datalib-reorg` source branches.
 
+- [Clean standalone datalib and ADAT-free Chroma builds](STANDALONE-CLEAN-BUILD.md)
 - [Build and targeted validation](VALIDATION.md)
 - [Full native-double NPT/CORR_SUPERB regression](NATIVE-DOUBLE-REGRESSIONS.md)
 
@@ -20,3 +21,8 @@ commits tested on that date.
 
 The build used Apple Clang, libc++ and libomp. The regression used cached
 tensors with one OpenMP thread per job and one MPI rank for Chroma.
+
+The clean-build follow-up used fresh source checkouts and empty build/install
+directories. ADAT access was blocked for both builds; QDP/QMP access was also
+blocked for datalib. Core/FILEDB checks and three CORR_SUPERB runtime cases passed.
+Its full build trees, binaries and unabridged logs remain outside Git.

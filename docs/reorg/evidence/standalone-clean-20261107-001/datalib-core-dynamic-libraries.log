@@ -1,0 +1,23 @@
+Archive : /Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(binary.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(byteorder.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(serial_xml.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(crc32.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(cgc_irrep_mom.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(cgc_su3.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(corr_graph.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(graph_momentum.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(hadron_adj_map.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(hadron_class_npart_npt_conn_graph.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(hadron_diagram_time.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(hadron_disp_vertex.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(hadron_sun_class_npart_irrep.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(hadron_sun_class_npart_irrep_op.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(hadron_sun_class_npart_npt_corr.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(hadron_timeslice.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(particle_class_op.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(single_hadron_coeffs.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(corr_output.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(basic_xpath_reader.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(xml_simplewriter.o):
+/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a(attribute.o):

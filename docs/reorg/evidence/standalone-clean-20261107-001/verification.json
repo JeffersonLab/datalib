@@ -1,0 +1,220 @@
+{
+  "status": "passed",
+  "builds": {
+    "datalib-core": {
+      "compiler_dependency_files": 25,
+      "forbidden_dependency_paths": [],
+      "exported_flags": {
+        "cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/include -I/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader/include -O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/libxml2/include/libxml2",
+        "ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "libs": "-ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp"
+      },
+      "passed_checks": 3
+    },
+    "datalib-filedb": {
+      "compiler_dependency_files": 36,
+      "forbidden_dependency_paths": [],
+      "exported_flags": {
+        "cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb/include -I/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader/include -O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/libxml2/include/libxml2",
+        "ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb/lib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "libs": "-ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp",
+        "filedb-cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/install/filedb-standalone-001/include",
+        "filedb-ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/install/filedb-standalone-001/lib",
+        "filedb-libs": "-lfiledb -lfilehash -lpthread"
+      },
+      "passed_checks": 4
+    },
+    "chroma": {
+      "compiler_dependency_files": 845,
+      "forbidden_dependency_paths": [],
+      "exported_flags": {
+        "cxxflags": "-O1 -std=c++20 -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/eigen/include/eigen3 -I/opt/homebrew/opt/gmp/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -DSUPERBBLAS_USE_MPI -I/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma/include -I/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include -I/opt/homebrew/opt/libxml2/include/libxml2 -I/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qmp-mpi/include",
+        "ldflags": "-L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp -framework Accelerate -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -L/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb/lib -L/Users/admin/Downloads/macos-datalib-reorg/install/filedb-standalone-001/lib -L/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma/lib -L/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/lib -L/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qmp-mpi/lib -L/opt/homebrew/opt/gmp/lib",
+        "libs": "-lchroma -lqdp-lapack -lqdp -lXPathReader -lxmlWriter -lqio -llime -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -lqmp -L/opt/homebrew/opt/gmp/lib -lgmpxx -lgmp -lqmp -lfiledb -lfilehash -ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp -lfiledb -lfilehash -lpthread -L/opt/homebrew/opt/gmp/lib -lgmpxx -lgmp -lgmp"
+      }
+    }
+  },
+  "artifacts": {
+    "datalib-core": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core/lib/libdatalib_serial.a",
+      "sha256": "6fb56575dcac05186f66ce816bccc758f26425e0655d1bfeda7054dcc8501670",
+      "forbidden_symbols": []
+    },
+    "datalib-filedb": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb/lib/libdatalib_serial.a",
+      "sha256": "2ca5eff83666d5f57b35909b99ea2f7278842cac0215c8fd1ba4a7fbe90cf657",
+      "forbidden_symbols": []
+    },
+    "chroma": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma/bin/chroma",
+      "sha256": "ae555329046aa3817d6cabc6e177e41ce42e35765f93f627813feda7cd76c917",
+      "forbidden_symbols": []
+    },
+    "readback": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/readback",
+      "sha256": "2897da79853354b354a6f9299476f0d4d9ca39021cf99254de99c89b002133e4",
+      "forbidden_symbols": []
+    }
+  },
+  "chroma_links_fresh_datalib": true,
+  "corr_superb_enabled": true,
+  "datalib_source": {
+    "head": "b3b1d4206ddbd9371468d38e9d0d72a9787d0dd7",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": "",
+    "tracked_files": 141,
+    "after_bootstrap_status": "",
+    "no_source_overlays": true
+  },
+  "chroma_source": {
+    "head": "0f832d738ee1a512f0b6ea6efffda4e77afc5bd0",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": "",
+    "tracked_files": 3119,
+    "after_bootstrap_status": " M INSTALL\n M config/compile\n M config/config.guess\n M config/config.sub\n M config/depcomp\n M config/install-sh\n M config/missing\n M config/mkinstalldirs\n m other_libs/cpp_wilson_dslash\n m other_libs/qdp-lapack\n m other_libs/sse_wilson_dslash\n m other_libs/wilsonmg\n",
+    "no_source_overlays": true
+  },
+  "chroma_submodules": [
+    {
+      "path": "other_libs/cpp_wilson_dslash",
+      "commit": "5a14dd16ba57aeed0166a22158116be5e499a5aa",
+      "no_source_overlays": true
+    },
+    {
+      "path": "other_libs/sse_wilson_dslash",
+      "commit": "0f9e5ed76589ce5f4bdd314990999b818a7a6c22",
+      "no_source_overlays": true
+    },
+    {
+      "path": "other_libs/qdp-lapack",
+      "commit": "2b0b713efecf3d02aa172c2d01d3320775e80fb0",
+      "no_source_overlays": true
+    },
+    {
+      "path": "other_libs/wilsonmg",
+      "commit": "cad7edd92e5b6a6871856e9dbff9cf269e32440c",
+      "no_source_overlays": true
+    }
+  ],
+  "original_reorg_devel_and_kanoni_unchanged": true,
+  "smoke": {
+    "status": "passed",
+    "cases": [
+      {
+        "case": "pion",
+        "command": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma/bin/chroma",
+          "-i",
+          "chroma.xml",
+          "-o",
+          "chroma.out.xml"
+        ],
+        "returncode": 0,
+        "CG_solves": 0,
+        "graph_sha256": "936f5789359d22eac0bd76c99610bc80b31b410b99ff4c165fdadbf80b69f811",
+        "input_sha256": "064b0d0863287590c74d1155a751676cc4323178583694951b4cb3a6f51dfc56",
+        "reference_sha256": "9ec38d6a94bd04f4a025d9f89fc2903fb29cae0071e354c739652fb0a3f47b7f",
+        "output_sha256": "9ec38d6a94bd04f4a025d9f89fc2903fb29cae0071e354c739652fb0a3f47b7f",
+        "byte_identical": true,
+        "keys": 3,
+        "values": 48,
+        "configurations": 1,
+        "times": 16,
+        "finite": true,
+        "failures": 0,
+        "zero_channels": 0,
+        "max_abs_difference": 0
+      },
+      {
+        "case": "3pi",
+        "command": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma/bin/chroma",
+          "-i",
+          "chroma.xml",
+          "-o",
+          "chroma.out.xml"
+        ],
+        "returncode": 0,
+        "CG_solves": 0,
+        "graph_sha256": "73027ccaab5a29f3edc4fcb5b15badb53507b4a53a3fd96c556da479438a64c5",
+        "input_sha256": "064b0d0863287590c74d1155a751676cc4323178583694951b4cb3a6f51dfc56",
+        "reference_sha256": "1c163ccaf19be2641eaca8ea30084112c3b9f4fe4dee95fee61be0273e926dce",
+        "output_sha256": "1c163ccaf19be2641eaca8ea30084112c3b9f4fe4dee95fee61be0273e926dce",
+        "byte_identical": true,
+        "keys": 3,
+        "values": 48,
+        "configurations": 1,
+        "times": 16,
+        "finite": true,
+        "failures": 0,
+        "zero_channels": 0,
+        "max_abs_difference": 0
+      },
+      {
+        "case": "nuc_nuc_3pt",
+        "command": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma/bin/chroma",
+          "-i",
+          "chroma.xml",
+          "-o",
+          "chroma.out.xml"
+        ],
+        "returncode": 0,
+        "CG_solves": 0,
+        "graph_sha256": "6a314bd162418e6a345b7db8088f084f6fac058be459db8b4eeb0389e10e5c26",
+        "input_sha256": "ce99926227d8011065225448243040762e1efe84387aa356493d5d3fb77c24fe",
+        "reference_sha256": "ddba096b9ee635471d864c8e6bdc9fe09eae5eaabc0132503840c3934ecc0f91",
+        "output_sha256": "ddba096b9ee635471d864c8e6bdc9fe09eae5eaabc0132503840c3934ecc0f91",
+        "byte_identical": true,
+        "keys": 1,
+        "values": 7,
+        "configurations": 1,
+        "times": 7,
+        "finite": true,
+        "failures": 0,
+        "zero_channels": 0,
+        "max_abs_difference": 0
+      }
+    ]
+  },
+  "sandbox_canaries": [
+    {
+      "profile": "datalib",
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/install/adat-direct-001/include/io/superb_kv.h",
+      "allowed": false,
+      "returncode": 1,
+      "stderr": "cat: /Users/admin/Downloads/macos-datalib-reorg/install/adat-direct-001/include/io/superb_kv.h: Operation not permitted\n"
+    },
+    {
+      "profile": "datalib",
+      "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include/qdp.h",
+      "allowed": false,
+      "returncode": 1,
+      "stderr": "cat: /Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include/qdp.h: Operation not permitted\n"
+    },
+    {
+      "profile": "chroma",
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/install/adat-direct-001/include/io/superb_kv.h",
+      "allowed": false,
+      "returncode": 1,
+      "stderr": "cat: /Users/admin/Downloads/macos-datalib-reorg/install/adat-direct-001/include/io/superb_kv.h: Operation not permitted\n"
+    },
+    {
+      "profile": "chroma",
+      "path": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include/qdp.h",
+      "allowed": true,
+      "returncode": 0,
+      "stderr": ""
+    }
+  ],
+  "openmp": [
+    {
+      "requested": 1,
+      "observed": 1
+    },
+    {
+      "requested": 4,
+      "observed": 4
+    }
+  ]
+}

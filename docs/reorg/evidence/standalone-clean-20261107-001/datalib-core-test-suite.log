@@ -1,0 +1,15 @@
+===================================
+   datalib 0.1: ./test-suite.log
+===================================
+
+# TOTAL: 3
+# PASS:  3
+# SKIP:  0
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+
+System information (uname -a): Darwin 25.6.0 Darwin Kernel Version 25.6.0: Tue Aug 18 17:49:13 PDT 2026; root:xnu-12377.161.15.700.19~2/RELEASE_ARM64_T6000
+
+.. contents:: :depth: 2

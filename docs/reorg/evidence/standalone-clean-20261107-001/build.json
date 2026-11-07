@@ -1,0 +1,291 @@
+[
+  {
+    "step": "datalib-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/datalib",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 2.550348917,
+    "finished_utc": "2026-11-07T20:14:23.148628+00:00"
+  },
+  {
+    "step": "chroma-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/chroma.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/chroma",
+    "profile": "chroma",
+    "returncode": 0,
+    "seconds": 14.396782249999998,
+    "finished_utc": "2026-11-07T20:14:37.546413+00:00"
+  },
+  {
+    "step": "datalib-core-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-xpath=/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader",
+      "--without-filedb"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-core",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-xpath=/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader",
+      "--without-filedb"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/datalib-core",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 6.586556250000001,
+    "finished_utc": "2026-11-07T20:14:44.133648+00:00"
+  },
+  {
+    "step": "datalib-core-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/datalib-core",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 6.192128916999998,
+    "finished_utc": "2026-11-07T20:14:50.326293+00:00"
+  },
+  {
+    "step": "datalib-core-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/datalib-core",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 3.4412680419999973,
+    "finished_utc": "2026-11-07T20:14:53.768195+00:00"
+  },
+  {
+    "step": "datalib-core-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/datalib-core",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 0.6055222920000034,
+    "finished_utc": "2026-11-07T20:14:54.374347+00:00"
+  },
+  {
+    "step": "datalib-filedb-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-xpath=/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader",
+      "--with-filedb=/Users/admin/Downloads/macos-datalib-reorg/install/filedb-standalone-001"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-xpath=/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader",
+      "--with-filedb=/Users/admin/Downloads/macos-datalib-reorg/install/filedb-standalone-001"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/datalib-filedb",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 5.600959082999999,
+    "finished_utc": "2026-11-07T20:14:59.976277+00:00"
+  },
+  {
+    "step": "datalib-filedb-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/datalib-filedb",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 11.142639084000002,
+    "finished_utc": "2026-11-07T20:15:11.119583+00:00"
+  },
+  {
+    "step": "datalib-filedb-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/datalib-filedb",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 3.4754716670000008,
+    "finished_utc": "2026-11-07T20:15:14.596178+00:00"
+  },
+  {
+    "step": "datalib-filedb-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/datalib-filedb",
+    "profile": "datalib",
+    "returncode": 0,
+    "seconds": 0.7229086669999987,
+    "finished_utc": "2026-11-07T20:15:15.319810+00:00"
+  },
+  {
+    "step": "chroma-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/chroma.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/chroma",
+    "profile": "chroma",
+    "returncode": 0,
+    "seconds": 29.4356115,
+    "finished_utc": "2026-11-07T20:15:44.756569+00:00"
+  },
+  {
+    "step": "chroma-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/chroma.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/chroma",
+    "profile": "chroma",
+    "returncode": 0,
+    "seconds": 627.8532822080001,
+    "finished_utc": "2026-11-07T20:26:12.588137+00:00"
+  },
+  {
+    "step": "chroma-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "sandbox_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/chroma.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/build/chroma",
+    "profile": "chroma",
+    "returncode": 0,
+    "seconds": 50.869127209,
+    "finished_utc": "2026-11-07T20:27:03.463924+00:00"
+  }
+]

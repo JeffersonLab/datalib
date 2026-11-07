@@ -39,3 +39,7 @@ and historical fixture generation.
 
 [Full regression and build reports](docs/reorg/README.md) record the tested
 format-4 stack, retained deferrals, numerical results and source provenance.
+
+The [clean standalone build verification](docs/reorg/STANDALONE-CLEAN-BUILD.md)
+records datalib builds with ADAT/QDP access blocked and a fresh ADAT-free
+Chroma build with targeted runtime checks.

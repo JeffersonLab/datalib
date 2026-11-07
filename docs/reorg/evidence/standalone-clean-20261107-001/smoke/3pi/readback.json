@@ -1,0 +1,25 @@
+{
+  "case": "3pi",
+  "command": [
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/chroma/bin/chroma",
+    "-i",
+    "chroma.xml",
+    "-o",
+    "chroma.out.xml"
+  ],
+  "returncode": 0,
+  "CG_solves": 0,
+  "graph_sha256": "73027ccaab5a29f3edc4fcb5b15badb53507b4a53a3fd96c556da479438a64c5",
+  "input_sha256": "064b0d0863287590c74d1155a751676cc4323178583694951b4cb3a6f51dfc56",
+  "reference_sha256": "1c163ccaf19be2641eaca8ea30084112c3b9f4fe4dee95fee61be0273e926dce",
+  "output_sha256": "1c163ccaf19be2641eaca8ea30084112c3b9f4fe4dee95fee61be0273e926dce",
+  "byte_identical": true,
+  "keys": 3,
+  "values": 48,
+  "configurations": 1,
+  "times": 16,
+  "finite": true,
+  "failures": 0,
+  "zero_channels": 0,
+  "max_abs_difference": 0
+}
