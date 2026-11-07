@@ -1,0 +1,47 @@
+[
+  {
+    "step": "chroma-final-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/private/tmp/datalib-reorg.QM7CRm/chroma",
+    "returncode": 0
+  },
+  {
+    "step": "chroma-final-configure",
+    "command": [
+      "/private/tmp/datalib-reorg.QM7CRm/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/install/chroma-no1pt-reorg-001",
+      "--with-qdp=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/install/datalib-no1pt-reorg-002",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "cwd": "/private/tmp/datalib-reorg.QM7CRm/build/chroma",
+    "returncode": 0
+  },
+  {
+    "step": "chroma-final-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "cwd": "/private/tmp/datalib-reorg.QM7CRm/build/chroma",
+    "returncode": 0
+  },
+  {
+    "step": "chroma-final-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/private/tmp/datalib-reorg.QM7CRm/build/chroma",
+    "returncode": 0
+  }
+]

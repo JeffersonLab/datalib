@@ -1,0 +1,3 @@
+ld: warning: duplicate -rpath '/opt/homebrew/opt/libomp/lib' ignored
+ld: warning: ignoring duplicate libraries: '-lomp'
+All 64 nonzero Dirac-Pauli projections match the historical implementation exactly.

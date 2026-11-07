@@ -34,3 +34,8 @@ Frozen fixtures check primitive codecs, format-4 binary and XML graph
 serialization, correlator storage and FILEDB records. Format-3 fixtures
 are used to test rejection. The provenance JSON files record the sources
 and historical fixture generation.
+
+## Reorganization validation
+
+[Full regression and build reports](docs/reorg/README.md) record the tested
+format-4 stack, retained deferrals, numerical results and source provenance.

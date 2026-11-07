@@ -90,3 +90,25 @@ nobase_datalibheaders_HEADERS += include/datalib/io/detail/basic_xpath_reader.h 
 EXTRA_DIST += COPYING.xpath_reader src/xml/README.md
 
 EXTRA_DIST += runtime-provenance.json
+
+EXTRA_DIST += \
+    docs/reorg/NATIVE-DOUBLE-REGRESSIONS.md \
+    docs/reorg/README.md \
+    docs/reorg/VALIDATION.md \
+    docs/reorg/evidence/native-double-full-20261106-001/audit.log \
+    docs/reorg/evidence/native-double-full-20261106-001/audit.py \
+    docs/reorg/evidence/native-double-full-20261106-001/independent-audit.json \
+    docs/reorg/evidence/native-double-full-20261106-001/npt-only/command.json \
+    docs/reorg/evidence/native-double-full-20261106-001/npt-only/suite/results.json \
+    docs/reorg/evidence/native-double-full-20261106-001/paired/command.json \
+    docs/reorg/evidence/native-double-full-20261106-001/paired/suite/results.json \
+    docs/reorg/evidence/native-double-full-20261106-001/policy-runner-library.sha256 \
+    docs/reorg/evidence/native-double-full-20261106-001/regression-policy.json \
+    docs/reorg/evidence/native-double-full-20261106-001/reorg-sources.log \
+    docs/reorg/evidence/no1pt-reorg-runtime-001/build-chroma.json \
+    docs/reorg/evidence/no1pt-reorg-runtime-001/build-cpu.json \
+    docs/reorg/evidence/no1pt-reorg-runtime-001/datalib-core-only-test-suite.log \
+    docs/reorg/evidence/no1pt-reorg-runtime-001/native-double-smoke/suite/results.json \
+    docs/reorg/evidence/no1pt-reorg-runtime-001/verification.json \
+    docs/reorg/evidence/no1pt-reorg-runtime-001/verify-gamma.log \
+    docs/reorg/evidence/no1pt-reorg-runtime-001/verify-omp.log

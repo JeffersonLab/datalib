@@ -1,0 +1,237 @@
+[
+  {
+    "step": "datalib-bootstrap",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/datalib",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "datalib-configure",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/datalib-no1pt-reorg-002",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/install/datalib-no1pt-reorg-002",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-xpath=/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader",
+      "--with-filedb=/Users/admin/Downloads/macos-datalib-reorg/install/filedb-standalone-001"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "datalib-build",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/datalib-no1pt-reorg-002",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "datalib-check",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/datalib-no1pt-reorg-002",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "datalib-install",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/datalib-no1pt-reorg-002",
+    "command": [
+      "make",
+      "install"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "adat-bootstrap",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/adat",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "adat-configure",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/adat-no1pt-reorg-002",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/adat/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/install/adat-no1pt-reorg-002",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/install/datalib-no1pt-reorg-002"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "adat-build",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/adat-no1pt-reorg-002",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "adat-check",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/adat-no1pt-reorg-002",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "adat-install",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/adat-no1pt-reorg-002",
+    "command": [
+      "make",
+      "install"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "colorvec-bootstrap",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/colorvec",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "colorvec-configure",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/colorvec-no1pt-reorg-002",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/colorvec/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/install/colorvec-no1pt-reorg-002",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/install/adat-no1pt-reorg-002",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "colorvec-build",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/colorvec-no1pt-reorg-002",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "returncode": 2
+  },
+  {
+    "step": "adat-build-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/adat-no1pt-reorg-002",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "adat-check-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/adat-no1pt-reorg-002",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "adat-install-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/adat-no1pt-reorg-002",
+    "command": [
+      "make",
+      "install",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "colorvec-build-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/colorvec-no1pt-reorg-002",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "colorvec-check-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/colorvec-no1pt-reorg-002",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "colorvec-install-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/colorvec-no1pt-reorg-002",
+    "command": [
+      "make",
+      "install",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "redstar-bootstrap",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/redstar",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "redstar-configure",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/redstar-no1pt-reorg-002",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/redstar/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/install/redstar-no1pt-reorg-002",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/install/colorvec-no1pt-reorg-002"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "redstar-build-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/redstar-no1pt-reorg-002",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "redstar-check-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/redstar-no1pt-reorg-002",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "returncode": 0
+  },
+  {
+    "step": "redstar-install-bridge",
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/build/redstar-no1pt-reorg-002",
+    "command": [
+      "make",
+      "install",
+      "-j6"
+    ],
+    "returncode": 0
+  }
+]

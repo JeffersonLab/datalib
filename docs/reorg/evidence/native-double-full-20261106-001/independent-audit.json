@@ -1,0 +1,913 @@
+{
+  "status": "passed",
+  "paired": {
+    "passed": 30,
+    "deferred": [
+      "ff_3pt",
+      "fsq_3pt",
+      "glue",
+      "tetra_F27_S2"
+    ],
+    "keys": 925,
+    "values": 4197,
+    "cases": [
+      {
+        "case": "pion",
+        "keys": 3,
+        "graph_count": 1,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "failures": 0,
+        "max_abs_error": 9.041133121840199e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "1pt",
+        "keys": 3,
+        "graph_count": 13,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "failures": 0,
+        "max_abs_error": 8.61689244180633e-18,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "33",
+        "keys": 1,
+        "graph_count": 4446,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 7.236496387882353e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "3pi",
+        "keys": 3,
+        "graph_count": 6775,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "failures": 0,
+        "max_abs_error": 1.2195766457225513e-13,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "a0.d3",
+        "keys": 324,
+        "graph_count": 15988,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 1296,
+        "failures": 0,
+        "max_abs_error": 4.647936526787833e-20,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 1296,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 1296,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "a1_rhopi",
+        "keys": 1,
+        "graph_count": 66,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.433114405811818e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "d",
+        "keys": 1,
+        "graph_count": 144,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.6638411145107034e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "delta_J1o2m",
+        "keys": 1,
+        "graph_count": 6,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 1.1150912609939193e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "eta8eta8_F8",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 1.4202500883305642e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "eta_eta_3pt",
+        "keys": 1,
+        "graph_count": 0,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 1,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 0.0,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 1,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "h8",
+        "keys": 4,
+        "graph_count": 3504,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 64,
+        "failures": 0,
+        "max_abs_error": 6.492617718943368e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 64,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 64,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "hard.1_tslice.ini",
+        "keys": 529,
+        "graph_count": 3969,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 2116,
+        "failures": 0,
+        "max_abs_error": 2.581623557302228e-19,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 2116,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 2116,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 2.220446049250313e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc.p100",
+        "keys": 2,
+        "graph_count": 4,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 14,
+        "failures": 0,
+        "max_abs_error": 2.120695015012297e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 14,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 14,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc_gA",
+        "keys": 1,
+        "graph_count": 6,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 7,
+        "failures": 0,
+        "max_abs_error": 1.4267046007789674e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc_nuc_3pt",
+        "keys": 1,
+        "graph_count": 9,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 1,
+        "prior_npt_unevaluable_graphs": 1,
+        "npt_zero_channels": 0,
+        "values": 7,
+        "failures": 0,
+        "max_abs_error": 4.1777673608052095e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc_nuc_ax_3pt",
+        "keys": 4,
+        "graph_count": 24,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 28,
+        "failures": 0,
+        "max_abs_error": 8.725934980155604e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 28,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 28,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc_nuc_proj_3pt",
+        "keys": 1,
+        "graph_count": 6,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 7,
+        "failures": 0,
+        "max_abs_error": 2.6196744905295746e-19,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucnuc_small",
+        "keys": 2,
+        "graph_count": 8804,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 8,
+        "failures": 0,
+        "max_abs_error": 7.983969392533412e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 8,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 8,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucpi",
+        "keys": 1,
+        "graph_count": 10,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.53916334140154e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucpi_I3o2",
+        "keys": 1,
+        "graph_count": 208,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.332294980281256e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucpi_J1o2m",
+        "keys": 1,
+        "graph_count": 6,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 2.5086874334455788e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucpi_nucpi_J1o2m",
+        "keys": 2,
+        "graph_count": 75,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 32,
+        "failures": 0,
+        "max_abs_error": 2.7755575615628914e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "pi",
+        "keys": 1,
+        "graph_count": 1,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 1.2600130452682744e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "pi_pi_3pt",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 6,
+        "failures": 0,
+        "max_abs_error": 2.9326576526939265e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 6,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 6,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "pion_3pt",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 7,
+        "failures": 0,
+        "max_abs_error": 3.0184188481996443e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "pipi_i1",
+        "keys": 1,
+        "graph_count": 4,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.0201331455116262e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "psi",
+        "keys": 2,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 32,
+        "failures": 0,
+        "max_abs_error": 4.012085879858621e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "rho",
+        "keys": 3,
+        "graph_count": 3,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "failures": 0,
+        "max_abs_error": 1.2440853988058506e-14,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "rho_rho_3pt",
+        "keys": 27,
+        "graph_count": 20829,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 189,
+        "failures": 0,
+        "max_abs_error": 6.073553092204933e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 189,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 189,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      }
+    ]
+  },
+  "npt_only": {
+    "passed": 3,
+    "deferred": [],
+    "keys": 6,
+    "values": 96,
+    "cases": [
+      {
+        "case": "fsq_3pt",
+        "keys": 2,
+        "graph_count": 3,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 2,
+        "prior_npt_unevaluable_graphs": 2,
+        "npt_zero_channels": 0,
+        "values": 32,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "case": "glue",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "case": "tetra_F27_S2",
+        "keys": 3,
+        "graph_count": 4,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        }
+      }
+    ]
+  },
+  "fully_deferred": [
+    "ff_3pt"
+  ],
+  "policy_sha256": "d9fbaf27fcec9af356976e23a00d2b5cb9f785fd433b1a07926f6c18f72b50df",
+  "devel_and_kanoni_status_match": true,
+  "compressed_diagnostics": [
+    {
+      "archive": "paired/suite/no_1pt/33/npt.log.gz",
+      "original_bytes": 150260686,
+      "original_sha256": "85fe27825e393b11eb6edbb7df060e64bacf7c748409be784168b3198bbb9ebe",
+      "archive_bytes": 11240892
+    },
+    {
+      "archive": "paired/suite/no_1pt/3pi/npt.log.gz",
+      "original_bytes": 232257989,
+      "original_sha256": "640e49cb414e3034f5e36fcbf67d96419a0e0267757363da1d7e2e6500a1000e",
+      "archive_bytes": 17780813
+    },
+    {
+      "archive": "paired/suite/no_1pt/h8/npt.log.gz",
+      "original_bytes": 131159401,
+      "original_sha256": "10dbaa515cd8e4bcf334cfa75b5f9e92b466af52902a5386226a6d9878df19a4",
+      "archive_bytes": 13005149
+    },
+    {
+      "archive": "paired/suite/no_1pt/rho_rho_3pt/npt.log.gz",
+      "original_bytes": 639719382,
+      "original_sha256": "9d50f0a18e72bd614c9270467abfc4bd33d455e883a8d88513a2a541f870b908",
+      "archive_bytes": 48421944
+    }
+  ]
+}

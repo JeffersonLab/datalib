@@ -1,0 +1,122 @@
+{
+  "repositories": {
+    "datalib": {
+      "branch": "rge/devel-datalib-reorg",
+      "commit": "71d6eed1def87b2eb00d499c61ef73424dbb1616"
+    },
+    "adat": {
+      "branch": "rge/devel-datalib-reorg",
+      "commit": "ebef988aec67947b95b8aa46645c29ebb9a22e35"
+    },
+    "colorvec": {
+      "branch": "rge/devel-datalib-reorg",
+      "commit": "bab4ff2f050f3b91cf10d2fc394c74aa42faa7c0"
+    },
+    "redstar": {
+      "branch": "rge/devel-datalib-reorg",
+      "commit": "839141e9adbc4b9e2b1f82cff0869a1b2d35b742"
+    },
+    "chroma": {
+      "branch": "rge/devel-datalib-reorg",
+      "commit": "0f832d738ee1a512f0b6ea6efffda4e77afc5bd0"
+    }
+  },
+  "binary_sha256": {
+    "redstar": "a60a252e181f9e56591b966d148da39744bcdbea16910f06236c058fddcdcd6a",
+    "chroma": "7a817fb5cb59077b0501da36378882fd98c58cdba6b1d57035a2bfd9c46acd43",
+    "datalib": "20a14d23f966e6deae984884578faf71ed4d4998e6a77e2530b13d82bfafe9c1"
+  },
+  "memory_audit_events": {
+    "startup": 1,
+    "env": 13,
+    "snapshot": 388,
+    "config": 7,
+    "file": 10
+  },
+  "cases": [
+    {
+      "case": "pion",
+      "keys": 3,
+      "values": 48,
+      "max_abs_difference": 9.041133121840199e-15,
+      "strict_failures": 0,
+      "CG_solves": 0,
+      "corr_byte_identical_to_historical": true,
+      "npt_unevaluable_graphs": 0,
+      "npt_zero_channels": 0,
+      "corr_zero_channels": 0,
+      "fake_data": false
+    },
+    {
+      "case": "1pt",
+      "keys": 3,
+      "values": 48,
+      "max_abs_difference": 8.61689244180633e-18,
+      "strict_failures": 0,
+      "CG_solves": 0,
+      "corr_byte_identical_to_historical": true,
+      "npt_unevaluable_graphs": 0,
+      "npt_zero_channels": 0,
+      "corr_zero_channels": 0,
+      "fake_data": false
+    },
+    {
+      "case": "3pi",
+      "keys": 3,
+      "values": 48,
+      "max_abs_difference": 1.2195766457225513e-13,
+      "strict_failures": 0,
+      "CG_solves": 0,
+      "corr_byte_identical_to_historical": true,
+      "npt_unevaluable_graphs": 0,
+      "npt_zero_channels": 0,
+      "corr_zero_channels": 0,
+      "fake_data": false
+    },
+    {
+      "case": "nuc",
+      "keys": 1,
+      "values": 16,
+      "max_abs_difference": 2.220446049250313e-16,
+      "strict_failures": 0,
+      "CG_solves": 0,
+      "corr_byte_identical_to_historical": true,
+      "npt_unevaluable_graphs": 0,
+      "npt_zero_channels": 0,
+      "corr_zero_channels": 0,
+      "fake_data": false
+    },
+    {
+      "case": "nuc_nuc_3pt",
+      "keys": 1,
+      "values": 7,
+      "max_abs_difference": 4.1777673608052095e-17,
+      "strict_failures": 0,
+      "CG_solves": 0,
+      "corr_byte_identical_to_historical": true,
+      "npt_unevaluable_graphs": 1,
+      "npt_zero_channels": 0,
+      "corr_zero_channels": 0,
+      "fake_data": false
+    },
+    {
+      "case": "pion_3pt",
+      "keys": 1,
+      "values": 7,
+      "max_abs_difference": 3.0184188481996443e-16,
+      "strict_failures": 0,
+      "CG_solves": 0,
+      "corr_byte_identical_to_historical": true,
+      "npt_unevaluable_graphs": 0,
+      "npt_zero_channels": 0,
+      "corr_zero_channels": 0,
+      "fake_data": false
+    }
+  ],
+  "compressed_diagnostics": [
+    {
+      "file": "native-double-smoke/suite/no_1pt/3pi/npt.log.gz",
+      "uncompressed_sha256": "ed9325f7dbed0ad7433ee6879ef36d9f45b0ee6e822ca82bdad1d4777fc7b8f0"
+    }
+  ]
+}
