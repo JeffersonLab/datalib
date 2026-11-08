@@ -1,0 +1,129 @@
+{
+  "status": "passed",
+  "owned_arrays": {
+    "status": "passed",
+    "builds": {
+      "datalib-core": {
+        "passed_checks": 4,
+        "exported_flags": {
+          "cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-core/include -O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/libxml2/include/libxml2",
+          "ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-core/lib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+          "libs": "-ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp"
+        },
+        "dependency_records": 26
+      },
+      "datalib-filedb": {
+        "passed_checks": 5,
+        "exported_flags": {
+          "cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb/include -O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/libxml2/include/libxml2",
+          "ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb/lib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+          "libs": "-ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp"
+        },
+        "dependency_records": 37
+      }
+    },
+    "header_self_containment": [
+      "xml_array.h",
+      "xml_array2d.h",
+      "xml_array3d.h",
+      "xml_array4d.h"
+    ],
+    "interoperability": [
+      {
+        "provider": "xpath",
+        "include": "/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader/include",
+        "order": "bundled-first",
+        "empty_equality": true,
+        "status": "passed"
+      },
+      {
+        "provider": "xpath",
+        "include": "/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader/include",
+        "order": "upstream-first",
+        "empty_equality": true,
+        "status": "passed"
+      },
+      {
+        "provider": "qdp",
+        "include": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include",
+        "order": "bundled-first",
+        "empty_equality": true,
+        "status": "passed"
+      },
+      {
+        "provider": "qdp",
+        "include": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include",
+        "order": "upstream-first",
+        "empty_equality": false,
+        "status": "passed"
+      }
+    ],
+    "artifacts": {
+      "datalib-core": {
+        "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-core/lib/libdatalib_serial.a",
+        "sha256": "b79b2ef8d59728a76f7a5b94ea1ff67608f3680f985291442cb84d6bb5100486"
+      },
+      "datalib-filedb": {
+        "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb/lib/libdatalib_serial.a",
+        "sha256": "18a064d40e1b7d76e4773aadc5f7625388bbe1362c9263de91bb433d35357486"
+      },
+      "chroma": {
+        "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/chroma/bin/chroma",
+        "sha256": "04651da61306c2b9f9e28a3a40484930cb7364ad1f2f15dcdd8b679326565fab"
+      }
+    },
+    "distribution": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-filedb/datalib-0.1.tar.gz",
+      "sha256": "2253dff8f8190b1c91f5685dcdccbbefa43072b6f9bd598347e45a03bcb13475"
+    },
+    "notes": "XMLArray namespace, layout, operators and guards retain the old upstream implementations; Chroma explicitly retains QDP-first array definitions."
+  },
+  "artifacts": {
+    "datalib-core": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-core/lib/libdatalib_serial.a",
+      "sha256": "b79b2ef8d59728a76f7a5b94ea1ff67608f3680f985291442cb84d6bb5100486"
+    },
+    "datalib-filedb": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb/lib/libdatalib_serial.a",
+      "sha256": "18a064d40e1b7d76e4773aadc5f7625388bbe1362c9263de91bb433d35357486"
+    },
+    "chroma": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/chroma/bin/chroma",
+      "sha256": "04651da61306c2b9f9e28a3a40484930cb7364ad1f2f15dcdd8b679326565fab"
+    }
+  },
+  "chroma_dependency_records": 845,
+  "chroma_adat_symbols": false,
+  "sources": {
+    "datalib": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/datalib",
+      "commit": "6f6a08a7a1e490d73ced26a002fd4202175a61e6",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "chroma": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/chroma",
+      "commit": "3e4724af9b664766fa6860f65505b5d4cbb4ae26",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "adat": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/adat",
+      "commit": "d3d14bf60a5fc3e5801b219c4e43b5ac4fa23575",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "colorvec": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/colorvec",
+      "commit": "5069d970c40583c80947a14a52464737b17f6196",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "redstar": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/redstar",
+      "commit": "ed355701fb651626ca8b241bc2f6f326ed9326e5",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    }
+  }
+}

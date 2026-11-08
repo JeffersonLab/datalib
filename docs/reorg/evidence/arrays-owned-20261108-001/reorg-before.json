@@ -1,0 +1,26 @@
+{
+  "datalib": {
+    "head": "3a87bccdf22f22a292c1244e9065497f57830f1a",
+    "status": "?? configure~\n"
+  },
+  "adat": {
+    "head": "d3d14bf60a5fc3e5801b219c4e43b5ac4fa23575",
+    "status": " m other_libs/filedb\n m other_libs/minuit\n m other_libs/xpath_reader\n"
+  },
+  "colorvec": {
+    "head": "5069d970c40583c80947a14a52464737b17f6196",
+    "status": "?? configure~\n"
+  },
+  "redstar": {
+    "head": "ed355701fb651626ca8b241bc2f6f326ed9326e5",
+    "status": ""
+  },
+  "chroma": {
+    "head": "0f832d738ee1a512f0b6ea6efffda4e77afc5bd0",
+    "status": ""
+  },
+  "xpath_reader": {
+    "head": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
+    "status": ""
+  }
+}

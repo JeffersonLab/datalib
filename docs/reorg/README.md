@@ -3,6 +3,7 @@
 These reports record the macOS build and regression tests performed in
 November 2026 with the matching `rge/devel-datalib-reorg` source branches.
 
+- [Bundled array headers and full regression](ARRAYS-OWNED-REGRESSIONS.md)
 - [Full clean-stack regression and memory-limit recovery](NATIVE-DOUBLE-CLEAN-REGRESSIONS.md)
 - [Clean standalone datalib and ADAT-free Chroma builds](STANDALONE-CLEAN-BUILD.md)
 - [Build and targeted validation](VALIDATION.md)
@@ -32,3 +33,8 @@ The full clean-stack follow-up retains the failed 8 GiB RSS-limit attempt and
 its fresh targeted retry. A complete rerun passed all 30 paired and three
 NPT-only cases with `SB_CACHEGB_CPU=1`, the same RSS guard and tensor planner
 budget, and the unchanged numerical gate and deferrals.
+
+The 8 November array-header extraction removes datalib's external
+xpath_reader dependency. Four core/five FILEDB checks, installed-header
+coexistence checks, and the full 30-pair/three-NPT-only matrix passed;
+see the bundled-array report for exact results and scope.

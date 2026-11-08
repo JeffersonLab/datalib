@@ -1,0 +1,30 @@
+[
+  {
+    "step": "verify_stack.py",
+    "returncode": 0
+  },
+  {
+    "step": "check_api.py",
+    "returncode": 0
+  },
+  {
+    "step": "check_aliases.py",
+    "returncode": 0
+  },
+  {
+    "step": "openmp_check.py",
+    "returncode": 0
+  },
+  {
+    "step": "run_full.py",
+    "returncode": 0
+  },
+  {
+    "step": "audit.py",
+    "returncode": 0
+  },
+  {
+    "step": "report.py",
+    "returncode": 0
+  }
+]

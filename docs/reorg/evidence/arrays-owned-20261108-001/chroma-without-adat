@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /usr/bin/sandbox-exec -f /Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma.sb /Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/chroma/bin/chroma "$@"

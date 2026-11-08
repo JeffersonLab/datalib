@@ -1,0 +1,11 @@
+(version 1)
+(allow default)
+(deny file-read* (regex ".*/(adat[^/]*|libadat[^/]*)(/|$)"))
+(deny file-read* (regex ".*/(qdp[^/]*|qmp[^/]*|libqdp[^/]*|libqmp[^/]*)(/|$)"))
+(deny file-read* (regex ".*/xpath_reader[^/]*(/|$)"))
+(deny file-read* (regex ".*/libXPathReader[^/]*(/|$)"))
+(deny file-read* (regex ".*/libxmlWriter[^/]*(/|$)"))
+
+; Historical evidence files named adat-* are documentation, not dependencies.
+(allow file-read* (subpath "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/datalib/docs"))
+(allow file-read* (subpath "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-filedb/datalib-0.1/docs"))

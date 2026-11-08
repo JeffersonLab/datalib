@@ -1,0 +1,315 @@
+{
+  "tested_on": "2026-11-08",
+  "files": [
+    {
+      "file": "array-provenance.json",
+      "sha256": "96028e27264a2f04a14beafd61861f8b24b62afcf7af10c5e6ca0f377f024c24",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/array-provenance.json"
+    },
+    {
+      "file": "owned-array-verification.json",
+      "sha256": "bf6c46f09787adfa95b919388bd7edd46bfe97b84e2d32ce020ae71f1090695b",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/owned-array-verification.json"
+    },
+    {
+      "file": "stack-verification.json",
+      "sha256": "fe35ddf589a73e1cdff19e58450a40a745290a04fe871a0a5ba9cdb884324ba4",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/stack-verification.json"
+    },
+    {
+      "file": "build.json",
+      "sha256": "99ab16a59f9100487d4f003d53a182bc3cdee085f42801be4d04332747eb5315",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build.json"
+    },
+    {
+      "file": "environments.json",
+      "sha256": "828080e0d42fce18aefeccf79c186b91e1429a12c5214d071913cb10b1991afb",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/environments.json"
+    },
+    {
+      "file": "environment.json",
+      "sha256": "b3d5e927113cc75f0a1a44e52864bbc3af53650ce084e3cc748dbeafe25defb7",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/environment.json"
+    },
+    {
+      "file": "sandbox-canaries.json",
+      "sha256": "d253b94904dcf6462316a526f41b927fe5e745e73b0cf72e79cfa1152915af2a",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sandbox-canaries.json"
+    },
+    {
+      "file": "datalib.sb",
+      "sha256": "bf11c03c40d2962c25f28bf1a14e1333350dcd4aafda0644b327577d91c56c33",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb"
+    },
+    {
+      "file": "datalib-dist.sb",
+      "sha256": "47b6256a865011e77f583e955f79b0cb0adf2c8b94ac4ed8f828c00fba354d58",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib-dist.sb"
+    },
+    {
+      "file": "chroma.sb",
+      "sha256": "3bb2a2fca3af9719233ba04475bafa9fdd3014f30e929baedc82b54c07664fe2",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma.sb"
+    },
+    {
+      "file": "stack-sources.json",
+      "sha256": "8385288986233393be0a41b05bae0404d647b45676939d9b92e8ab9c366471da",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/stack-sources.json"
+    },
+    {
+      "file": "reorg-sources.log",
+      "sha256": "9780ba82aeac22c20a8f23fc21864959388d186ec730820e70cce9d63a5d5d77",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/reorg-sources.log"
+    },
+    {
+      "file": "reorg-before.json",
+      "sha256": "99dca6bbc2503705b19ceb5a49db0d50014046924ed7451ce06cd85b64b8995e",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/reorg-before.json"
+    },
+    {
+      "file": "reorg-validation-heads.json",
+      "sha256": "cca5f8bbc2407a660a8808971a596e8c6b5818bc2af38bb07228016824eab98f",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/reorg-validation-heads.json"
+    },
+    {
+      "file": "protected-before.json",
+      "sha256": "34da4e0c998cc1e42be0e47fd77e31ddc14eb8edfa7951b340c1efb2a280358e",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/protected-before.json"
+    },
+    {
+      "file": "direct-api-check.json",
+      "sha256": "6f0d3fb08e9d6f554362522fa4321a0eabcfa6d7b45f4667a8259b4c20d760b5",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/direct-api-check.json"
+    },
+    {
+      "file": "openmp-check.json",
+      "sha256": "17eac3e0571fd8b3c891d60854bb7a5d6839740cbd3ff7c208f3b9baf7bb6359",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/openmp-check.json"
+    },
+    {
+      "file": "devel-before.log",
+      "sha256": "692857ab6ec2ca15078d789a9a7e7fcc1b67653ae8b836b6a141b6e42e6d5049",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/devel-before.log"
+    },
+    {
+      "file": "devel-after.log",
+      "sha256": "692857ab6ec2ca15078d789a9a7e7fcc1b67653ae8b836b6a141b6e42e6d5049",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/devel-after.log"
+    },
+    {
+      "file": "chroma-executor.json",
+      "sha256": "09e6da4fd2516ed6b97c806d050c4cd8d6fecbc2cea216a2da37038fb92c935f",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma-executor.json"
+    },
+    {
+      "file": "chroma-without-adat",
+      "sha256": "81cf8c4072e19f1e88fcc071db979021768c66cb824be9775a1a022ef6c63617",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma-without-adat"
+    },
+    {
+      "file": "policy-runner-library.sha256",
+      "sha256": "724601b2ea82aede8d8e435fa412392991974efe718907d0ea4fe90e181f3a67",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/policy-runner-library.sha256"
+    },
+    {
+      "file": "independent-audit.json",
+      "sha256": "4033c1d19d8c63ef606da84b5dc15dfae06fecc4c82969b059b0bdae6532ea09",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/independent-audit.json"
+    },
+    {
+      "file": "phases.json",
+      "sha256": "cead750a51c916b86a3bd7ae3dc3b69d7df930867642c4249133391ed6700fe2",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/phases.json"
+    },
+    {
+      "file": "finish.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/finish.exit"
+    },
+    {
+      "file": "paired.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/paired.exit"
+    },
+    {
+      "file": "npt-only.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/npt-only.exit"
+    },
+    {
+      "file": "paired/command.json",
+      "sha256": "18a2501aa8a44c542a7270a8f3cf23ad22d0e2e85644875b27242658e0c8ec0e",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/paired/command.json"
+    },
+    {
+      "file": "paired/suite/results.json",
+      "sha256": "d82d9927e5035de0468dddbb839145b5d4934f0f50447fa59e900b12107fe673",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/paired/suite/results.json"
+    },
+    {
+      "file": "npt-only/command.json",
+      "sha256": "d3cebed9973260ec78cdb7cddafd90002c99d05bad632f0053ce5b0f12aba6ca",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/npt-only/command.json"
+    },
+    {
+      "file": "npt-only/suite/results.json",
+      "sha256": "03b63204dc0784571188c200f3a8e90f1c37aba2e6cffc19c1afef0846de0b28",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/npt-only/suite/results.json"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "5f3f8483ccb61e88b9e0c678d655a02c5bd0f9a56d4d393516437c47e53f1131",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/prepare.py"
+    },
+    {
+      "file": "build.py",
+      "sha256": "58f5114eae73ab383e3fc9ee76de8433fc1f1464c483b69061b5fe340ef21989",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build.py"
+    },
+    {
+      "file": "verify_owned.py",
+      "sha256": "9084d6fd2b905181459223130ca93015b0972b6ced53c6392e373f7fb10a049c",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/verify_owned.py"
+    },
+    {
+      "file": "setup_full.py",
+      "sha256": "27a5abd9d23f9e92054dcd13c75ea2562171361d235321593cd284f5cf37f448",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/setup_full.py"
+    },
+    {
+      "file": "verify_stack.py",
+      "sha256": "c95a71796a1865de898c435bad08a70f039d0be5aaca52b8976877beea59b5e9",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/verify_stack.py"
+    },
+    {
+      "file": "finish.py",
+      "sha256": "e816da1a2ba2468d4179c48092ca6cd0cf9aeb8dbf3aaa5c2be527be1ce6a34f",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/finish.py"
+    },
+    {
+      "file": "audit.py",
+      "sha256": "0578569b24429669326b3028b4de907023b1af149d70310c99e71434b05aa31f",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/audit.py"
+    },
+    {
+      "file": "report.py",
+      "sha256": "d9c7d3139a8ed583f705a5b871d4bec7a27d0a425aedb7a7bcfd80f2094d17fb",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/report.py"
+    },
+    {
+      "file": "run_full.py",
+      "sha256": "a95c3019c3a5937eff55ae29b97d9fbf51fdc247f0b78b4b1b1245809b09732f",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/run_full.py"
+    },
+    {
+      "file": "check_api.py",
+      "sha256": "54173aaa9a85c8f4befdad4d2b7735d04b253bb2945e3b779010657028e02a8c",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/check_api.py"
+    },
+    {
+      "file": "check_aliases.py",
+      "sha256": "d81e20ff61624fb5e06c806923fa62b32a605c96fe4346e777681209b76b1a83",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/check_aliases.py"
+    },
+    {
+      "file": "openmp_check.py",
+      "sha256": "60228415228e486a25502872da6751356dd3b3ea178fe8c06ccf70dc62ed31a0",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/openmp_check.py"
+    },
+    {
+      "file": "arrays_probe.cc",
+      "sha256": "4fc8a012f370fe342052ffc82a8bc4460ea4db89957634695c8d6c841a724061",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/arrays_probe.cc"
+    },
+    {
+      "file": "coexist-arrays.cc",
+      "sha256": "9eebaa7a419778d7426102a3df0f8afd4579e602c6196162b3f59ed0fb97f9cb",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/coexist-arrays.cc"
+    },
+    {
+      "file": "export_correlators.cc",
+      "sha256": "1f995f931594761dd4d7c531e9d44ddfd979644b0c4f4e2fe397e265ab7f755f",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/export_correlators.cc"
+    },
+    {
+      "file": "frozen-arrays/manifest.json",
+      "sha256": "e04dcca3e830451969a56d7bdf138822ebec2c4618f19bb5554a275610ec8e3a",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/frozen-arrays/manifest.json"
+    },
+    {
+      "file": "freeze-command.json",
+      "sha256": "bd294e3c29106d2d64c6ad06f32b960dff01b19d5a47732253cb3fc3174cce42",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/freeze-command.json"
+    },
+    {
+      "file": "chroma-link.log",
+      "sha256": "d94b436240e79ca5ef62791461489aaf98a01a4107a305fa029fd1f0480ef503",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma-link.log"
+    },
+    {
+      "file": "chroma-dynamic-libraries.log",
+      "sha256": "5124ae9ff50575a102f5601ec6bc88382202a0772ae69009a8bcfe57a23b72cb",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma-dynamic-libraries.log"
+    },
+    {
+      "file": "redstar-dynamic-libraries.log",
+      "sha256": "5858acb789050ce344c29da7b8da3aea9b1ece817fc5234763194699a00055be",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/redstar-dynamic-libraries.log"
+    },
+    {
+      "file": "audit-driver.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/audit-driver.log",
+      "sha256": "52c9933187c827fd282f0c372418c414f44092b6010019b94e91af96e03dd7ad",
+      "uncompressed_sha256": "685516c03720cd81aecf243a7765f75684601097cd7fa38bded98740a027935f"
+    },
+    {
+      "file": "run_full-driver.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/run_full-driver.log",
+      "sha256": "37234ba2e6bb287446a1853eda97e9e7750f4542165c3b882d01f30015b67ae2",
+      "uncompressed_sha256": "666925f22f7908f782c546b99e1d476198f711de3e5b1655ef36a08f274d826f"
+    },
+    {
+      "file": "freeze-run.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/freeze-run.log",
+      "sha256": "c9061ca3f73aee7f40e02e2135e47587dc29fefbc4485b36f17e5649b44cf452",
+      "uncompressed_sha256": "e621b723d9ea0f15378d0a2de824d703fc3780292ccc69baf7edbb6fe214f9d5"
+    },
+    {
+      "file": "paired/suite.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/paired/suite.log",
+      "sha256": "3dfda0d7dab9afa4ccf50c7991b671dd35fc08b9049e994381dcc6503f03be0f",
+      "uncompressed_sha256": "883b087a8124d27732e8425073cc48e268b655b999698dd78c2ee6cc2755e252"
+    },
+    {
+      "file": "npt-only/suite.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/npt-only/suite.log",
+      "sha256": "e73fe2407b0f2ac36fb457e6959eee1a662fef0aa570730ced51e253251a95bd",
+      "uncompressed_sha256": "94afe5ca1d41bd1af4da551aedd337266f77f8c098845c2e2cb9137c4140c5c2"
+    },
+    {
+      "file": "qdp-bundled-first-run.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/qdp-bundled-first-run.log",
+      "sha256": "c9061ca3f73aee7f40e02e2135e47587dc29fefbc4485b36f17e5649b44cf452",
+      "uncompressed_sha256": "e621b723d9ea0f15378d0a2de824d703fc3780292ccc69baf7edbb6fe214f9d5"
+    },
+    {
+      "file": "qdp-upstream-first-run.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/qdp-upstream-first-run.log",
+      "sha256": "c9061ca3f73aee7f40e02e2135e47587dc29fefbc4485b36f17e5649b44cf452",
+      "uncompressed_sha256": "e621b723d9ea0f15378d0a2de824d703fc3780292ccc69baf7edbb6fe214f9d5"
+    },
+    {
+      "file": "xpath-bundled-first-run.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/xpath-bundled-first-run.log",
+      "sha256": "c9061ca3f73aee7f40e02e2135e47587dc29fefbc4485b36f17e5649b44cf452",
+      "uncompressed_sha256": "e621b723d9ea0f15378d0a2de824d703fc3780292ccc69baf7edbb6fe214f9d5"
+    },
+    {
+      "file": "xpath-upstream-first-run.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/xpath-upstream-first-run.log",
+      "sha256": "c9061ca3f73aee7f40e02e2135e47587dc29fefbc4485b36f17e5649b44cf452",
+      "uncompressed_sha256": "e621b723d9ea0f15378d0a2de824d703fc3780292ccc69baf7edbb6fe214f9d5"
+    }
+  ],
+  "scope": "Small verification/provenance/result records only; build trees, binaries, source archives, numerical databases and full run trees stay outside Git."
+}

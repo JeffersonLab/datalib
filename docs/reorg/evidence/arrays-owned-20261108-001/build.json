@@ -1,0 +1,545 @@
+[
+  {
+    "step": "datalib-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/datalib",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 2.8735278330000007,
+    "finished_utc": "2026-11-08T16:18:06.517872+00:00"
+  },
+  {
+    "step": "datalib-core-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-core",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-core",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 7.718479541000001,
+    "finished_utc": "2026-11-08T16:18:14.237029+00:00"
+  },
+  {
+    "step": "datalib-core-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 5.718042583999999,
+    "finished_utc": "2026-11-08T16:18:19.955465+00:00"
+  },
+  {
+    "step": "datalib-core-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 3.5643947910000016,
+    "finished_utc": "2026-11-08T16:18:23.520287+00:00"
+  },
+  {
+    "step": "datalib-core-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 0.6630905830000025,
+    "finished_utc": "2026-11-08T16:18:24.183911+00:00"
+  },
+  {
+    "step": "datalib-filedb-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=/Users/admin/Downloads/macos-datalib-reorg/install/filedb-standalone-001"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=/Users/admin/Downloads/macos-datalib-reorg/install/filedb-standalone-001"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 5.351828208000001,
+    "finished_utc": "2026-11-08T16:18:29.536207+00:00"
+  },
+  {
+    "step": "datalib-filedb-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 6.667222582999997,
+    "finished_utc": "2026-11-08T16:18:36.203889+00:00"
+  },
+  {
+    "step": "datalib-filedb-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 3.444960833000003,
+    "finished_utc": "2026-11-08T16:18:39.649297+00:00"
+  },
+  {
+    "step": "datalib-filedb-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 0.7952844160000012,
+    "finished_utc": "2026-11-08T16:18:40.445112+00:00"
+  },
+  {
+    "step": "adat-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 9.750309333000004,
+    "finished_utc": "2026-11-08T16:18:50.196316+00:00"
+  },
+  {
+    "step": "chroma-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 12.781282832999999,
+    "finished_utc": "2026-11-08T16:18:53.227235+00:00"
+  },
+  {
+    "step": "adat-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/adat/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/adat/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 21.331102208000004,
+    "finished_utc": "2026-11-08T16:19:11.527857+00:00"
+  },
+  {
+    "step": "chroma-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 24.445641541,
+    "finished_utc": "2026-11-08T16:19:17.673892+00:00"
+  },
+  {
+    "step": "adat-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 79.58213075,
+    "finished_utc": "2026-11-08T16:20:31.110085+00:00"
+  },
+  {
+    "step": "adat-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 17.586654750000008,
+    "finished_utc": "2026-11-08T16:20:48.697154+00:00"
+  },
+  {
+    "step": "adat-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 10.821755083,
+    "finished_utc": "2026-11-08T16:20:59.519453+00:00"
+  },
+  {
+    "step": "colorvec-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 2.3248062080000125,
+    "finished_utc": "2026-11-08T16:21:01.844947+00:00"
+  },
+  {
+    "step": "colorvec-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/colorvec/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/colorvec/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 5.710898458000003,
+    "finished_utc": "2026-11-08T16:21:07.556636+00:00"
+  },
+  {
+    "step": "colorvec-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 43.104388125000014,
+    "finished_utc": "2026-11-08T16:21:50.661538+00:00"
+  },
+  {
+    "step": "colorvec-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 0.22984687499999268,
+    "finished_utc": "2026-11-08T16:21:50.892049+00:00"
+  },
+  {
+    "step": "colorvec-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 0.6533881249999922,
+    "finished_utc": "2026-11-08T16:21:51.546149+00:00"
+  },
+  {
+    "step": "redstar-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 3.070690749999983,
+    "finished_utc": "2026-11-08T16:21:54.617897+00:00"
+  },
+  {
+    "step": "redstar-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/redstar/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/colorvec"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/sources/redstar/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/install/colorvec"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 6.446248916999991,
+    "finished_utc": "2026-11-08T16:22:01.064813+00:00"
+  },
+  {
+    "step": "redstar-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 66.19756795799998,
+    "finished_utc": "2026-11-08T16:23:07.262686+00:00"
+  },
+  {
+    "step": "redstar-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 8.913586083999974,
+    "finished_utc": "2026-11-08T16:23:16.176888+00:00"
+  },
+  {
+    "step": "redstar-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 6.588304540999957,
+    "finished_utc": "2026-11-08T16:23:22.765799+00:00"
+  },
+  {
+    "step": "chroma-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma.sb",
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 766.872274084,
+    "finished_utc": "2026-11-08T16:32:04.542919+00:00"
+  },
+  {
+    "step": "chroma-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/chroma.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/arrays-owned-20261108-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 46.118209417,
+    "finished_utc": "2026-11-08T16:32:50.661982+00:00"
+  }
+]

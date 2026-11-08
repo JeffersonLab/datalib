@@ -48,3 +48,7 @@ Chroma build with targeted runtime checks.
 The [full clean-stack regression](docs/reorg/NATIVE-DOUBLE-CLEAN-REGRESSIONS.md)
 records the complete Redstar/Chroma matrix, retained memory-limit failure,
 and successful cache-capped rerun under the unchanged process-memory guard.
+
+The [bundled-array regression report](docs/reorg/ARRAYS-OWNED-REGRESSIONS.md)
+records the xpath_reader dependency removal, format fixtures, provider
+coexistence checks and complete native-double numerical sweep.
