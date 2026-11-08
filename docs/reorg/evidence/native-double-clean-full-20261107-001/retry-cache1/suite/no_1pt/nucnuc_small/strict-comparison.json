@@ -1,0 +1,7 @@
+{
+  "relative_tolerance": 1e-09,
+  "absolute_floor": 2.583466850253429e-13,
+  "per_value_failures": 0,
+  "max_abs_error": 7.983969392533412e-17,
+  "finite_complex_values": 8
+}

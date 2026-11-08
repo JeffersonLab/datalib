@@ -1,0 +1,11 @@
+/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/redstar_npt:
+	/opt/homebrew/opt/libomp/lib/libomp.dylib (compatibility version 5.0.0, current version 5.0.0)
+	/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate (compatibility version 1.0.0, current version 4.0.0)
+	/opt/homebrew/opt/libxml2/lib/libxml2.2.dylib (compatibility version 16.0.0, current version 16.5.0)
+	/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)
+	/opt/homebrew/opt/icu4c@76/lib/libicuuc.76.dylib (compatibility version 76.0.0, current version 76.1.0)
+	/usr/lib/libiconv.2.dylib (compatibility version 7.0.0, current version 7.0.0)
+	/opt/homebrew/opt/gmp/lib/libgmpxx.4.dylib (compatibility version 12.0.0, current version 12.0.0)
+	/opt/homebrew/opt/gmp/lib/libgmp.10.dylib (compatibility version 16.0.0, current version 16.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1356.0.0)
+	/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2100.43.0)

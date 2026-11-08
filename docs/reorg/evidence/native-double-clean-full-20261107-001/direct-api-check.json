@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "removed_headers": 37,
+  "removed_from_source": true,
+  "removed_from_fresh_install": true,
+  "no_old_include_paths": true,
+  "no_datalib_namespace_imports": true,
+  "qualified_api_probe": true,
+  "removed_legacy_aliases": {
+    "ADAT::Array1dO<int>": "rejected",
+    "ADAT::MapObject<int,int>": "rejected",
+    "ADATIO::BinaryReader": "rejected",
+    "ADATXML::XMLReader": "rejected",
+    "ADATIO::SerialDBKey<int>": "rejected"
+  }
+}

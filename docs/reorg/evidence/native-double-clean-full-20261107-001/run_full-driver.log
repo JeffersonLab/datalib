@@ -1,0 +1,8 @@
+Running paired
+paired 1
+Running npt-only
+npt-only 0
+Traceback (most recent call last):
+  File "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/run_full.py", line 60, in <module>
+    assert all(value==0 for value in statuses.values()),statuses
+AssertionError: {'paired': 1, 'npt-only': 0}

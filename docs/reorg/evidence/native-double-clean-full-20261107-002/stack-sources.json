@@ -1,0 +1,27 @@
+{
+  "datalib": {
+    "commit": "b3b1d4206ddbd9371468d38e9d0d72a9787d0dd7",
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/datalib",
+    "branch_head": "9f086e1b7f285b196d6956660d1d3884a3e98c50"
+  },
+  "adat": {
+    "commit": "d3d14bf60a5fc3e5801b219c4e43b5ac4fa23575",
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/adat",
+    "branch_head": "d3d14bf60a5fc3e5801b219c4e43b5ac4fa23575"
+  },
+  "colorvec": {
+    "commit": "5069d970c40583c80947a14a52464737b17f6196",
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/colorvec",
+    "branch_head": "5069d970c40583c80947a14a52464737b17f6196"
+  },
+  "redstar": {
+    "commit": "ed355701fb651626ca8b241bc2f6f326ed9326e5",
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/redstar",
+    "branch_head": "ed355701fb651626ca8b241bc2f6f326ed9326e5"
+  },
+  "chroma": {
+    "commit": "0f832d738ee1a512f0b6ea6efffda4e77afc5bd0",
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/sources/chroma",
+    "branch_head": "0f832d738ee1a512f0b6ea6efffda4e77afc5bd0"
+  }
+}

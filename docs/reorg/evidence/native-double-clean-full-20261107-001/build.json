@@ -1,0 +1,275 @@
+[
+  {
+    "step": "adat-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "--single-branch",
+      "--branch",
+      "rge/devel-datalib-reorg",
+      "/Users/admin/Downloads/macos-datalib-reorg/adat",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/adat"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001",
+    "returncode": 0,
+    "seconds": 1.534119166,
+    "finished_utc": "2026-11-07T21:50:02.610815+00:00"
+  },
+  {
+    "step": "adat-submodules",
+    "command": [
+      "git",
+      "-c",
+      "protocol.file.allow=always",
+      "submodule",
+      "update",
+      "--init",
+      "--recursive"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/adat",
+    "returncode": 0,
+    "seconds": 0.8383322500000001,
+    "finished_utc": "2026-11-07T21:50:03.692310+00:00"
+  },
+  {
+    "step": "adat-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/adat",
+    "returncode": 0,
+    "seconds": 12.666897042,
+    "finished_utc": "2026-11-07T21:50:16.996437+00:00"
+  },
+  {
+    "step": "adat-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/adat/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/standalone-clean-20261107-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/adat",
+    "returncode": 0,
+    "seconds": 34.750401042,
+    "finished_utc": "2026-11-07T21:50:51.748008+00:00"
+  },
+  {
+    "step": "adat-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/adat",
+    "returncode": 0,
+    "seconds": 63.701539708,
+    "finished_utc": "2026-11-07T21:51:55.451104+00:00"
+  },
+  {
+    "step": "adat-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/adat",
+    "returncode": 0,
+    "seconds": 16.46886154100001,
+    "finished_utc": "2026-11-07T21:52:11.922062+00:00"
+  },
+  {
+    "step": "adat-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/adat",
+    "returncode": 0,
+    "seconds": 14.67544641699999,
+    "finished_utc": "2026-11-07T21:52:26.598516+00:00"
+  },
+  {
+    "step": "colorvec-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "--single-branch",
+      "--branch",
+      "rge/devel-datalib-reorg",
+      "/Users/admin/Downloads/macos-datalib-reorg/colorvec",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/colorvec"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001",
+    "returncode": 0,
+    "seconds": 0.38267537499999094,
+    "finished_utc": "2026-11-07T21:52:26.981862+00:00"
+  },
+  {
+    "step": "colorvec-submodules",
+    "command": [
+      "git",
+      "-c",
+      "protocol.file.allow=always",
+      "submodule",
+      "update",
+      "--init",
+      "--recursive"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/colorvec",
+    "returncode": 0,
+    "seconds": 0.3804767499999855,
+    "finished_utc": "2026-11-07T21:52:27.508676+00:00"
+  },
+  {
+    "step": "colorvec-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/colorvec",
+    "returncode": 0,
+    "seconds": 3.0706357920000187,
+    "finished_utc": "2026-11-07T21:52:30.911491+00:00"
+  },
+  {
+    "step": "colorvec-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/colorvec/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/colorvec",
+    "returncode": 0,
+    "seconds": 9.040399584,
+    "finished_utc": "2026-11-07T21:52:39.953322+00:00"
+  },
+  {
+    "step": "colorvec-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/colorvec",
+    "returncode": 0,
+    "seconds": 31.226687417000022,
+    "finished_utc": "2026-11-07T21:53:11.181329+00:00"
+  },
+  {
+    "step": "colorvec-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/colorvec",
+    "returncode": 0,
+    "seconds": 0.25560183299998585,
+    "finished_utc": "2026-11-07T21:53:11.438010+00:00"
+  },
+  {
+    "step": "colorvec-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/colorvec",
+    "returncode": 0,
+    "seconds": 0.8192037499999856,
+    "finished_utc": "2026-11-07T21:53:12.258255+00:00"
+  },
+  {
+    "step": "redstar-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "--single-branch",
+      "--branch",
+      "rge/devel-datalib-reorg",
+      "/Users/admin/Downloads/macos-datalib-reorg/redstar",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/redstar"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001",
+    "returncode": 0,
+    "seconds": 1.4819479589999958,
+    "finished_utc": "2026-11-07T21:53:13.741100+00:00"
+  },
+  {
+    "step": "redstar-submodules",
+    "command": [
+      "git",
+      "-c",
+      "protocol.file.allow=always",
+      "submodule",
+      "update",
+      "--init",
+      "--recursive"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/redstar",
+    "returncode": 0,
+    "seconds": 0.273878792000005,
+    "finished_utc": "2026-11-07T21:53:14.639559+00:00"
+  },
+  {
+    "step": "redstar-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/redstar",
+    "returncode": 0,
+    "seconds": 2.886762833000006,
+    "finished_utc": "2026-11-07T21:53:18.324655+00:00"
+  },
+  {
+    "step": "redstar-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/sources/redstar/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/colorvec"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/redstar",
+    "returncode": 0,
+    "seconds": 9.702867083000001,
+    "finished_utc": "2026-11-07T21:53:28.028682+00:00"
+  },
+  {
+    "step": "redstar-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/redstar",
+    "returncode": 0,
+    "seconds": 44.71904329200001,
+    "finished_utc": "2026-11-07T21:54:12.749076+00:00"
+  },
+  {
+    "step": "redstar-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/redstar",
+    "returncode": 0,
+    "seconds": 10.229962040999993,
+    "finished_utc": "2026-11-07T21:54:22.980039+00:00"
+  },
+  {
+    "step": "redstar-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build/redstar",
+    "returncode": 0,
+    "seconds": 8.325036082999986,
+    "finished_utc": "2026-11-07T21:54:31.306148+00:00"
+  }
+]

@@ -1,8 +1,9 @@
 # Datalib reorganization validation
 
-These reports record the macOS build and regression tests performed on
+These reports record the macOS build and regression tests performed in
 November 2026 with the matching `rge/devel-datalib-reorg` source branches.
 
+- [Full clean-stack regression and memory-limit recovery](NATIVE-DOUBLE-CLEAN-REGRESSIONS.md)
 - [Clean standalone datalib and ADAT-free Chroma builds](STANDALONE-CLEAN-BUILD.md)
 - [Build and targeted validation](VALIDATION.md)
 - [Full native-double NPT/CORR_SUPERB regression](NATIVE-DOUBLE-REGRESSIONS.md)
@@ -26,3 +27,8 @@ The clean-build follow-up used fresh source checkouts and empty build/install
 directories. ADAT access was blocked for both builds; QDP/QMP access was also
 blocked for datalib. Core/FILEDB checks and three CORR_SUPERB runtime cases passed.
 Its full build trees, binaries and unabridged logs remain outside Git.
+
+The full clean-stack follow-up retains the failed 8 GiB RSS-limit attempt and
+its fresh targeted retry. A complete rerun passed all 30 paired and three
+NPT-only cases with `SB_CACHEGB_CPU=1`, the same RSS guard and tensor planner
+budget, and the unchanged numerical gate and deferrals.

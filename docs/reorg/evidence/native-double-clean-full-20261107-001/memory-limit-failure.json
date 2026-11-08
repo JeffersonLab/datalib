@@ -1,0 +1,52 @@
+{
+  "status": "failed",
+  "case": {
+    "case": "nucnuc_small",
+    "chain": "no_1pt",
+    "status": "failed",
+    "commands": [
+      {
+        "stage": "graph",
+        "argv": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/redstar_corr_graph",
+          "graph.xml",
+          "graph.out.xml"
+        ],
+        "returncode": 0
+      },
+      {
+        "stage": "view",
+        "argv": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/view_corr_graph",
+          "corr_graph.bin"
+        ],
+        "returncode": 0
+      },
+      {
+        "stage": "npt",
+        "argv": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/redstar_npt",
+          "npt.xml",
+          "npt.out.xml"
+        ],
+        "returncode": 0
+      },
+      {
+        "stage": "chroma",
+        "argv": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/chroma-without-adat",
+          "-i",
+          "chroma.xml",
+          "-o",
+          "chroma.out.xml"
+        ]
+      }
+    ],
+    "error": "memory limit exceeded (8192 MiB; observed 8403888 KiB RSS)"
+  },
+  "rss_guard_mib": 8192,
+  "observed_rss_kib": 8403888,
+  "xml_report": "paired/suite/no_1pt/nucnuc_small/chroma.out.xml.gz",
+  "xml_report_kind": "Incomplete XML run report from terminated attempt; not a correlator database or graph binary.",
+  "diagnostic_log": "paired/suite/no_1pt/nucnuc_small/chroma.log.gz"
+}

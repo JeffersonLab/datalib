@@ -1,0 +1,14 @@
+[
+  {
+    "step": "run_full.py",
+    "returncode": 0
+  },
+  {
+    "step": "audit.py",
+    "returncode": 0
+  },
+  {
+    "step": "report.py",
+    "returncode": 0
+  }
+]

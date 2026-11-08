@@ -1,0 +1,669 @@
+{
+  "packaged_on": "2026-11-08",
+  "tested_on": "2026-11-07",
+  "scope": "Small report/provenance and result records only. Raw numerical databases, graph binaries, build/install/source trees and full diagnostics remain in the original workspace.",
+  "files": [
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/build.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build.json",
+      "sha256": "d04f03e61b811f9c890ac56aa528c98162218f6588242ab99234c7f57786b005",
+      "bytes": 9146,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/environment.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/environment.json",
+      "sha256": "b5c6606b2486b7bb985f657441f44e9150f5d46c09c12408b1d16ff73b4dc279",
+      "bytes": 1501,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/protected-before.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/protected-before.json",
+      "sha256": "75919f8a6cc16ea9c5211da7b0bf3b423171cf471a43e9797494b6b18afb8d42",
+      "bytes": 859,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/reorg-before.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/reorg-before.json",
+      "sha256": "392cc5e268576d53fbdd77ae0683b0c034cba658a08f7c0c0f1b678b25cfa56a",
+      "bytes": 808,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/reorg-sources.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/reorg-sources.log",
+      "sha256": "236f6e794de34334e28bf115f9654a287e68ef20cdea4d27b54d41a941afbed7",
+      "bytes": 242,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/stack-sources.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/stack-sources.json",
+      "sha256": "b0db212832debf832a6a9f7d3e89e785adfd026530650cf24d3f078919594a86",
+      "bytes": 1296,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/direct-api-check.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/direct-api-check.json",
+      "sha256": "6f0d3fb08e9d6f554362522fa4321a0eabcfa6d7b45f4667a8259b4c20d760b5",
+      "bytes": 461,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/openmp-check.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/openmp-check.json",
+      "sha256": "17eac3e0571fd8b3c891d60854bb7a5d6839740cbd3ff7c208f3b9baf7bb6359",
+      "bytes": 97,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/policy-runner-library.sha256",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/policy-runner-library.sha256",
+      "sha256": "05c7feeebcc7f2833f61e168a6e76a91df040759de0ab8bb9701a28df819d212",
+      "bytes": 1375,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/chroma-executor.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/chroma-executor.json",
+      "sha256": "93ce473b5afbe612aa00d21bcd5238a3264ddc580dec5d4efe5592124188d046",
+      "bytes": 455,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/chroma-without-adat",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/chroma-without-adat",
+      "sha256": "af9b8d378694ba00e3ccc4ae5d060e68b42d338ffd7eb3249ffa15f3919ea01b",
+      "bytes": 245,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/chroma-dynamic-libraries.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/chroma-dynamic-libraries.log",
+      "sha256": "c6a4ee7063e59523d4889ff067e1b3d6f359bdf1ecd2aa39d40acdfcb4d34a35",
+      "bytes": 1159,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/redstar-dynamic-libraries.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/redstar-dynamic-libraries.log",
+      "sha256": "175acb8febff0b96fe80cc63d92b0675223d0afee64c892de917042f9dd0789d",
+      "bytes": 1070,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/datalib-documentation-push.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/datalib-documentation-push.json",
+      "sha256": "9c6731c65a3ce6995f47591976dca6f96a0176993eca466bac1cde7c34bd5916",
+      "bytes": 264,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/devel-before.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/devel-before.log",
+      "sha256": "692857ab6ec2ca15078d789a9a7e7fcc1b67653ae8b836b6a141b6e42e6d5049",
+      "bytes": 601,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/paired/command.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/paired/command.json",
+      "sha256": "75110ef1a8a10a4b19907295f1ccd524b850dda28b98eb171a5cdcf8ad36a51c",
+      "bytes": 1973,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/paired/suite/results.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/paired/suite/results.json",
+      "sha256": "4bb8d0b0f333fd7d958f5c9ef5acb67ca64d92db74df200e809eae85d7a154e6",
+      "bytes": 54816,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/paired.exit",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/paired.exit",
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/npt-only/command.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/npt-only/command.json",
+      "sha256": "7cdc2a4b6f010883399e41e08cebf756d123e51f7717f406e442c4e10ef586af",
+      "bytes": 2045,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/npt-only/suite/results.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/npt-only/suite/results.json",
+      "sha256": "69d6a05eb63ef930989a166e89e072ad9a4024768c1bc3cd4f75f48514fa79e4",
+      "bytes": 10263,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/npt-only.exit",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/npt-only.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/phases.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/phases.json",
+      "sha256": "918bd585d83d350a8d9c621bc2f5ba95e7fa2e977a85d48f69dd556b98dbae56",
+      "bytes": 299,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/run_full.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/run_full.py",
+      "sha256": "8b97c45b8beca8f6956bebf9fdbce172520ad30539caf7d29d280288b849065e",
+      "bytes": 3853,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/run_full-driver.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/run_full-driver.log",
+      "sha256": "15720dc811a119d6cee176df1a5e1da2eb3e7c76d4bb0f45ee39614cac13eaec",
+      "bytes": 330,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/export_correlators.cc",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/export_correlators.cc",
+      "sha256": "1f995f931594761dd4d7c531e9d44ddfd979644b0c4f4e2fe397e265ab7f755f",
+      "bytes": 2398,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/exporter-command.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/exporter-command.json",
+      "sha256": "50d746e2a08d9a46ffd62f6b8d19664e05144ce5bb781a94f494319c2f4cce82",
+      "bytes": 2200,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/build_stack.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build_stack.py",
+      "sha256": "9a89dc34305b1a00b6250ec350b7b52cd2796058d5fbfbafcdf521eb7e85ad7f",
+      "bytes": 5266,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/prepare_checks.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/prepare_checks.py",
+      "sha256": "5968e97223a478fa5b508b18df7c7779aeaa022b79d4eb295c794c181e24a221",
+      "bytes": 970,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/finish.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/finish.py",
+      "sha256": "c91b71f56b0131d4c8523f9fc406aa1158dfbe710251edea74e50b3a2ca55f51",
+      "bytes": 1297,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/check_api.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/check_api.py",
+      "sha256": "c4d9b37cb2471d5105e17fb1164de685efa0b7b5e90d48f0b8c07f721dbbd32b",
+      "bytes": 2762,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/check_aliases.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/check_aliases.py",
+      "sha256": "d4ce242256420fdcf0f810f2636956c6701235daccb383ac9c824acf97d4eb14",
+      "bytes": 1228,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/openmp_check.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/openmp_check.py",
+      "sha256": "8a78e39e09ece6f8499c5e1c77e37f226daad3fbced895f5e1b2748d3fcd75b2",
+      "bytes": 1511,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/direct-api-probe.cc",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/direct-api-probe.cc",
+      "sha256": "644ab86d6075defe54ff52de1a2b4422f5b15f5f7cf6f3bacb64341c81ef26ee",
+      "bytes": 5136,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/openmp.cc",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/openmp.cc",
+      "sha256": "e9b46e2323d6fa04a46cebb7349ea18d49ae80ea48281a7c5c1f1f118f4f6749",
+      "bytes": 164,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/probe.cc.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/probe.cc",
+      "sha256": "6ca228b6b1c0c451910efca133bbc1975a04ede44b6709a2bd114fbbfa1c4718",
+      "bytes": 653,
+      "copy": "lossless gzip",
+      "uncompressed_sha256": "da526ac151afa8b0a1779c367da2799a189adcf956f80e923e3571bdc4334e3d",
+      "uncompressed_bytes": 1454
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/build.exit",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/build.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/adat-clean-checkout.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/adat-clean-checkout.json",
+      "sha256": "04574af877496de48cff47e4ba543cb9e8e9d95df27ac28f9d2be0121df1edaf",
+      "bytes": 129,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/colorvec-clean-checkout.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/colorvec-clean-checkout.json",
+      "sha256": "29a3f05e73e1cd5f2a19a4fe34b214b6d85d6640303bab056cfa704f415cb8cc",
+      "bytes": 129,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/redstar-clean-checkout.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/redstar-clean-checkout.json",
+      "sha256": "93dcbcb95543f65bfd498ffbe74f9ac57b17fb83194512cd4c6313a7e5076a61",
+      "bytes": 129,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/adat-submodule-commits.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/adat-submodule-commits.log",
+      "sha256": "f02a2b8df2f91ff3c63716d77154043e7ba68beae2a72d7a72d46e022711b10d",
+      "bytes": 275,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/colorvec-submodule-commits.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/colorvec-submodule-commits.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/redstar-submodule-commits.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/redstar-submodule-commits.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/retry-cache1/command.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/retry-cache1/command.json",
+      "sha256": "f2a493b739f50264674178a4e9bfc10342c32c37c02489838e180cd72c566ea4",
+      "bytes": 2141,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/retry-cache1/environment.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/retry-cache1/environment.json",
+      "sha256": "367a87501b349e69c8210342df428ce2573d75928bf7f582b5b8ea6a024c94a8",
+      "bytes": 68,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/retry-cache1/suite/results.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/retry-cache1/suite/results.json",
+      "sha256": "be6a02d3937996100eb556a1bd75409cfe7e98e03412720f341f4820f8ba4f14",
+      "bytes": 5606,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/retry-cache1/exit",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/retry-cache1/exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/retry-cache1/suite/no_1pt/nucnuc_small/strict-comparison.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/retry-cache1/suite/no_1pt/nucnuc_small/strict-comparison.json",
+      "sha256": "8128996693a607645a1e91c172283ef9a82572f1eacb676b5eb4792b9cddd672",
+      "bytes": 176,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/paired/suite.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/paired/suite.log",
+      "sha256": "b98bbb2b3c7ede92971c2cd98f98afc2ba6ff23d626f3ac5744d10d727eaebdc",
+      "uncompressed_sha256": "51aa382b43e1ea36785c86e44adc499f76b50077117651873e2c956828c87382",
+      "uncompressed_bytes": 875,
+      "bytes": 327,
+      "copy": "lossless gzip"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/npt-only/suite.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/npt-only/suite.log",
+      "sha256": "039e27099e242bd74f9f36fbb088b939b5f99f70c59810011d8fabab34e041c1",
+      "uncompressed_sha256": "f03301979a7a070657f9f583bda26b602675efac7da90bfe608a1ce8ea20caf6",
+      "uncompressed_bytes": 200,
+      "bytes": 158,
+      "copy": "lossless gzip"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/paired/suite/no_1pt/nucnuc_small/chroma.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/paired/suite/no_1pt/nucnuc_small/chroma.log",
+      "sha256": "05ec688fec9d28dd726889c51282d376c77bbbf8b9ae6d3cc2b12f21c05e1ea6",
+      "uncompressed_sha256": "c014d389b5be54206b28fa4c43847129905df227bbc1a8b37e9786f9e6b9cf21",
+      "uncompressed_bytes": 17815,
+      "bytes": 2980,
+      "copy": "lossless gzip"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/paired/suite/no_1pt/nucnuc_small/chroma.out.xml.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/paired/suite/no_1pt/nucnuc_small/chroma.out.xml",
+      "sha256": "a8cdba9416776539997c3db852966bad311327a5e7d22419834914dfad979601",
+      "uncompressed_sha256": "d0bed0916bc5f9d9f93a51fcf303a550485f8078ec78565c6ea1de8beeb0340c",
+      "uncompressed_bytes": 17491,
+      "bytes": 2317,
+      "copy": "lossless gzip"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-001/retry-cache1/suite/no_1pt/nucnuc_small/chroma.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/retry-cache1/suite/no_1pt/nucnuc_small/chroma.log",
+      "sha256": "422b89060ea0da83bba6fc5ece2dfd69f414f5aa80708d9a7cb6662d7f3f8568",
+      "uncompressed_sha256": "253054a5146aeee9c05d43b325edf9395a95efed07e90fea222319dc3e7d8e0e",
+      "uncompressed_bytes": 21192,
+      "bytes": 3421,
+      "copy": "lossless gzip"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/build.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/build.json",
+      "sha256": "d04f03e61b811f9c890ac56aa528c98162218f6588242ab99234c7f57786b005",
+      "bytes": 9146,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/environment.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/environment.json",
+      "sha256": "b3d5e927113cc75f0a1a44e52864bbc3af53650ce084e3cc748dbeafe25defb7",
+      "bytes": 1526,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/protected-before.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/protected-before.json",
+      "sha256": "75919f8a6cc16ea9c5211da7b0bf3b423171cf471a43e9797494b6b18afb8d42",
+      "bytes": 859,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/reorg-before.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/reorg-before.json",
+      "sha256": "392cc5e268576d53fbdd77ae0683b0c034cba658a08f7c0c0f1b678b25cfa56a",
+      "bytes": 808,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/reorg-sources.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/reorg-sources.log",
+      "sha256": "236f6e794de34334e28bf115f9654a287e68ef20cdea4d27b54d41a941afbed7",
+      "bytes": 242,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/stack-sources.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/stack-sources.json",
+      "sha256": "b0db212832debf832a6a9f7d3e89e785adfd026530650cf24d3f078919594a86",
+      "bytes": 1296,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/direct-api-check.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/direct-api-check.json",
+      "sha256": "6f0d3fb08e9d6f554362522fa4321a0eabcfa6d7b45f4667a8259b4c20d760b5",
+      "bytes": 461,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/openmp-check.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/openmp-check.json",
+      "sha256": "17eac3e0571fd8b3c891d60854bb7a5d6839740cbd3ff7c208f3b9baf7bb6359",
+      "bytes": 97,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/policy-runner-library.sha256",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/policy-runner-library.sha256",
+      "sha256": "05c7feeebcc7f2833f61e168a6e76a91df040759de0ab8bb9701a28df819d212",
+      "bytes": 1375,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/chroma-executor.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/chroma-executor.json",
+      "sha256": "ad1d55352a46d173aec091e0bf48209807aa67cb88bc33469d0eef86beb5693d",
+      "bytes": 455,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/chroma-without-adat",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/chroma-without-adat",
+      "sha256": "af9b8d378694ba00e3ccc4ae5d060e68b42d338ffd7eb3249ffa15f3919ea01b",
+      "bytes": 245,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/chroma-dynamic-libraries.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/chroma-dynamic-libraries.log",
+      "sha256": "c6a4ee7063e59523d4889ff067e1b3d6f359bdf1ecd2aa39d40acdfcb4d34a35",
+      "bytes": 1159,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/redstar-dynamic-libraries.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/redstar-dynamic-libraries.log",
+      "sha256": "175acb8febff0b96fe80cc63d92b0675223d0afee64c892de917042f9dd0789d",
+      "bytes": 1070,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/datalib-documentation-push.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/datalib-documentation-push.json",
+      "sha256": "9c6731c65a3ce6995f47591976dca6f96a0176993eca466bac1cde7c34bd5916",
+      "bytes": 264,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/devel-before.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/devel-before.log",
+      "sha256": "692857ab6ec2ca15078d789a9a7e7fcc1b67653ae8b836b6a141b6e42e6d5049",
+      "bytes": 601,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/paired/command.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/paired/command.json",
+      "sha256": "c0e1816e884422fdbbe40b58170f4288b6fe42fd3618ab0b04e8c75536762d99",
+      "bytes": 2086,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/paired/suite/results.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/paired/suite/results.json",
+      "sha256": "03d1eff852c4f7082fa7426516f326a3d45c6e0fc626147c3eca7aee4003b2aa",
+      "bytes": 55227,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/paired.exit",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/paired.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/npt-only/command.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/npt-only/command.json",
+      "sha256": "5af545b56496aa88f05d014c728ae3de16228a387cee692a6c57dbd34e7f294c",
+      "bytes": 2158,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/npt-only/suite/results.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/npt-only/suite/results.json",
+      "sha256": "8727e78b1354eb9e0623e1af834bd258d956f24fbf2d7c627f9b5430d85fabfa",
+      "bytes": 10376,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/npt-only.exit",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/npt-only.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/phases.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/phases.json",
+      "sha256": "d6ef8877b0421e32fb139f0ce3b7e302890c99a193f1cec0dcfbf1613b481497",
+      "bytes": 166,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/run_full.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/run_full.py",
+      "sha256": "d5d7dbad6df5cdad8d79ab38268f9fd480e0a50eba7d3371630047f78a0cac9a",
+      "bytes": 4046,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/run_full-driver.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/run_full-driver.log",
+      "sha256": "666925f22f7908f782c546b99e1d476198f711de3e5b1655ef36a08f274d826f",
+      "bytes": 52,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/export_correlators.cc",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/export_correlators.cc",
+      "sha256": "1f995f931594761dd4d7c531e9d44ddfd979644b0c4f4e2fe397e265ab7f755f",
+      "bytes": 2398,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/exporter-command.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/exporter-command.json",
+      "sha256": "7c89fc1cb090fbc5abf7e2604492057f8f7608dc36739a354fb47d8e7f7de64b",
+      "bytes": 2200,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/independent-audit.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/independent-audit.json",
+      "sha256": "a44442f91a9aa7fbdb7c14ae3ccb45d3837889368edbb08447e1dca073f77881",
+      "bytes": 27185,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/resource-retry.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/resource-retry.json",
+      "sha256": "63d64a6b31f53bdf8648f14102fe1f42a2fbb9b5415cbf6ef379886a76e43a99",
+      "bytes": 582,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/audit.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/audit.py",
+      "sha256": "ee1be7b015f9e5f5eb5a43d2ca7c5206b2cbdef541264d6f4c5e8b78d75e5bef",
+      "bytes": 14640,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/audit-driver.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/audit-driver.log",
+      "sha256": "685516c03720cd81aecf243a7765f75684601097cd7fa38bded98740a027935f",
+      "bytes": 64,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/report.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/report.py",
+      "sha256": "bfab81c61a459a9122bf294c0ccb27e42d6dc68aa7ee59f240f98f3fe15b9161",
+      "bytes": 10581,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/report-driver.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/report-driver.log",
+      "sha256": "141eebf97bf324c98207916f115ed26e15b81803ed50a784ae3bfab534c4bd75",
+      "bytes": 78,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/restart_full.py",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/restart_full.py",
+      "sha256": "8fe8c9944f30aea6e980342314addf708e05796cea7c85593c294ebb2ab0812c",
+      "bytes": 5549,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/devel-after.log",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/devel-after.log",
+      "sha256": "692857ab6ec2ca15078d789a9a7e7fcc1b67653ae8b836b6a141b6e42e6d5049",
+      "bytes": 601,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/finish.exit",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/finish.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/regression.exit",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/regression.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/paired/suite/no_1pt/nucnuc_small/strict-comparison.json",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/paired/suite/no_1pt/nucnuc_small/strict-comparison.json",
+      "sha256": "8128996693a607645a1e91c172283ef9a82572f1eacb676b5eb4792b9cddd672",
+      "bytes": 176,
+      "copy": "exact"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/paired/suite.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/paired/suite.log",
+      "sha256": "55107977a3d69e6ad3efd274502b9858afd782826d5360c781c8beba043a1484",
+      "uncompressed_sha256": "1a5eb2fed942b53b4fd5e9f1ffa72578415cc95f320453deffcf671347288f31",
+      "uncompressed_bytes": 817,
+      "bytes": 271,
+      "copy": "lossless gzip"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/npt-only/suite.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/npt-only/suite.log",
+      "sha256": "f4d425f54525c69b4721aa0cb375dfb0997abab37c56f2b43dab76c99282713c",
+      "uncompressed_sha256": "8ae2f088800b229c59cf2186cfcaf4e79697d4b290169b589f77bf73dd9761b4",
+      "uncompressed_bytes": 200,
+      "bytes": 158,
+      "copy": "lossless gzip"
+    },
+    {
+      "file": "evidence/native-double-clean-full-20261107-002/paired/suite/no_1pt/nucnuc_small/chroma.log.gz",
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-002/paired/suite/no_1pt/nucnuc_small/chroma.log",
+      "sha256": "c87a01f7450a10a664900b3b1868a6aeff2f3aac7bb035745629bcfea9208cfb",
+      "uncompressed_sha256": "9dbc0484934392717010ecee346412da653b8ed832838dc7510382e0e5c03a73",
+      "uncompressed_bytes": 21188,
+      "bytes": 3421,
+      "copy": "lossless gzip"
+    }
+  ]
+}

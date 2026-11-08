@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "mode": "stored native tensors; full finite readback and strict per-value comparison",
+  "scope": "explicit user deferrals retained",
+  "requested_cases": [
+    "nucnuc_small"
+  ],
+  "requested_chain": "no_1pt",
+  "npt_only": false,
+  "experimental_no_1pt": true,
+  "cases": [
+    {
+      "case": "nucnuc_small",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 2.583466850253429e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 7.983969392533412e-17,
+        "finite_complex_values": 8
+      },
+      "keys": 2,
+      "finite_complex_values": 8,
+      "CG_solves": 0
+    }
+  ],
+  "build_qualification": "Clean-source standalone datalib and ADAT-free Chroma, with fresh ADAT/ColorVec/Redstar rebuilt against that same datalib install; Apple Clang/libomp; cached native-double tensors, explicit DISCO supplement; one MPI rank; Chroma runs through an ADAT-denying sandbox executor whose real executable hash is recorded separately. Targeted fresh resource retry with SB_CACHEGB_CPU=1; unchanged 8192 MiB RSS cap, 2 GiB tensor planner, physics and numerical gate.",
+  "data_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/dataset-manifest.json": "01f7b0f2f9ff8d2863a97e82aa80046110963af5fff595a64bb6a1030098cc19",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod": "5aadbfe5573a70a0abaad4ba868085e8246dc7ff3c3080820970fd426e43b2ce",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/meson.sbt": "96a546300769e06eb15d0d7bfab95855ef9eacde4755ba56038699ac689eacb6",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.05.sbt": "312493548ae5c93bb954f2b580cb6c5ff39f377d390e602f1a7dc87c27898c6c",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.1.sbt": "cd241ee7740816ae74d6e397c4798973db17ff597f3d58ae5c6f8759d5c8957d",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.2.sbt": "ed2db91bf252a6f420001389eefa4cb9224b288f8cc56e610a09bf52020dee93",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.05.sbt": "ba6ac2f77f8ff1bea76079e52f94c435b4c9f248449a99a6ce5c15bc4f0a3eca",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.1.sbt": "40774ca534ecdd5f9b0fe02f4ca0a2c47881effcc31b72f2e020e8f5e9100f15",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/baryon.sbt": "a9e3c0f390fa000911f8aa5ba6d6ed12a28d3e133e29963e6524ad0ac7d74b26"
+  },
+  "disco_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/dataset-manifest.json": "dad89112a2c92f29503703b7167543dfedc390c901fd1a91241539ae87f5b968",
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/disco.sdb": "87a867c876e94f6e67b37097c0744c4b2d184f3f2e5e5a236e1c526e623a03be"
+  },
+  "program_sha256": {
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/chroma-without-adat": "af9b8d378694ba00e3ccc4ae5d060e68b42d338ffd7eb3249ffa15f3919ea01b",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/redstar_npt": "8963962987c18e09dc785a4286ed7296bf7e49d8fc82ff180821ba322e224898",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/adat/bin/dbutil": "3fd1de5149d01df25aa4053873a2c42f2ddabcaf8938cdb48449bed21c42e3cf",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/export-correlators": "947e3877bc56c2579b8389efb4f19066625b26473dc50578839c38555ac5a3c9",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/redstar_corr_graph": "f88ee6a63568d68ec7307a193818f0d70cb8cca9eeb25087f3ec3547ba599917",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/install/redstar/bin/view_corr_graph": "f6488de202cdb0fe645498a3a76fb298e0f0dc11d1b4c01146ab8aa0b2c001d6"
+  }
+}

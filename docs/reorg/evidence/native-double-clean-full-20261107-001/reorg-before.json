@@ -1,0 +1,27 @@
+{
+  "datalib": {
+    "head": "9f086e1b7f285b196d6956660d1d3884a3e98c50",
+    "status": "?? configure~\n",
+    "local_devel": ""
+  },
+  "adat": {
+    "head": "d3d14bf60a5fc3e5801b219c4e43b5ac4fa23575",
+    "status": " m other_libs/filedb\n m other_libs/minuit\n m other_libs/xpath_reader\n",
+    "local_devel": ""
+  },
+  "colorvec": {
+    "head": "5069d970c40583c80947a14a52464737b17f6196",
+    "status": "?? configure~\n",
+    "local_devel": "bab4ff2f050f3b91cf10d2fc394c74aa42faa7c0\n"
+  },
+  "redstar": {
+    "head": "ed355701fb651626ca8b241bc2f6f326ed9326e5",
+    "status": "",
+    "local_devel": "b194fdfcfe93742ba6887e4374fd5a32a002415f\n"
+  },
+  "chroma": {
+    "head": "0f832d738ee1a512f0b6ea6efffda4e77afc5bd0",
+    "status": "",
+    "local_devel": "e1ac530e0bd50dbeac75a1e94d62a981308fe251\n"
+  }
+}

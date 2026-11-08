@@ -1,0 +1,10 @@
+{
+  "failed_full_attempt": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/paired/suite/results.json",
+  "failed_case": "nucnuc_small",
+  "error": "memory limit exceeded (8192 MiB; observed 8403888 KiB RSS)",
+  "targeted_retry": "/Users/admin/Downloads/macos-datalib-reorg/evidence/native-double-clean-full-20261107-001/retry-cache1/suite/results.json",
+  "SB_CACHEGB_CPU": "1",
+  "max_rss_mb": 8192,
+  "tensor_gb": 2,
+  "change_scope": "Reusable CPU allocation cache only; unchanged physics, numerical gate, deferrals and executables."
+}

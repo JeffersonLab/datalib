@@ -1,0 +1,5 @@
+{
+  "SB_CACHEGB_CPU": "1",
+  "max_rss_mb": 8192,
+  "tensor_gb": 2
+}
