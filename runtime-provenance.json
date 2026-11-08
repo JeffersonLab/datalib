@@ -9,6 +9,6 @@
   },
   "xml": {
     "xpath_reader": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
-    "notes": "Parser and writer implementation isolated under Datalib::Serial::Detail. The legacy XMLArray headers remain a compile-time dependency."
+    "notes": "Parser/writer isolated under Datalib::Serial::Detail. Array headers are bundled under datalib/model and require no external xpath_reader installation; see array-provenance.json."
   }
 }

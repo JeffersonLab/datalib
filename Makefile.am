@@ -1,4 +1,4 @@
-AM_CXXFLAGS = -I$(srcdir)/include @XPATH_CXXFLAGS@ @DATALIB_XML_CFLAGS@
+AM_CXXFLAGS = -I$(srcdir)/include @DATALIB_XML_CFLAGS@
 lib_LIBRARIES = libdatalib_serial.a
 libdatalib_serial_a_SOURCES = src/binary.cc src/byteorder.cc src/serial_xml.cc src/crc32.cc
 nobase_datalibheaders_HEADERS = include/datalib/io/serial_xml.h include/datalib/codec/binary.h include/datalib/codec/byteorder.h include/datalib/model/arrays.h include/datalib/model/arraynd.h
@@ -253,3 +253,13 @@ EXTRA_DIST += \
     docs/reorg/evidence/native-double-clean-full-20261107-002/run_full.py \
     docs/reorg/evidence/native-double-clean-full-20261107-002/stack-sources.json \
     docs/reorg/evidence/native-double-clean-full-publication.json
+
+# Array definitions are owned by datalib; no external xpath_reader headers.
+nobase_datalibheaders_HEADERS += include/datalib/model/xml_array.h include/datalib/model/xml_array2d.h include/datalib/model/xml_array3d.h include/datalib/model/xml_array4d.h
+EXTRA_DIST += array-provenance.json
+
+check_PROGRAMS += arrays_probe
+arrays_probe_SOURCES = tests/arrays_probe.cc
+arrays_probe_LDADD = libdatalib_serial.a @DATALIB_DEP_LIBS@
+TESTS += tests/check-arrays.sh
+EXTRA_DIST += tests/check-arrays.sh tests/fixtures/arrays-ranks.bin tests/fixtures/arrays-ranks.xml tests/fixtures/arrays-ranks-reference.json

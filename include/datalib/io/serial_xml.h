@@ -16,7 +16,7 @@
 
 #include "datalib/io/detail/xml_simplewriter.h"
 #include "datalib/io/detail/basic_xpath_reader.h"
-#include "xml_array.h"
+#include <datalib/model/xml_array.h>
 #include "datalib/model/arrays.h"
 
 namespace Datalib::Serial {

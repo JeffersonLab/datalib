@@ -1,0 +1,39 @@
+{
+  "upstream": "usqcd-software/xpath_reader",
+  "license": "COPYING.xpath_reader",
+  "headers": [
+    {
+      "source": "include/xml_array.h",
+      "source_commit": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
+      "source_sha256": "5aeb4c0df3fdfc71ffa188eb1c186ddf81bb5b2c99a20274c91791ad31b239f5",
+      "destination": "include/datalib/model/xml_array.h",
+      "extracted_sha256": "a4f29ac06b9b883c0fc4383d141f9f460d6eb538bcd7e8d5eb6f2e08e620a98a",
+      "change": "Canonical internal include paths and trailing whitespace normalization only; namespaces, guards and array algorithms unchanged."
+    },
+    {
+      "source": "include/xml_array2d.h",
+      "source_commit": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
+      "source_sha256": "fe6760f8ca45b48cfa2e0a7dbc10a1532e26441c43c0159b566dcfce6684ce8d",
+      "destination": "include/datalib/model/xml_array2d.h",
+      "extracted_sha256": "7e3309bd9239ea36cace801882f532cfa5ae5be1cb782eb0c4085d46a5b52d12",
+      "change": "Canonical internal include paths and trailing whitespace normalization only; namespaces, guards and array algorithms unchanged."
+    },
+    {
+      "source": "include/xml_array3d.h",
+      "source_commit": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
+      "source_sha256": "39f8dfa2e72809c1d2716c05fd2753ed774b7cd78beb5b151861cdca75f12036",
+      "destination": "include/datalib/model/xml_array3d.h",
+      "extracted_sha256": "332f0df6e34f74d8fb19e3ca2f2b9669525ec6fd8eb1e1eef1f568780e554fc2",
+      "change": "Canonical internal include paths and trailing whitespace normalization only; namespaces, guards and array algorithms unchanged."
+    },
+    {
+      "source": "include/xml_array4d.h",
+      "source_commit": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
+      "source_sha256": "143aa09925867556011481cf6591792d88e3e2aae138f7c874fa30e79c821777",
+      "destination": "include/datalib/model/xml_array4d.h",
+      "extracted_sha256": "eb4eb9998d7d2a6a02c6a7b4bc220a2526d7d685163b83fdc9d0f45e1ef37a29",
+      "change": "Canonical internal include paths and trailing whitespace normalization only; namespaces, guards and array algorithms unchanged."
+    }
+  ],
+  "compatibility": "XMLArray public types and legacy guards are retained for ADAT/QDP type identity. QDP has existing rank-1 empty equality/operator!= differences; Chroma selects its QDP headers explicitly before datalib. No array algorithms or formats changed."
+}

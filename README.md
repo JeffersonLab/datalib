@@ -7,9 +7,10 @@ and an optional FILEDB adapter. The graph API is in
 and omits the per-graph stitching records. Regenerate older graph files
 with the matching Redstar graph generator.
 
-The serial build needs the standalone xpath_reader array headers, libxml2,
-a C++20 compiler, and OpenMP. Its XML parser and writer are compiled into
-datalib under a separate namespace. The optional FILEDB adapter needs a FILEDB
+The serial build needs libxml2, a C++20 compiler, and OpenMP. The array
+headers are installed under `<datalib/model/xml_array*.h>` and retain the
+existing `XMLArray` public types; no xpath_reader installation is needed.
+Its XML parser and writer are compiled into datalib under a separate namespace. The optional FILEDB adapter needs a FILEDB
 installation. The FILEDB component also provides the typed tensor storage
 keys and adapters used by Redstar and Chroma. The header-only evaluator
 uses the consumer's SuperbBLAS build and its MPI configuration.
@@ -19,7 +20,7 @@ Run `autoreconf -fi` and configure from a separate build directory:
 
 ```sh
 /path/to/datalib/configure --prefix=/path/to/install --without-qdp \
-  --with-xpath=/path/to/xpath_reader --with-libxml2=/path/to/libxml2 \
+  --with-libxml2=/path/to/libxml2 \
   --enable-openmp
 make
 make check

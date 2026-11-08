@@ -22,7 +22,7 @@
 
 #include "datalib/superb/types.h"
 #include "datalib/codec/superb_options.h"
-#include "xml_array.h"
+#include <datalib/model/xml_array.h>
 #include <algorithm>
 #include <complex>
 

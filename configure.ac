@@ -7,13 +7,10 @@ AC_LANG([C++])
 AC_ARG_WITH([qdp],AS_HELP_STRING([--without-qdp],[Serial build; QDP is not implemented in this checkpoint]),[],[with_qdp=no])
 AS_IF([test "x$with_qdp" != xno],[AC_MSG_ERROR([QDP integration is on hold])])
 AC_ARG_WITH([qdpxx],AS_HELP_STRING([--with-qdpxx=DIR],[Reserved; QDP integration is on hold]),[AC_MSG_ERROR([QDP integration is on hold])])
-AC_ARG_WITH([xpath],AS_HELP_STRING([--with-xpath=DIR],[Standalone xpath_reader array headers]),[XPATH_PREFIX=$withval],[AC_MSG_ERROR([--with-xpath=DIR is required; ADAT is not searched])])
-AC_SUBST([XPATH_CXXFLAGS],["-I$XPATH_PREFIX/include"])
 AC_ARG_VAR([OPENMP_CXXFLAGS],[Compiler flags enabling OpenMP])
 AC_ARG_VAR([OPENMP_LIBS],[OpenMP runtime link flags])
 AC_ARG_ENABLE([openmp],AS_HELP_STRING([--enable-openmp],[Require OpenMP (default yes)]),[],[enable_openmp=yes])
 AS_IF([test "x$enable_openmp" != xyes],[AC_MSG_ERROR([This reorganization checkpoint requires OpenMP])])
-CPPFLAGS="$CPPFLAGS $XPATH_CXXFLAGS"
 CXXFLAGS="$CXXFLAGS $OPENMP_CXXFLAGS"
 LIBS="$OPENMP_LIBS $LIBS"
 AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <omp.h>]],[[return omp_get_max_threads()<1;]])],[],[AC_MSG_ERROR([Working OpenMP flags/runtime required])])

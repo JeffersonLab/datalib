@@ -9,10 +9,10 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include <xml_array.h>
-#include <xml_array2d.h>
-#include <xml_array3d.h>
-#include <xml_array4d.h>
+#include <datalib/model/xml_array.h>
+#include <datalib/model/xml_array2d.h>
+#include <datalib/model/xml_array3d.h>
+#include <datalib/model/xml_array4d.h>
 #include "datalib/model/arraynd.h"
 #include "datalib/model/arrays.h"
 #include "datalib/codec/byteorder.h"

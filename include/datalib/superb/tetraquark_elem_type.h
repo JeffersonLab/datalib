@@ -7,8 +7,8 @@
 #define __tetraquark_elem_type_h__
 
 #include "datalib/superb/types.h"
-#include "xml_array.h"
-#include "xml_array4d.h"
+#include <datalib/model/xml_array.h>
+#include <datalib/model/xml_array4d.h>
 
 
 #include <iostream>

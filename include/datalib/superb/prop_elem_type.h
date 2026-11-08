@@ -11,7 +11,7 @@
 #include "datalib/codec/superb_options.h"
 #include <complex>
 #include <iostream>
-#include <xml_array4d.h>
+#include <datalib/model/xml_array4d.h>
 
 namespace Hadron
 {

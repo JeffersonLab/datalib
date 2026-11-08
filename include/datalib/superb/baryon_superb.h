@@ -14,8 +14,8 @@
 #include "datalib/superb/superb_aux.h"
 #include <memory>
 #include <map>
-#include <xml_array.h>
-#include <xml_array4d.h>
+#include <datalib/model/xml_array.h>
+#include <datalib/model/xml_array4d.h>
 
 namespace Hadron
 {

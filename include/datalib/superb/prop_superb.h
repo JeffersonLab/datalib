@@ -11,8 +11,8 @@
 #include "datalib/superb/prop_elem_type.h"
 #include "datalib/storage/filedb.h"
 #include "datalib/superb/superb_aux.h"
-#include <xml_array.h>
-#include <xml_array4d.h>
+#include <datalib/model/xml_array.h>
+#include <datalib/model/xml_array4d.h>
 
 namespace Hadron
 {

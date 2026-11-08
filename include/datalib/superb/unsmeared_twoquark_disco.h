@@ -9,7 +9,7 @@
 #include "datalib/superb/types.h"
 #include "datalib/codec/binary.h"
 #include "datalib/model/arrays.h"
-#include "xml_array.h"
+#include <datalib/model/xml_array.h>
 
 
 #include <string>

@@ -18,9 +18,9 @@
 
 #include "datalib/superb/superb_aux.h"
 #include "datalib/codec/superb_options.h"
-#include "xml_array2d.h"
-#include "xml_array3d.h"
-#include "xml_array4d.h"
+#include <datalib/model/xml_array2d.h>
+#include <datalib/model/xml_array3d.h>
+#include <datalib/model/xml_array4d.h>
 
 #if defined(SUPERBBLAS_HAS_GPU_SUPPORT) && defined(SUPERBBLAS_NOT_USE_GPU)
 #  error "superbblas won't use the gpu version despite being compiled with gpu support"

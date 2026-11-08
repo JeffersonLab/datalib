@@ -6,10 +6,10 @@
 #ifndef DATALIB_adat_arrays_h
 #define DATALIB_adat_arrays_h
 
-#include "xml_array.h"
-#include "xml_array2d.h"
-#include "xml_array3d.h"
-#include "xml_array4d.h"
+#include <datalib/model/xml_array.h>
+#include <datalib/model/xml_array2d.h>
+#include <datalib/model/xml_array3d.h>
+#include <datalib/model/xml_array4d.h>
 #include <vector>
 
 namespace Datalib::Model

@@ -9,9 +9,9 @@
 #define DATALIB_adat_arraynd_h
 
 #include <iostream>
-#include "xml_array.h"
-#include "xml_array2d.h"
-#include "xml_array3d.h"
+#include <datalib/model/xml_array.h>
+#include <datalib/model/xml_array2d.h>
+#include <datalib/model/xml_array3d.h>
 
 namespace Datalib::Model
 {

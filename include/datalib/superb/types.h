@@ -4,8 +4,8 @@
 #include "datalib/io/serial_xml.h"
 #include "datalib/storage/filedb.h"
 #include "datalib/model/map_obj.h"
-#include <xml_array2d.h>
-#include <xml_array3d.h>
+#include <datalib/model/xml_array2d.h>
+#include <datalib/model/xml_array3d.h>
 
 namespace Datalib::TensorStorage
 {

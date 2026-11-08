@@ -7,8 +7,8 @@
 #define __redstar_datalib_meson_elem_type_h__
 
 #include "datalib/superb/types.h"
-#include "xml_array.h"
-#include "xml_array2d.h"
+#include <datalib/model/xml_array.h>
+#include <datalib/model/xml_array2d.h>
 
 #include "datalib/codec/superb_options.h"
 
