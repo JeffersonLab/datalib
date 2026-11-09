@@ -64,3 +64,16 @@ Shared metadata and correlator readers are available through
 `<datalib/storage/dbtype.h>` and `<datalib/storage/corr_reader.h>`.
 Legacy key models/codecs live under `<datalib/legacy/>`; ENSEM adapters stay
 in ADAT. Operator filename formatting is in `<datalib/graph/filenames.h>`.
+
+## CORR_SUPERB in Chroma
+
+Configure Chroma with `--with-datalib=PREFIX` and
+`--with-superbblas=PREFIX` to enable the CORR_SUPERB measurement. The normal
+FILEDB-enabled datalib installation already provides its shared graph, key,
+codec, storage and evaluator headers. Chroma uses its own matching QDP/QMP and
+SuperbBLAS communication configuration; ADAT is not a dependency. Datalib's
+`--with-superbblas` option enables the separate standalone dbutil tensor backend.
+
+[FILEDB ownership and full CORR_SUPERB regression](docs/reorg/FILEDB-TOOLS-REGRESSIONS.md)
+records the tested stack, unchanged old Chroma measurement sources and retained
+QDP++ platform-test limitations.

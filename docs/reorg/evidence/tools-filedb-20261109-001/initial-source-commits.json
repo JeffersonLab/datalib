@@ -1,0 +1,22 @@
+{
+  "datalib": {
+    "commit": "10ce4b47e534086a075e6d6ac1fc35a8e54381ec",
+    "status": " m other_libs/filedb\n?? configure~\n"
+  },
+  "adat": {
+    "commit": "11e365887ae091730eb53697b7bd5571ba8a5f1b",
+    "status": " M other_libs/Makefile.am\n m other_libs/minuit\n m other_libs/xpath_reader\n"
+  },
+  "redstar": {
+    "commit": "62ec8290b02d85802d4d29cfa8b44a23bc2541b6",
+    "status": ""
+  },
+  "chroma": {
+    "commit": "af17465139e0d82cca9e4ae20c1ef28f76e3d741",
+    "status": ""
+  },
+  "colorvec": {
+    "commit": "db727626300119da07830f51012603b15f9c159a",
+    "status": "?? configure~\n"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "active_installed_programs": 20,
+  "active_syntax_pass": true,
+  "inactive_sources_also_fail_on_previous_installation": [
+    {
+      "source": "dbconvert_read.cc",
+      "baseline_returncode": 1
+    },
+    {
+      "source": "dbcorr_read.cc",
+      "baseline_returncode": 1
+    },
+    {
+      "source": "extract_corr.cc",
+      "baseline_returncode": 1
+    },
+    {
+      "source": "dbconvert.cc",
+      "baseline_returncode": 1
+    },
+    {
+      "source": "dbconvert_write.cc",
+      "baseline_returncode": 1
+    }
+  ]
+}

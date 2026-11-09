@@ -1,0 +1,10 @@
+#include <mpi.h>
+#include <datalib/superb/meson_superb.h>
+#include <datalib/storage/corr_reader.h>
+#include <cmath>
+#include <iostream>
+#include <stdexcept>
+int main(int argc,char**argv){MPI_Init(&argc,&argv);int rank=0;MPI_Comm_rank(MPI_COMM_WORLD,&rank);try{if(argc!=3)throw std::runtime_error("expected meson database and fresh output directory");
+ Datalib::TensorStorage::StorageMeson meson(false);meson.open({argv[1]},2);std::vector<Hadron::KeyMesonElementalOperator_t> keys;meson.keys(keys);if(keys.empty()||meson.db_stores.empty()||meson.is_dummy)throw std::runtime_error("legacy meson coverage missing");Hadron::ValMesonElementalOperator_t value;if(meson.get(keys.front(),value)!=0||value.op.size1()<2||value.op.size2()<2)throw std::runtime_error("meson read failed");double sum=0;for(int j=0;j<value.op.size1();++j)for(int k=0;k<value.op.size2();++k){auto v=value.op(j,k);if(!std::isfinite(v.real())||!std::isfinite(v.imag()))throw std::runtime_error("nonfinite meson");sum+=std::abs(v);}if(sum==0)throw std::runtime_error("zero meson fixture");meson.close();
+ const std::string filename=std::string(argv[2])+"/rank-"+std::to_string(rank)+".sdb";const std::vector<std::vector<std::complex<double>>> expected={{{1.25+rank,-.5},{2,3}},{{-4,5},{0,-2}}};Datalib::Storage::StorageCorrFunc<int> corr;corr.open_for_writing(filename,2,"<DBMetaData><id>serial-fixture</id></DBMetaData>",2,false);corr.insert_keys({7});if(corr.insert(7,expected)!=0)throw std::runtime_error("legacy insert failed");corr.close();corr.open_for_reading(filename);std::vector<std::vector<std::complex<double>>> actual;if(corr.keys()!=std::vector<int>{7}||corr.num_configs!=2||corr.NtCorr!=2||corr.get(7,actual)!=0||actual!=expected)throw std::runtime_error("legacy correlator roundtrip changed");corr.close();std::cout<<"PASS rank="<<rank<<" meson_keys="<<keys.size()<<" finite_legacy_values="<<value.op.size1()*value.op.size2()<<" correlator_rows=2 times=2\n";
+ }catch(const std::exception& ex){std::cerr<<"rank="<<rank<<": "<<ex.what()<<"\n";MPI_Abort(MPI_COMM_WORLD,1);}MPI_Finalize();return 0;}

@@ -1,0 +1,26 @@
+[
+  {
+    "step": "build",
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/chroma.sb",
+      "make",
+      "-j3"
+    ],
+    "returncode": 0,
+    "seconds": 463.63415675
+  },
+  {
+    "step": "install",
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/chroma.sb",
+      "make",
+      "install"
+    ],
+    "returncode": 0,
+    "seconds": 47.63100858300004
+  }
+]

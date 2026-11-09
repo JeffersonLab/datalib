@@ -1,0 +1,32 @@
+{
+  "datalib": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib-final",
+    "commit": "500a35f4487c21541c4afbc99dc9108ab809ac40",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "chroma": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/chroma",
+    "commit": "af17465139e0d82cca9e4ae20c1ef28f76e3d741",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "adat": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/adat-final",
+    "commit": "8a280304e1284b69e7f783e43e3cc5df6170a300",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "colorvec": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/colorvec-final",
+    "commit": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "redstar": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/redstar-final",
+    "commit": "301b8d1350dfed730cbc64f6d7cea4838c7fa630",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  }
+}

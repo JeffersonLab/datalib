@@ -1,0 +1,405 @@
+[
+  {
+    "step": "final-datalib-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib-final",
+    "returncode": 0,
+    "seconds": 4.889868208999999
+  },
+  {
+    "step": "final-datalib-core-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-core",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-core",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-core-final",
+    "returncode": 0,
+    "seconds": 5.112641708000001
+  },
+  {
+    "step": "final-datalib-core-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-core-final",
+    "returncode": 0,
+    "seconds": 13.042184624999999
+  },
+  {
+    "step": "final-datalib-core-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-core-final",
+    "returncode": 0,
+    "seconds": 5.095643208999999
+  },
+  {
+    "step": "final-datalib-core-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-core-final",
+    "returncode": 0,
+    "seconds": 0.9848813339999971
+  },
+  {
+    "step": "final-datalib-filedb-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb-final",
+    "returncode": 0,
+    "seconds": 12.559185666999998
+  },
+  {
+    "step": "final-datalib-filedb-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb-final",
+    "returncode": 0,
+    "seconds": 25.32627674999999
+  },
+  {
+    "step": "final-datalib-filedb-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb-final",
+    "returncode": 0,
+    "seconds": 10.731123291999992
+  },
+  {
+    "step": "final-datalib-filedb-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb-final",
+    "returncode": 0,
+    "seconds": 1.9043160419999907
+  },
+  {
+    "step": "final-adat-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/adat-final",
+    "returncode": 0,
+    "seconds": 7.213876958
+  },
+  {
+    "step": "final-adat-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/adat-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/adat-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/adat-final",
+    "returncode": 0,
+    "seconds": 16.895729916999997
+  },
+  {
+    "step": "final-adat-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/adat-final",
+    "returncode": 0,
+    "seconds": 69.82646220900001
+  },
+  {
+    "step": "final-adat-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/adat-final",
+    "returncode": 0,
+    "seconds": 13.613804958999992
+  },
+  {
+    "step": "final-adat-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/adat-final",
+    "returncode": 0,
+    "seconds": 11.080462791999992
+  },
+  {
+    "step": "final-colorvec-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/colorvec-final",
+    "returncode": 0,
+    "seconds": 2.394789875000015
+  },
+  {
+    "step": "final-colorvec-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/colorvec-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/colorvec-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/colorvec-final",
+    "returncode": 0,
+    "seconds": 6.058265124999991
+  },
+  {
+    "step": "final-colorvec-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/colorvec-final",
+    "returncode": 0,
+    "seconds": 41.036966457999995
+  },
+  {
+    "step": "final-colorvec-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/colorvec-final",
+    "returncode": 0,
+    "seconds": 0.2509005000000002
+  },
+  {
+    "step": "final-colorvec-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/colorvec-final",
+    "returncode": 0,
+    "seconds": 0.6559164159999966
+  },
+  {
+    "step": "final-redstar-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/redstar-final",
+    "returncode": 0,
+    "seconds": 2.387078540999994
+  },
+  {
+    "step": "final-redstar-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/redstar-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/colorvec"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/redstar-final/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/colorvec"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/redstar-final",
+    "returncode": 0,
+    "seconds": 6.649905582999992
+  },
+  {
+    "step": "final-redstar-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/redstar-final",
+    "returncode": 0,
+    "seconds": 65.96698541699999
+  },
+  {
+    "step": "final-redstar-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/redstar-final",
+    "returncode": 0,
+    "seconds": 8.650696665999988
+  },
+  {
+    "step": "final-redstar-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/redstar-final",
+    "returncode": 0,
+    "seconds": 6.417532666999989
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "artifacts": {
+    "datalib-core": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-core/lib/libdatalib_serial.a",
+      "sha256": "dca477b3889dc57da07a6ef90ee002240aba2b62380a872d724545c96374d327"
+    },
+    "datalib-filedb": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb/lib/libdatalib_serial.a",
+      "sha256": "80d41ac579cc2f5b8d2fa65d1d54b854e30b0c326d2c3f7edb4c2965a6808d84"
+    },
+    "chroma": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/chroma/bin/chroma",
+      "sha256": "2c807b2456a6e668d3352144c7ee80eea059435ebb4c6d047c5fd8c626f571bf"
+    }
+  },
+  "checks": {
+    "datalib-core": {
+      "checks": 5,
+      "dependency_records": 39,
+      "flags": {
+        "cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-core/include -O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/libxml2/include/libxml2",
+        "ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-core/lib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -framework Accelerate",
+        "libs": "-ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp"
+      }
+    },
+    "datalib-filedb": {
+      "checks": 7,
+      "dependency_records": 89,
+      "flags": {
+        "cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb/include -O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/libxml2/include/libxml2",
+        "ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb/lib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -framework Accelerate",
+        "libs": "-ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp"
+      }
+    }
+  },
+  "graph_tool_comparisons": [
+    {
+      "case": "pion",
+      "before_summary_sha256": "301cab6b6206facf59aff7a85015d390c567fcb0113c3973740920fa4e162f64",
+      "after_summary_sha256": "301cab6b6206facf59aff7a85015d390c567fcb0113c3973740920fa4e162f64",
+      "before_xml_sha256": "73f76cd25833876e06f05c1ff59d0f5f36f237651ba053ba59bbc72bb3ba4ef9",
+      "after_xml_sha256": "73f76cd25833876e06f05c1ff59d0f5f36f237651ba053ba59bbc72bb3ba4ef9"
+    },
+    {
+      "case": "3pi",
+      "before_summary_sha256": "ed580c76dc72cff62e82435459ea244c2da78c2774501a9bafa1bc5b3664afbc",
+      "after_summary_sha256": "ed580c76dc72cff62e82435459ea244c2da78c2774501a9bafa1bc5b3664afbc",
+      "before_xml_sha256": "0deb1d52d1f103b23ed1822dc7dac3a310d3a3c5da7b55b24bb4f92cc50478d1",
+      "after_xml_sha256": "0deb1d52d1f103b23ed1822dc7dac3a310d3a3c5da7b55b24bb4f92cc50478d1"
+    },
+    {
+      "case": "nuc_nuc_3pt",
+      "before_summary_sha256": "15f088797f1d6fb4cc6e86766a4af760a834e95190c0566de94679018bbfafc0",
+      "after_summary_sha256": "15f088797f1d6fb4cc6e86766a4af760a834e95190c0566de94679018bbfafc0",
+      "before_xml_sha256": "ab07d63d956a33c8b495bec6f475b73e073789fa352be202d499cf4d7d873c67",
+      "after_xml_sha256": "ab07d63d956a33c8b495bec6f475b73e073789fa352be202d499cf4d7d873c67"
+    },
+    {
+      "case": "eta_eta_3pt",
+      "before_summary_sha256": "42962f2790719eedf9b9f5586ea974c7ae3d4c6739a2adc1d4bbbcb01882f37c",
+      "after_summary_sha256": "42962f2790719eedf9b9f5586ea974c7ae3d4c6739a2adc1d4bbbcb01882f37c",
+      "before_xml_sha256": "763faa2b5d627e058f34de613e421be8653a21c6d8ee0dd05d2eac84186690d8",
+      "after_xml_sha256": "763faa2b5d627e058f34de613e421be8653a21c6d8ee0dd05d2eac84186690d8"
+    }
+  ],
+  "filedb_owner": "datalib",
+  "filedb_commit": "db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693",
+  "chroma_measurements_unchanged": true,
+  "chroma_adat_symbols": false,
+  "chroma_dependency_records": 845,
+  "sources": {
+    "datalib": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib-final",
+      "commit": "500a35f4487c21541c4afbc99dc9108ab809ac40",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "chroma": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/chroma",
+      "commit": "af17465139e0d82cca9e4ae20c1ef28f76e3d741",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "adat": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/adat-final",
+      "commit": "8a280304e1284b69e7f783e43e3cc5df6170a300",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "colorvec": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/colorvec-final",
+      "commit": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "redstar": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/redstar-final",
+      "commit": "301b8d1350dfed730cbc64f6d7cea4838c7fa630",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    }
+  },
+  "qdp_full_check": "existing ARM/SIMD failure reproduced on baseline; see qdp-check-limitation.json"
+}

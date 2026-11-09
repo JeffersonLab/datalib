@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "external_filedb": [
+    {
+      "step": "configure",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib-final/configure",
+        "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-external",
+        "--without-qdp",
+        "--with-libxml2=/opt/homebrew/opt/libxml2",
+        "--with-filedb=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "build",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+        "make",
+        "-j3"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "check",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+        "make",
+        "check",
+        "-j3"
+      ],
+      "returncode": 0
+    }
+  ],
+  "source_archive": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb-final/datalib-0.1.tar.gz",
+  "sha256": "2b021ffa248f02cf176f0eec0687abd8ffed489597311202dfeae5e1d66b3afe",
+  "files": 539,
+  "note": "Distribution-only sandbox grants source/dist docs read access; production builds use the unchanged dependency-denying sandbox."
+}

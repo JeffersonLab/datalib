@@ -1,0 +1,37 @@
+[
+  {
+    "profile": "datalib",
+    "file": "/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader/include/xml_array.h",
+    "allowed": false,
+    "returncode": 1,
+    "stderr": "cat: /Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader/include/xml_array.h: Operation not permitted\n"
+  },
+  {
+    "profile": "datalib",
+    "file": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include/qdp.h",
+    "allowed": false,
+    "returncode": 1,
+    "stderr": "cat: /Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include/qdp.h: Operation not permitted\n"
+  },
+  {
+    "profile": "datalib",
+    "file": "/Users/admin/Downloads/macos-datalib-reorg/install/adat-direct-001/include/io/superb_kv.h",
+    "allowed": false,
+    "returncode": 1,
+    "stderr": "cat: /Users/admin/Downloads/macos-datalib-reorg/install/adat-direct-001/include/io/superb_kv.h: Operation not permitted\n"
+  },
+  {
+    "profile": "chroma",
+    "file": "/Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader/include/xml_array.h",
+    "allowed": false,
+    "returncode": 1,
+    "stderr": "cat: /Users/admin/Downloads/macos-datalib-reorg/install/xpath_reader/include/xml_array.h: Operation not permitted\n"
+  },
+  {
+    "profile": "chroma",
+    "file": "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qdpxx-mpi/include/xml_array.h",
+    "allowed": true,
+    "returncode": 0,
+    "stderr": ""
+  }
+]

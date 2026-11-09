@@ -1,0 +1,35 @@
+[
+  {
+    "step": "adat-002-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/adat-002",
+    "returncode": 0,
+    "seconds": 7.586428542
+  },
+  {
+    "step": "adat-002-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/adat-002/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/adat-002",
+    "returncode": 0,
+    "seconds": 17.555584665999998
+  },
+  {
+    "step": "adat-002-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/adat-002",
+    "returncode": 2,
+    "seconds": 1.7115699169999985
+  }
+]

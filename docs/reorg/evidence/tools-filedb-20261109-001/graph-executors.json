@@ -1,0 +1,14 @@
+[
+  {
+    "wrapper": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/graph-tools/redstar_corr_graph",
+    "wrapper_sha256": "d1c5e2bb1601bfa2fb8e5c506d74d581af3952ab429dbf2a695b3f1e304c480b",
+    "executable": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/redstar/bin/redstar_corr_graph",
+    "executable_sha256": "c6dd2ff691e8e1e57cc1bfb19bf13ede2718999fd4c4936843532f24aab39be2"
+  },
+  {
+    "wrapper": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/graph-tools/view_corr_graph",
+    "wrapper_sha256": "d251e27a087368ce228655b6662163e454d8867818d60bcd3dc3c3ee999d0b5e",
+    "executable": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb/bin/view_corr_graph",
+    "executable_sha256": "1bad8dc283ea751a5f5fa556c16eb42dff04972811c26f3f30593bba2ff6a844"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "step": "unlink-programs",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/chroma.sb",
+        "make",
+        "clean-binPROGRAMS"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "link",
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/chroma.sb",
+        "make",
+        "-j3"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "install",
+      "returncode": 0
+    }
+  ],
+  "datalib_archive_sha256": "80d41ac579cc2f5b8d2fa65d1d54b854e30b0c326d2c3f7edb4c2965a6808d84",
+  "executable_sha256": "2c807b2456a6e668d3352144c7ee80eea059435ebb4c6d047c5fd8c626f571bf",
+  "metadata_only_header_not_in_chroma_dependencies": true,
+  "chroma_source_code_unchanged": true,
+  "dependency_recompilations": 37,
+  "note": "make rebuilt affected dependencies after the complete final datalib installation, then linked all installed main programs."
+}

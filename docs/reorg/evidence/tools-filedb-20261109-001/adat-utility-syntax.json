@@ -1,0 +1,106 @@
+[
+  {
+    "source": "main/dbutil/db_rephase_corrs.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbavgcors.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbiso_wick_rescale.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbmerge.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbprop_t0fix.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbavg_disco.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/db_transform_corrs.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbmeta.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbavgsrc.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbconvert_read.cc",
+    "returncode": 1
+  },
+  {
+    "source": "main/dbutil/dbcorr_read.cc",
+    "returncode": 1
+  },
+  {
+    "source": "main/dbutil/dbbin.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbgaus_corr.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbcombine.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbmeson_t0fix.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/check_corr_graph.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbreplicate.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbwick_rescale.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbconvert_ops_util.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbconvert_corr_util.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbcanon_mom.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbavg.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/extract_corr.cc",
+    "returncode": 1
+  },
+  {
+    "source": "main/dbutil/dbconvert.cc",
+    "returncode": 1
+  },
+  {
+    "source": "main/dbutil/dbprop_diag_t0.cc",
+    "returncode": 0
+  },
+  {
+    "source": "main/dbutil/dbconvert_write.cc",
+    "returncode": 1
+  }
+]

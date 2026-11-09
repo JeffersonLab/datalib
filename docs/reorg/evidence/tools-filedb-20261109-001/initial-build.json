@@ -1,0 +1,267 @@
+[
+  {
+    "step": "datalib-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 4.9434640000000005,
+    "finished_utc": "2026-11-09T14:34:49.741123+00:00"
+  },
+  {
+    "step": "datalib-core-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-core",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-core",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 5.169720957999999,
+    "finished_utc": "2026-11-09T14:34:54.911613+00:00"
+  },
+  {
+    "step": "datalib-core-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 7.373643417,
+    "finished_utc": "2026-11-09T14:35:02.285741+00:00"
+  },
+  {
+    "step": "datalib-core-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 4.086789500000002,
+    "finished_utc": "2026-11-09T14:35:06.372999+00:00"
+  },
+  {
+    "step": "datalib-core-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 0.966345749999995,
+    "finished_utc": "2026-11-09T14:35:07.339790+00:00"
+  },
+  {
+    "step": "datalib-filedb-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--without-qdp",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 12.439789915999995,
+    "finished_utc": "2026-11-09T14:35:19.780232+00:00"
+  },
+  {
+    "step": "datalib-filedb-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 20.020629167000003,
+    "finished_utc": "2026-11-09T14:35:39.801536+00:00"
+  },
+  {
+    "step": "datalib-filedb-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 7.514781958,
+    "finished_utc": "2026-11-09T14:35:47.316828+00:00"
+  },
+  {
+    "step": "datalib-filedb-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 1.9099862079999923,
+    "finished_utc": "2026-11-09T14:35:49.227574+00:00"
+  },
+  {
+    "step": "adat-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/adat",
+    "environment": "downstream",
+    "returncode": 1,
+    "seconds": 7.274993084000002,
+    "finished_utc": "2026-11-09T14:35:56.503556+00:00"
+  },
+  {
+    "step": "chroma-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/chroma.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 13.17187687500001,
+    "finished_utc": "2026-11-09T14:36:02.400458+00:00"
+  },
+  {
+    "step": "chroma-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/chroma.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 27.32156825,
+    "finished_utc": "2026-11-09T14:36:29.723256+00:00"
+  }
+]

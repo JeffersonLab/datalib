@@ -1,0 +1,11 @@
+{
+  "formfac/hadron_1pt_corr.h": "datalib/legacy/hadron_1pt_corr.h",
+  "formfac/hadron_2pt_corr.h": "datalib/legacy/hadron_2pt_corr.h",
+  "formfac/hadron_3pt_corr.h": "datalib/legacy/hadron_3pt_corr.h",
+  "hadron/particle_op.h": "datalib/legacy/particle_op.h",
+  "hadron/su2_corr/hadron_npart_irrep_op.h": "datalib/legacy/hadron_npart_irrep_op.h",
+  "hadron/su2_corr/hadron_npart_irrep.h": "datalib/legacy/hadron_npart_irrep.h",
+  "hadron/su2_corr/hadron_npart_npt_corr.h": "datalib/legacy/hadron_npart_npt_corr.h",
+  "hadron/operator_name_util.h": "datalib/graph/operator_name.h",
+  "hadron/ensem_filenames.h": "datalib/graph/filenames.h"
+}

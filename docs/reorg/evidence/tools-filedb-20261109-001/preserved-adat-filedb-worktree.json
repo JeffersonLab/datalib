@@ -1,0 +1,18 @@
+{
+  "path": "/Users/admin/Downloads/macos-datalib-reorg/adat/other_libs/filedb",
+  "head": "db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693",
+  "status": " M INSTALL\n M config/ar-lib\n M config/compile\n M config/config.guess\n M config/config.sub\n M config/depcomp\n M config/install-sh\n M config/missing\n",
+  "dirty_paths_match_original_inventory": true,
+  "retained_file_hashes": {
+    "INSTALL": "a32a373565a5284c1f5a2dc9b86cf18bfecfbd63aa37909627374882a45086be",
+    "config/ar-lib": "5fe9400eae89065a7fa753e90c3d8360cafd6c28ab26e77dc9f2d25a7789f8f5",
+    "config/compile": "07089708e9aba8bcd58d7d4b150a6a7d9f6669dda23a169e6609a448332b9800",
+    "config/config.guess": "641cae3c0c74c49354d3ede009f3febd80febe1501a77c1d9fac8d42cc45b6cb",
+    "config/config.sub": "fe3a2f32fbaff57848732549f48d983fd6526024ec2f0f5a9dc75c2f4359a3a6",
+    "config/depcomp": "62cde010a373e569b5921b8ef1ef34e1f47f2c7b62086c7e8b4a67e4737b79c2",
+    "config/install-sh": "250865025dcfc1b511e3899a16f793a7d7717d3ac2af1bdea8af9171bf1dc9ff",
+    "config/missing": "1509d72c676d3b757ab9a0b251cb4c2ff5f1391d694839e71091358cb5e18f69"
+  },
+  "no_longer_a_tracked_submodule": true,
+  "used_by_build": false
+}

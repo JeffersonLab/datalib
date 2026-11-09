@@ -3,6 +3,7 @@
 These reports record the macOS build and regression tests performed in
 November 2026 with the matching `rge/devel-datalib-reorg` source branches.
 
+- [FILEDB ownership, standalone tools and CORR_SUPERB regression](FILEDB-TOOLS-REGRESSIONS.md)
 - [Bundled array headers and full regression](ARRAYS-OWNED-REGRESSIONS.md)
 - [Full clean-stack regression and memory-limit recovery](NATIVE-DOUBLE-CLEAN-REGRESSIONS.md)
 - [Clean standalone datalib and ADAT-free Chroma builds](STANDALONE-CLEAN-BUILD.md)
@@ -38,3 +39,7 @@ The 8 November array-header extraction removes datalib's external
 xpath_reader dependency. Four core/five FILEDB checks, installed-header
 coexistence checks, and the full 30-pair/three-NPT-only matrix passed;
 see the bundled-array report for exact results and scope.
+
+The 9 November checkpoint moves FILEDB ownership and diagnostic tools to
+datalib, retains old Chroma measurement calls, verifies the CORR_SUPERB build
+gates, and records the full numerical matrix plus existing platform limits.

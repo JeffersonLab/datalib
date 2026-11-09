@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "configuration_options": [
+    "--with-datalib=PREFIX",
+    "--with-superbblas=PREFIX"
+  ],
+  "defines": {
+    "BUILD_SB": true,
+    "BUILD_REDSTAR_DATALIB": true
+  },
+  "registration_symbol": [
+    "0000000102811020 T Chroma::InlineCorrSuperbEnv::registerAll()"
+  ],
+  "executable": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/chroma/bin/chroma",
+  "sha256": "2c807b2456a6e668d3352144c7ee80eea059435ebb4c6d047c5fd8c626f571bf",
+  "datalib_support": "Installed shared graph models/codecs, FILEDB and typed storage/evaluator headers; no ADAT dependency."
+}

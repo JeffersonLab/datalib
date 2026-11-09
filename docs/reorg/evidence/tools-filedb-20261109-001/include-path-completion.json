@@ -1,0 +1,31 @@
+{
+  "adat": [
+    "main/dbutil/db_rephase_corrs.cc",
+    "main/dbutil/db_transform_corrs.cc",
+    "main/dbutil/dbcanon_mom.cc",
+    "main/dbutil/dbconvert_corr_util.cc",
+    "main/dbutil/dbconvert_ops_util.cc",
+    "main/dbutil/dbiso_wick_rescale.cc",
+    "main/dbutil/dbwick_rescale.cc"
+  ],
+  "redstar": [
+    "lib/corr_graph_build.cc",
+    "lib/generate_hadron_xml.cc",
+    "lib/projected_ops.cc",
+    "src/convert_proj_weights_util.cc",
+    "src/do_not_use/redstar_gen_graph.cc",
+    "src/do_not_use/redstar_hadron_node.cc",
+    "src/extract_ops_util.cc",
+    "src/generate_nonint_spectrum_3ops.cc",
+    "src/redstar_corr_graph.cc",
+    "src/redstar_npt.cc"
+  ],
+  "chroma": [],
+  "colorvec": [
+    "src/check_meson_egg.cc",
+    "src/g5h_peram.cc",
+    "src/rotate_meson_egg.cc",
+    "src/rotate_meson_egg_sparse_mesh.cc",
+    "src/rotate_prop_egg.cc"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "datalib": {
+    "head": "500a35f4487c21541c4afbc99dc9108ab809ac40",
+    "status": " m other_libs/filedb\n?? configure~\n",
+    "local_devel": ""
+  },
+  "adat": {
+    "head": "8a280304e1284b69e7f783e43e3cc5df6170a300",
+    "status": " m other_libs/minuit\n m other_libs/xpath_reader\n",
+    "local_devel": ""
+  },
+  "redstar": {
+    "head": "301b8d1350dfed730cbc64f6d7cea4838c7fa630",
+    "status": "",
+    "local_devel": "b194fdfcfe93742ba6887e4374fd5a32a002415f\n"
+  },
+  "chroma": {
+    "head": "af17465139e0d82cca9e4ae20c1ef28f76e3d741",
+    "status": "",
+    "local_devel": "e1ac530e0bd50dbeac75a1e94d62a981308fe251\n"
+  },
+  "colorvec": {
+    "head": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+    "status": "?? configure~\n",
+    "local_devel": "bab4ff2f050f3b91cf10d2fc394c74aa42faa7c0\n"
+  },
+  "qdpxx": {
+    "head": "3b8297f8b3da725c67f1c5a362b93757ff3b1eb6",
+    "status": "",
+    "local_devel": "c1e9b5209f89d232af064a60004f8ac7c9a5c734\n"
+  },
+  "xpath_reader": {
+    "head": "05cbc2d6e03cfe32e88433d3a3df77c6fd69f244",
+    "status": "",
+    "local_devel": ""
+  },
+  "filedb": {
+    "head": "db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693",
+    "status": "",
+    "local_devel": ""
+  }
+}

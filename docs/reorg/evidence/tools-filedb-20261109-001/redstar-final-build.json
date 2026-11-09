@@ -1,0 +1,33 @@
+[
+  {
+    "step": "bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/redstar-006",
+    "returncode": 0,
+    "seconds": 2.5442200839999995
+  },
+  {
+    "step": "configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/redstar-006/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/colorvec"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/redstar-006",
+    "returncode": 0,
+    "seconds": 6.56736975
+  },
+  {
+    "step": "build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/redstar-006",
+    "returncode": 2,
+    "seconds": 64.265788083
+  }
+]

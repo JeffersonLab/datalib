@@ -1,0 +1,49 @@
+[
+  {
+    "step": "bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/qdpxx",
+    "returncode": 0,
+    "seconds": 12.876453416
+  },
+  {
+    "step": "configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/sources/qdpxx/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/qdpxx-mpi",
+      "--enable-parallel-arch=parscalar",
+      "--enable-Nd=4",
+      "--enable-precision=double",
+      "--enable-openmp",
+      "--with-qmp=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/qmp-mpi",
+      "--with-libxml2=/opt/homebrew/opt/libxml2"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/qdpxx-mpi",
+    "returncode": 0,
+    "seconds": 25.717072833000003
+  },
+  {
+    "step": "build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/qdpxx-mpi",
+    "returncode": 0,
+    "seconds": 7.896032749999996
+  },
+  {
+    "step": "check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/build/qdpxx-mpi",
+    "returncode": 2,
+    "seconds": 11.577167916
+  }
+]
