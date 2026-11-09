@@ -1,0 +1,39 @@
+[
+  {
+    "phase": "storage_abi_after.py",
+    "args": [],
+    "returncode": 0
+  },
+  {
+    "phase": "verify_stack.py",
+    "args": [],
+    "returncode": 0
+  },
+  {
+    "phase": "check_aliases.py",
+    "args": [],
+    "returncode": 0
+  },
+  {
+    "phase": "openmp_check.py",
+    "args": [],
+    "returncode": 0
+  },
+  {
+    "phase": "clean_codec.py",
+    "args": [],
+    "returncode": 0
+  },
+  {
+    "phase": "producer_runs.py",
+    "args": [
+      "new"
+    ],
+    "returncode": 0
+  },
+  {
+    "phase": "producer_compare.py",
+    "args": [],
+    "returncode": 1
+  }
+]

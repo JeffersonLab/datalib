@@ -1,0 +1,21 @@
+[
+  {
+    "step": "datalib-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 5.277211375,
+    "finished_utc": "2026-11-09T19:23:11.380398+00:00"
+  }
+]

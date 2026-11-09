@@ -1,0 +1,48 @@
+// Safe numbered-file export of current SUNClass correlators through ADAT StorageCorrFunc.
+#include <datalib/graph/hadron_sun_class_npart_npt_corr.h>
+#include <datalib/graph/filenames.h>
+#include <datalib/storage/corr_reader.h>
+#include <datalib/io/serial_xml.h>
+#include <complex>
+#include <filesystem>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <sstream>
+#include <stdexcept>
+#include <vector>
+int main(int argc,char**argv) {
+  if(argc!=3) {std::cerr<<"Usage: export_correlators INPUT_DB NEW_OUTPUT_DIR\n";return 2;}
+  try {
+    namespace fs=std::filesystem;
+    fs::path output(argv[2]);
+    if(fs::exists(output))throw std::runtime_error("Output already exists");
+    Datalib::Storage::StorageCorrFunc<Hadron::KeyHadronSUNClassNPartNPtCorr_t> db;
+    db.open_for_reading(argv[1]);auto keys=db.keys();
+    if(keys.empty())throw std::runtime_error("No correlator keys");
+    fs::create_directories(output);
+    Datalib::Serial::XMLFileWriter index((output/"index.xml").string());
+    Datalib::Serial::push(index,"Exports");
+    for(std::size_t i=0;i<keys.size();++i) {
+      std::vector<std::vector<std::complex<double>>> values;
+      if(db.get(keys[i],values)!=0 || values.empty() || values[0].empty())throw std::runtime_error("Missing/empty correlator");
+      std::ostringstream name;name<<"key-"<<std::setfill('0')<<std::setw(6)<<i<<".dat";
+      std::ofstream file(output/name.str());
+      if(!file)throw std::runtime_error("Cannot open numeric output");
+      file<<values.size()<<" "<<values[0].size()<<" 1 0 1\n"<<std::setprecision(17);
+      for(const auto& row:values) {
+        if(row.size()!=values[0].size())throw std::runtime_error("Inconsistent time shape");
+        for(std::size_t t=0;t<row.size();++t)file<<t<<" "<<row[t].real()<<" "<<row[t].imag()<<"\n";
+      }
+      file.close();if(!file)throw std::runtime_error("Cannot finish numeric output");
+      Datalib::Serial::push(index,"elem");
+      Datalib::Serial::write(index,"filename",name.str());
+      Datalib::Serial::write(index,"standard_filename",Hadron::ensemFileName(keys[i]));
+      Hadron::write(index,"Key",keys[i]);
+      Datalib::Serial::pop(index);
+    }
+    Datalib::Serial::pop(index);index.close();
+    std::cout<<"Exported "<<keys.size()<<" keys with numbered filenames\n";
+  }catch(const std::string&e){std::cerr<<e<<"\n";return 1;}
+   catch(const std::exception&e){std::cerr<<e.what()<<"\n";return 1;}
+}

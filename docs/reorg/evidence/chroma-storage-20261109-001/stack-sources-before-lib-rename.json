@@ -1,0 +1,32 @@
+{
+  "datalib": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib",
+    "commit": "9ae485947bf3a1333fb716f0590f1c5c6386cbd6",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "chroma": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/chroma",
+    "commit": "a74d6d52f1e77df08bd4743a84f8b3670f3586c7",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "adat": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/adat",
+    "commit": "20dd155b47984ca86a6b72cdf3a8bb773586d7a3",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "colorvec": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/colorvec",
+    "commit": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "redstar": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/redstar",
+    "commit": "150b97eb678b31b6509758235512a795db4b484d",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  }
+}

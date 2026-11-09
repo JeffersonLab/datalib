@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "artifacts": {
+    "datalib-core": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-core/lib/libdatalib_serial.a",
+      "sha256": "ec0c2d183cfa366385889c7b7cae7eb36a2b6897f5c6b9b1ee11ad20923bac9b"
+    },
+    "datalib-filedb": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb/lib/libdatalib_serial.a",
+      "sha256": "b7fda70a5fd6369cbebe97605fa8629257a308de0a453bdc5299834a3dbf60f7"
+    },
+    "chroma": {
+      "path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/chroma/bin/chroma",
+      "sha256": "98fea4e9731138991cd87e4ddf4f102ccd64bf3ba90619842f956758dfd330db"
+    }
+  },
+  "checks": {
+    "datalib-core": {
+      "checks": 5,
+      "dependency_records": 39,
+      "flags": {
+        "cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-core/include -O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/libxml2/include/libxml2",
+        "ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-core/lib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -framework Accelerate",
+        "libs": "-ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp"
+      }
+    },
+    "datalib-filedb": {
+      "checks": 8,
+      "dependency_records": 90,
+      "flags": {
+        "cxxflags": "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb/include -O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/libxml2/include/libxml2",
+        "ldflags": "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb/lib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -framework Accelerate",
+        "libs": "-ldatalib_serial -L/opt/homebrew/opt/libxml2/lib -lxml2 -L/usr/lib -lz -L/opt/homebrew/opt/icu4c@76/lib -licuuc -liconv -L/opt/homebrew/opt/libomp/lib -Wl,-rpath,/opt/homebrew/opt/libomp/lib -lomp"
+      }
+    }
+  },
+  "chroma_no_adat_symbols": true,
+  "chroma_dependency_records": 845,
+  "chroma_no_explicit_filedb_api": true,
+  "temporary_wrappers_removed": true,
+  "datalib_lib_layout": true,
+  "qdp_build": "unchanged validated FILEDB-free installation from tools-filedb-20261109-001; ARM/SIMD check limitation remains unchanged",
+  "sources": {
+    "datalib": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib",
+      "commit": "16d226c683449299672a0d9d22bb6565220b306c",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "chroma": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/chroma",
+      "commit": "39cdadc6246a48bc68d42ac41361c3e050f34944",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": "",
+      "initial_clean_checkout_commit": "a74d6d52f1e77df08bd4743a84f8b3670f3586c7",
+      "final_source_update": "Tracked source fast-forwards, normal dependency rebuilds and relinking for tensor-storage ABI; STOCH_HADRON then removed from source, factory, build/archive and new empty installation. No copied overlays."
+    },
+    "adat": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/adat",
+      "commit": "20dd155b47984ca86a6b72cdf3a8bb773586d7a3",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "colorvec": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/colorvec",
+      "commit": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    },
+    "redstar": {
+      "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/redstar",
+      "commit": "150b97eb678b31b6509758235512a795db4b484d",
+      "branch": "rge/devel-datalib-reorg",
+      "status_before_bootstrap": ""
+    }
+  }
+}

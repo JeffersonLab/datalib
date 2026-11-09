@@ -1,0 +1,2903 @@
+{
+  "removed_headers": {
+    "lib/adat/adat_arraynd.h": "datalib/model/arraynd.h",
+    "lib/adat/map_obj.h": "datalib/model/map_obj.h",
+    "lib/adat/adat_arrays.h": "datalib/model/arrays.h",
+    "lib/io/adat_io.h": "datalib/codec/binary.h",
+    "lib/io/disco_superb.h": "datalib/superb/disco_superb.h",
+    "lib/io/baryon_superb.h": "datalib/superb/baryon_superb.h",
+    "lib/io/adat_byteorder.h": "datalib/codec/byteorder.h",
+    "lib/io/colorvec_matelem_type.h": "datalib/superb/colorvec_matelem_type.h",
+    "lib/io/corr_storage.h": "datalib/storage/corr_storage.h",
+    "lib/io/adat_xmlio.h": "datalib/io/serial_xml.h",
+    "lib/io/genprop4.h": "datalib/superb/genprop4.h",
+    "lib/io/superb_aux.h": "datalib/superb/superb_aux.h",
+    "lib/io/superb_options.h": "datalib/codec/superb_options.h",
+    "lib/io/glueball_superb.h": "datalib/superb/glueball_superb.h",
+    "lib/io/key_val_db.h": "datalib/storage/filedb.h",
+    "lib/io/prop_superb.h": "datalib/superb/prop_superb.h",
+    "lib/io/tetraquark_superb.h": "datalib/superb/tetraquark_superb.h",
+    "lib/io/meson_superb.h": "datalib/superb/meson_superb.h",
+    "lib/hadron/hadron_diagram_time.h": "datalib/graph/hadron_diagram_time.h",
+    "lib/hadron/prop_elem_type.h": "datalib/superb/prop_elem_type.h",
+    "lib/hadron/single_hadron_coeffs.h": "datalib/graph/single_hadron_coeffs.h",
+    "lib/hadron/corr_graph.h": "datalib/graph/process_corrs.h",
+    "lib/hadron/baryon_elem_type.h": "datalib/superb/baryon_elem_type.h",
+    "lib/hadron/meson_elem_type.h": "datalib/superb/meson_elem_type.h",
+    "lib/hadron/hadron_class_npart_npt_conn_graph.h": "datalib/graph/hadron_class_npart_npt_conn_graph.h",
+    "lib/hadron/tetraquark_elem_type.h": "datalib/superb/tetraquark_elem_type.h",
+    "lib/hadron/particle_class_op.h": "datalib/graph/particle_class_op.h",
+    "lib/hadron/glueball_elem_type.h": "datalib/superb/glueball_elem_type.h",
+    "lib/hadron/unsmeared_meson_elem.h": "datalib/superb/unsmeared_meson_elem.h",
+    "lib/hadron/hadron_sun_class_npart_version.h": "datalib/graph/hadron_sun_class_npart_version.h",
+    "lib/hadron/hadron_timeslice.h": "datalib/graph/hadron_timeslice.h",
+    "lib/hadron/unsmeared_twoquark_disco.h": "datalib/superb/unsmeared_twoquark_disco.h",
+    "lib/hadron/hadron_disp_vertex.h": "datalib/graph/hadron_disp_vertex.h",
+    "lib/hadron/unsmeared_genprop4_elem.h": "datalib/superb/unsmeared_genprop4_elem.h",
+    "lib/hadron/hadron_sun_class_npart_irrep_op.h": "datalib/graph/hadron_sun_class_npart_irrep_op.h",
+    "lib/hadron/hadron_sun_class_npart_irrep.h": "datalib/graph/hadron_sun_class_npart_irrep.h",
+    "lib/hadron/hadron_adj_map.h": "datalib/graph/hadron_adj_map.h"
+  },
+  "changes": [
+    {
+      "repo": "adat",
+      "path": "lib/adat/adat_arraynd.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/adat/adat_arrays.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/adat/map_obj.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/adat/map_traits.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/adat/ordered_map_obj.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/adat/proginfo.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/adat/proginfo.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_ensem.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_obsscalar.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_obstensor.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_obsvector.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_primmatrix.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_primscalar.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_primseed.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_primvector.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_reality.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_scalar_specific.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_specializations.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/ensem/ensem_xmlio.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/formfac/hadron_1pt_corr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/formfac/hadron_1pt_corr.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/formfac/hadron_2pt_corr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/formfac/hadron_2pt_corr.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/formfac/hadron_3pt_corr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/formfac/hadron_3pt_corr.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/baryon_elem_type.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_irrep_mom.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_irrep_mom_auto.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_irrep_mom_auto.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_irrep_mom_lgxlgtolg_auto.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_irrep_mom_lgxlgtooct_auto.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_perm_s3.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_perm_s3_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_su2.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_su2_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_su3.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgc_su3_auto.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgcs.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cgcs_map_obj.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/corr_graph.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/cubic_groups.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/do_not_use/hadron_dist_obj.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/do_not_use/hadron_dist_obj.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/ensem_filenames.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/ensem_filenames.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/genprop_elem_type.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/genprop_elem_type.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/glueball_elem_type.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_adj_map.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_class_npart_npt_conn_graph.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_diagram_time.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_disp_vertex.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_npt_type.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_npt_type.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_quark_location.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_quark_location.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_class_npart_irrep.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_class_npart_irrep_op.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_class_npart_npt_corr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_class_npart_npt_corr.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_class_npart_version.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_npart_irrep.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_npart_irrep.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_npart_irrep_op.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_npart_irrep_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_npart_npt_corr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_sun_npart_npt_corr.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/hadron_timeslice.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/irrep_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/irrep_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/irreps_cubic.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/irreps_cubic_lg.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/irreps_cubic_oct.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/meson_elem_type.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/old_cgc_auto/cgc_irrep_mom_auto.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/old_cgc_auto/cgc_irrep_mom_auto.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/old_cgc_auto/cgc_irrep_mom_lgxlgtolg_auto.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/old_cgc_factory/cgc_irrep_mom_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/old_cgc_factory/cgc_irrep_mom_lgxlgtolg_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/old_cgc_factory/cgc_irrep_mom_lgxlgtooct_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/old_cgc_factory/cgc_irrep_mom_lgxocttolg_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/old_cgc_factory/cgc_irrep_mom_oct_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/operator_name_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/particle_class_op.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/particle_op.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/particle_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/peram_dist_elem_type.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/peram_dist_elem_type.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/prop_elem_type.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/single_hadron_coeffs.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/spin_rep.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/spin_rep.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/su2_corr/hadron_npart_irrep.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/su2_corr/hadron_npart_irrep.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/su2_corr/hadron_npart_irrep_op.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/su2_corr/hadron_npart_irrep_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/su2_corr/hadron_npart_npt_corr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/su2_corr/hadron_npart_npt_corr.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/subduce_tables_lg_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/subduce_tables_oct_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/tetraquark_elem_type.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/unsmeared_fsq_disco.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/unsmeared_fsq_disco.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/unsmeared_genprop4_elem.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/unsmeared_genprop_elem.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/unsmeared_genprop_elem.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/unsmeared_meson_elem.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/hadron/unsmeared_twoquark_disco.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/adat_byteorder.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/adat_io.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/adat_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/adat_xml_group_reader.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/adat_xml_group_reader.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/adat_xmlio.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/baryon_superb.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/colorvec_matelem_type.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/corr_storage.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/disco_superb.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/do_not_use/adat_qdpio.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/do_not_use/adat_qdpio.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/genprop4.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/glueball_superb.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/key_val_db.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/meson_superb.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/old_key_val_db.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/prop_superb.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/superb_aux.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/superb_kv.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/superb_options.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/io/tetraquark_superb.h",
+      "operation": "delete"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/check_corr_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/db_rephase_corrs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/db_transform_corrs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbavg.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbavg_disco.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbavgcors.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbavgsrc.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbbin.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbcanon_mom.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbcombine.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbconvert.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbconvert_corr_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbconvert_ops_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbconvert_read.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbconvert_write.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbcorr_read.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbgaus_corr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbiso_wick_rescale.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbmerge.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbmeson_t0fix.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbprop_diag_t0.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbprop_t0fix.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbtype.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbtype.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbutil.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/dbwick_rescale.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/extract_corr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/dbutil/mod_reader.h",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/cgs_table.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/cgs_table_hardcode.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/cgs_table_v2.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/num_embed_check.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/num_embed_table.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/test_cgs_hardcode.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/test_cgs_rotation.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/test_cgs_v2.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/test_secondhadronphase.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/test_subduce_PW_LS.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "main/irreputils/test_subduce_Ylm.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/baryon_elem_op.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/baryon_elem_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/baryon_file_test.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/baryon_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/baryon_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/baryon_to_tensor.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/check_baryon_egg.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/check_baryon_eig.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/check_baryon_inner_prod.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/check_meson_egg.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/check_meson_eig.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/check_peram_egg.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/check_sparsity.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/check_tetra_egg.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/colorvec_lib.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/colorvec_lib.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/dbdisp_to_deriv.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/dbtype.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/diractodr.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/dist_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/all_dilutions.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/all_dilutions.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/antisymtensor.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/baryon_2pt_contract.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/baryon_2pt_contract.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/baryon_2pt_dispatch.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/baryon_2pt_dispatch.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/baryon_3pt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/complex_to_hadron_1pt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/dilutions.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/dilutions_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/distillution_noise.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/distillution_noise.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/genprop_obj.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/genprop_obj.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/hadron_dist_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/hadron_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/hadron_node_new_omp.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/high_vecs_dilutions.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/high_vecs_dilutions.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_2pt_contract.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_2pt_contract.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_2pt_dispatch.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_2pt_dispatch.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_2pt_su.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_3pt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_4pt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_4pt_combine.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_4pt_contract.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_4pt_contract.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_4pt_dispatch.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_4pt_dispatch.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_4pt_test.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_dist_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_dist_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_meson_operators.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/meson_meson_operators.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/mom_conv.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/mom_conv.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/no_dilutions.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/no_dilutions.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/noneval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/prop_extract_mass.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/symtensor.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/unit_prop.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/unsmeared_hadron_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/wick.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/wick.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/do_not_use/zN_rng.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/elemental_key_value_cache.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/elemental_key_value_cache.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/g5h_peram.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/g5herm_check.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/glueball_construct_dist_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/glueball_construct_dist_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/glueball_elem_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/glueball_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/glueball_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/gpu_construct_dist_op.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/gpu_construct_dist_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/hadron_node_timeslice.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/hadron_node_timeslice.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/hadron_obj_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/hadron_obj_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/meson_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/meson_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/op_params.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/op_params.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/op_random_data_source.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/pion_check.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/prop_obj.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/prop_obj.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/prop_obj_key.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/prop_obj_key.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/read_hadron_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/read_hadron_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/read_metadata.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/read_metadata.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/rotate_baryon_egg.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/rotate_meson_egg.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/rotate_meson_egg_sparse_mesh.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/rotate_prop_egg.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/t_db.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/tetraquark_elem_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/tetraquark_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/tetraquark_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/threequark_construct_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/threequark_construct_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_construct_dist_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_construct_dist_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_construct_genprop4_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_construct_genprop4_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_construct_unsmeared_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_construct_unsmeared_graph.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_construct_unsmeared_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_gamma_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_gamma_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_operators_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/twoquark_operators_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_fsq_disco_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_fsq_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_fsq_graph.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_genprop4_elem_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_genprop4_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_genprop4_node.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_graph.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_meson_elem_graph.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_meson_elem_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_meson_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_meson_graph.h",
+      "operation": "write"
+    },
+    {
+      "repo": "colorvec",
+      "path": "src/unsmeared_twoquark_disco_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "docs/roper/chroma/read_correlators.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/cchk.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/cchk.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/diagram_diagnostics.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/baryon_eval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/baryon_flavor_proj_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/baryon_meson_eval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/contract_opt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/contract_opt.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/evaluate_graph_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/evaluate_graph_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/evaluate_multiple_graphs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/evaluate_multiple_graphs.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/evaluate_single_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/evaluate_single_graph.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/generate_nonint_spectrum.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/glueball_subduced_proj_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/hadron_flavor.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/hadron_flavor_proj_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/hadron_operator_contract.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/meson_eval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/meson_flavor_proj_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/redstar_evaluate_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/single_meson_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/spin_subduced_obj_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/tetraquark_eval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/threequark_contract_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/threequark_contract_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/threequark_subduced_proj_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/twoquark_dist_obj.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/twoquark_dist_obj.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/do_not_use/twoquark_subduced_proj_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/evaluate_graphs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/evaluate_graphs.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/evaluate_graphs_multiple_tslices.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/evaluate_graphs_multiple_tslices.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/evaluate_graphs_single_tslice.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/evaluate_graphs_single_tslice.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/filetest_redstar.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/filetest_redstar.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/generate_3pt_xml.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/generate_3pt_xml.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/generate_hadron_xml.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/generate_hadron_xml.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/generate_nonzero_matelem.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/generate_nonzero_matelem.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/graph_isomorphism.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/graph_isomorphism.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_cache.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_cache.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_corr_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_corr_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_db_type.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_flavor_expr.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_flavor_expr.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_flavor_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_flavor_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_initialize_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_initialize_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_irrep_weights.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_irrep_weights.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_node_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_node_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_npt_op.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_npt_op_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_obj_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_obj_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_op_map.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_op_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_op_util.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_operator_contract.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_operator_contract.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_print_diagram.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_print_diagram.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_print_node_coeffs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_print_node_coeffs.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_print_noneval_graphs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_print_noneval_graphs.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_su2_weights.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_su2_weights.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_su3_weights.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_su3_weights.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_sun_weights.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_sun_weights.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_wick_contract.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/hadron_wick_contract.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/irrepCGs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/irrepCGs.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/aniso_param.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/aniso_param.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/axial_vec_vec.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/axial_vec_vec.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/formfac_qsq.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/formfac_qsq.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/little_group.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/matelem_helicity_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/matelem_invariant.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/matelem_invariant.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/matelem_qsq_inv.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/nuc_g4link_nuc.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/pseudo_vec_pseudo.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/pseudo_vec_tens.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/subduction.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/subduction.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/vec_vec_tens.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/do_not_use/vec_vec_vec.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/matelem_3pt_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/matelem_gpd_inv.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/matelem_invariant.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/matelem_qsq_inv.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/matelem_subduced_state_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/nuc_vec_nuc.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/nuc_vgpdz_nuc.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/pseudo_vec_pseudo.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/pseudo_vec_vec.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/pseudo_vgpd_pseudo.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/pseudo_vgpdz_pseudo.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/scalar_vec_vec.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/matelems/vec_vec_vec.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/npt_contraction_queue.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/npt_contraction_queue.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/npt_run_params.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/npt_run_params.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/op_params.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/op_params.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/diquark_dirac_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/diquark_su3_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/diquark_su3_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/fourquark_cont_helicity_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/fourquark_cont_helicity_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/glueball_cont_helicity_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/glueball_cont_helicity_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/glueball_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/glueball_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/glueball_subduced_helicity_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/glueball_subduced_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/glueball_subduced_rest_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/single_tetraquark_helicity_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/single_tetraquark_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/single_tetraquark_rest_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/threequark_cont_helicity_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/threequark_cont_helicity_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/threequark_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/threequark_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/threequark_subduced_helicity_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/threequark_subduced_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/threequark_subduced_rest_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/twoquark_cont_helicity_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/twoquark_cont_helicity_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/twoquark_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/twoquark_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/twoquark_subduced_helicity_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/twoquark_subduced_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/do_not_use/twoquark_subduced_rest_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/fourquark_cont_rest_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/fourquark_cont_rest_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/generate_perm_s3.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/generate_perm_s3.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/glueball_cont_rest_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/glueball_deriv_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/glueball_displace.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/glueball_displace.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/simple_dirac_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/simple_dirac_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/spin_subduced_obj_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/spin_subduced_obj_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/threequark_cont_rest_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/threequark_deriv_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/threequark_dirac_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/threequark_dirac_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/threequark_displace.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/threequark_displace.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/threequark_isospin_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/threequark_isospin_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/twoquark_cont_rest_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/twoquark_deriv_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/twoquark_dirac_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/twoquark_dirac_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/twoquark_displace.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/twoquark_displace.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/twoquark_su3_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/operators/twoquark_su3_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/process_corrs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/process_corrs.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/proj_boson_npt_op_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/proj_fermion_npt_op_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/proj_hadron_npt_op_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/proj_hadron_npt_op_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/projected_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/projected_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/read_metadata.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_amplitude_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_baryon_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_ff_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_fsq_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_glueball_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_glueball_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_hadron.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_hadron_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_hadron_npt_op_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_nohelamp_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_su3_meson_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_tetraquark_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/single_twocurr_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/vertex_coeff.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/vertex_coeff.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "lib/wick_contract.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "scripts/filter_onept_annihilation.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/check_gamma.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/check_graph_times.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/check_onept_graph_reuse.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/check_tetra.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/convert_corr_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/convert_meson_elem_sdb.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/convert_proj_weights_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/baryon_eval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/baryon_flavor_proj_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/baryon_meson_eval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/contract_opt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/contract_opt.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/evaluate_graph_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/evaluate_graph_factory.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/evaluate_multiple_graphs.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/evaluate_multiple_graphs.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/evaluate_single_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/evaluate_single_graph.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/generate_nonint_levels.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/generate_nonint_spectrum.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/generate_redstar_twohadron.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/glueball_subduced_proj_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/hadron_flavor.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/hadron_flavor_proj_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/hadron_operator_contract.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/meson_eval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/meson_flavor_proj_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/redstar_evaluate_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/redstar_gen_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/redstar_hadron_node.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/single_meson_factory.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/tetraquark_eval_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/threequark_contract_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/threequark_contract_ops.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/threequark_subduced_proj_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/twoquark_dist_obj.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/twoquark_dist_obj.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/do_not_use/twoquark_subduced_proj_ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/dump_corr_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/extract_ops_util.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/filetest_db.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/filetest_redstar.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/filetest_redstar.h",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_all_3pt_spectrum.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_all_possible_nonint_spectrum.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_nonint_levels.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_nonint_spectrum.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_nonint_spectrum_3ops.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_redstar_1pt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_redstar_2pt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_redstar_3pt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_redstar_onehadron.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/generate_redstar_twohadron.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/print_matelem_lists.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/print_op_lists.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/redstar_corr_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/redstar_npt.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/reweight_insertions_DA.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "redstar",
+      "path": "src/view_corr_graph.cc",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/Makefile.am",
+      "operation": "write"
+    },
+    {
+      "repo": "adat",
+      "path": "lib/CMakeLists.txt",
+      "operation": "write"
+    }
+  ]
+}

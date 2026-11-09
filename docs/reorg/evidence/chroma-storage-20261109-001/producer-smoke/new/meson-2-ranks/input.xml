@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<chroma>
+  <Param>
+    <InlineMeasurements>
+      <elem>
+        <Name>MESON_MATELEM_COLORVEC_SUPERB</Name>
+        <Frequency>1</Frequency>
+        <Param>
+          <version>4</version>
+          <mom2_min>0</mom2_min>
+          <mom2_max>0</mom2_max>
+          <mom_list /><num_vecs>2</num_vecs>
+          <displacement_length>1</displacement_length>
+          <decay_dir>3</decay_dir>
+          <t_source>0</t_source>
+          <Nt_forward>16</Nt_forward>
+          <displacement_list><elem />
+            <elem>1</elem>
+            </displacement_list><LinkSmearing>
+            <LinkSmearingType>STOUT_SMEAR</LinkSmearingType>
+            <link_smear_fact>0.1625</link_smear_fact>
+            <link_smear_num>4</link_smear_num>
+            <no_smear_dir>3</no_smear_dir>
+          </LinkSmearing>
+        <use_superb_format>false</use_superb_format></Param>
+        <NamedObject>
+          <gauge_id>default_gauge_field</gauge_id>
+          <colorvec_files>
+            <elem>/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod</elem>
+          </colorvec_files>
+          <meson_op_file>meson.sdb</meson_op_file>
+        </NamedObject>
+      </elem>
+    </InlineMeasurements>
+    <nrow>4 4 4 16</nrow>
+  </Param>
+  <RNG>
+    <Seed>
+      <elem>11</elem>
+      <elem>11</elem>
+      <elem>11</elem>
+      <elem>0</elem>
+    </Seed>
+  </RNG>
+  <Cfg>
+    <cfg_type>WEAK_FIELD</cfg_type>
+    <cfg_file>dummy</cfg_file>
+  </Cfg>
+</chroma>

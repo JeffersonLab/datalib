@@ -3,6 +3,7 @@
 These reports record the macOS build and regression tests performed in
 November 2026 with the matching `rge/devel-datalib-reorg` source branches.
 
+- [Direct Chroma storage, removed STOCH_HADRON and lib layout](CHROMA-STORAGE-REGRESSIONS.md)
 - [FILEDB ownership, standalone tools and CORR_SUPERB regression](FILEDB-TOOLS-REGRESSIONS.md)
 - [Bundled array headers and full regression](ARRAYS-OWNED-REGRESSIONS.md)
 - [Full clean-stack regression and memory-limit recovery](NATIVE-DOUBLE-CLEAN-REGRESSIONS.md)
@@ -43,3 +44,8 @@ see the bundled-array report for exact results and scope.
 The 9 November checkpoint moves FILEDB ownership and diagnostic tools to
 datalib, retains old Chroma measurement calls, verifies the CORR_SUPERB build
 gates, and records the full numerical matrix plus existing platform limits.
+
+The later 9 November storage checkpoint supersedes the earlier deferred
+legacy-writer modernization. Chroma uses datalib storage directly; temporary
+wrappers and STOCH_HADRON are removed. Datalib sources use lib/, and no QDP
+configure switch remains. See the latest report above for the full rerun.

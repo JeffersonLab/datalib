@@ -1,0 +1,326 @@
+[
+  {
+    "case": "meson",
+    "comparison": "old-new-1-rank",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-readback",
+      "meson",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/meson-1-ranks/meson.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/meson-1-ranks/meson.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/meson-1-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/meson-1-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "09 Nov 26 14:26:23 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "ad124bcae5aabd736e621bf899756bfdd7cd3886d09b01faf7d6f8a4b861d05a",
+        "automatic_timeslice_batch": 1
+      },
+      "candidate": {
+        "run_date": "09 Nov 26 14:50:37 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "ab407f52737cba7ebf15f07cfb40d30230a85b41cec30cf2abc6e6143b7f9a21",
+        "automatic_timeslice_batch": 1
+      },
+      "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+    }
+  },
+  {
+    "case": "meson",
+    "comparison": "old-new-2-ranks",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-readback",
+      "meson",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/meson-2-ranks/meson.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/meson-2-ranks/meson.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/meson-2-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/meson-2-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "09 Nov 26 14:26:24 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "199d2a0afd91fdd7db093a9329e02bcce5b959bae1c6966373cedf55f1f488f9",
+        "automatic_timeslice_batch": 2
+      },
+      "candidate": {
+        "run_date": "09 Nov 26 14:50:38 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "a4269010b7fbd177b120e5adc91d052134649ee2e0e1d2b62fc18ec0f3eb9cba",
+        "automatic_timeslice_batch": 2
+      },
+      "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+    }
+  },
+  {
+    "case": "meson",
+    "comparison": "new-1-vs-2-ranks",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-readback",
+      "meson",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/meson-1-ranks/meson.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/meson-2-ranks/meson.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/meson-1-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/meson-2-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=0 max_abs_error=7.77156e-16 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "09 Nov 26 14:50:37 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "ab407f52737cba7ebf15f07cfb40d30230a85b41cec30cf2abc6e6143b7f9a21",
+        "automatic_timeslice_batch": 1
+      },
+      "candidate": {
+        "run_date": "09 Nov 26 14:50:38 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "a4269010b7fbd177b120e5adc91d052134649ee2e0e1d2b62fc18ec0f3eb9cba",
+        "automatic_timeslice_batch": 2
+      },
+      "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+    }
+  },
+  {
+    "case": "baryon",
+    "comparison": "old-new-1-rank",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-readback",
+      "baryon",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/baryon-1-ranks/baryon.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/baryon-1-ranks/baryon.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/baryon-1-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/baryon-1-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "09 Nov 26 14:26:24 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "157e0fedf9f8ca29d4792b38540e17bce2a1e8bfe25ec402d18fabe6dc86616a"
+      },
+      "candidate": {
+        "run_date": "09 Nov 26 14:50:38 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "fe75e501063a796b7075020f5b659ac966613b1a26118bed0e9c8b2a87073150"
+      },
+      "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+    }
+  },
+  {
+    "case": "baryon",
+    "comparison": "old-new-2-ranks",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-readback",
+      "baryon",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/baryon-2-ranks/baryon.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/baryon-2-ranks/baryon.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/baryon-2-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/baryon-2-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "09 Nov 26 14:26:24 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "ac47fdf9bbf126ea0cc5225779eb834b1deb46abcc9662bc3a33f4fd3ecc4924"
+      },
+      "candidate": {
+        "run_date": "09 Nov 26 14:50:38 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "fa1167a33cf72417fa14ddf18af59bf7af98a2f8efe56d77894137c2df1800f3"
+      },
+      "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+    }
+  },
+  {
+    "case": "baryon",
+    "comparison": "new-1-vs-2-ranks",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-readback",
+      "baryon",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/baryon-1-ranks/baryon.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/baryon-2-ranks/baryon.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/baryon-1-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/new/baryon-2-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=0 max_abs_error=3.06904e-17 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "09 Nov 26 14:50:38 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "fe75e501063a796b7075020f5b659ac966613b1a26118bed0e9c8b2a87073150"
+      },
+      "candidate": {
+        "run_date": "09 Nov 26 14:50:38 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "fa1167a33cf72417fa14ddf18af59bf7af98a2f8efe56d77894137c2df1800f3"
+      },
+      "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+    }
+  }
+]

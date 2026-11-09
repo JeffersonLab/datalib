@@ -1,5 +1,10 @@
 # FILEDB ownership, standalone tools and full regression
 
+The later [direct Chroma storage checkpoint](CHROMA-STORAGE-REGRESSIONS.md)
+supersedes the deferred writer modernization below and records STOCH_HADRON
+removal. This report is retained as the earlier tested source checkpoint.
+
+
 9 November 2026. Work is isolated to `rge/devel-datalib-reorg` in
 `~/Downloads/macos-datalib-reorg`. Devel refs, Kanoni's scripts/policy/data,
 and its pre-existing working-tree changes are preserved.

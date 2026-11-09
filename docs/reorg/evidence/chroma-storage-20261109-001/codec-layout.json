@@ -1,0 +1,377 @@
+{
+  "status": "passed",
+  "layout_source": "FILEDB db2a795 ffdb_page.h; user-info tail and hash bucket free gap only; masks checksum for those same pages. All remaining bytes including payload CRCs identical.",
+  "comparisons": [
+    {
+      "file": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen-repeat/collective.sdb",
+      "reference": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen/collective.sdb",
+      "same_wire_bytes_except_unused_page_space_and_its_crc": true,
+      "raw_identical": true,
+      "unused_ranges": [
+        {
+          "page": 1,
+          "type": "0x4001",
+          "unused_and_crc_ranges": [
+            [
+              128,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 2,
+          "type": "0x5001",
+          "unused_and_crc_ranges": [
+            [
+              28,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 34,
+          "type": "0x1001",
+          "unused_and_crc_ranges": [
+            [
+              40,
+              8152
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        }
+      ],
+      "size": 294912,
+      "sha256": "c3c0249242dddc568efcf4f121e00fefaac6056f75a6a0747e2ec45f07fc1935",
+      "normalized_sha256": "f3fab05d5184a744741e42c564af6860aac6d5624384c596c041423f6476cfa4"
+    },
+    {
+      "file": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen-repeat/local.sdb",
+      "reference": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen/local.sdb",
+      "same_wire_bytes_except_unused_page_space_and_its_crc": true,
+      "raw_identical": true,
+      "unused_ranges": [
+        {
+          "page": 1,
+          "type": "0x4001",
+          "unused_and_crc_ranges": [
+            [
+              128,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 2,
+          "type": "0x5001",
+          "unused_and_crc_ranges": [
+            [
+              28,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 34,
+          "type": "0x1001",
+          "unused_and_crc_ranges": [
+            [
+              40,
+              8152
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        }
+      ],
+      "size": 294912,
+      "sha256": "189f59490cde1c142d81ff102b2cf7ceeee59fa6f97f622bbee8f4097a97082e",
+      "normalized_sha256": "f3fab05d5184a744741e42c564af6860aac6d5624384c596c041423f6476cfa4"
+    },
+    {
+      "file": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/codec-probe-final-1-ranks/collective.sdb",
+      "reference": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen/collective.sdb",
+      "same_wire_bytes_except_unused_page_space_and_its_crc": true,
+      "raw_identical": false,
+      "unused_ranges": [
+        {
+          "page": 1,
+          "type": "0x4001",
+          "unused_and_crc_ranges": [
+            [
+              128,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 2,
+          "type": "0x5001",
+          "unused_and_crc_ranges": [
+            [
+              28,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 34,
+          "type": "0x1001",
+          "unused_and_crc_ranges": [
+            [
+              40,
+              8152
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        }
+      ],
+      "size": 294912,
+      "sha256": "9ffed5d487e6b38f90d72d35e6b434b9cf3dcb66b1d6ed1067c0dcf8d32f93e5",
+      "normalized_sha256": "f3fab05d5184a744741e42c564af6860aac6d5624384c596c041423f6476cfa4"
+    },
+    {
+      "file": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/codec-probe-final-1-ranks/local-0.sdb",
+      "reference": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen/local.sdb",
+      "same_wire_bytes_except_unused_page_space_and_its_crc": true,
+      "raw_identical": false,
+      "unused_ranges": [
+        {
+          "page": 1,
+          "type": "0x4001",
+          "unused_and_crc_ranges": [
+            [
+              128,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 2,
+          "type": "0x5001",
+          "unused_and_crc_ranges": [
+            [
+              28,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 34,
+          "type": "0x1001",
+          "unused_and_crc_ranges": [
+            [
+              40,
+              8152
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        }
+      ],
+      "size": 294912,
+      "sha256": "04718407562f0d50d745ba6981456220effd08eb22d7daa524ab73557ab1167e",
+      "normalized_sha256": "f3fab05d5184a744741e42c564af6860aac6d5624384c596c041423f6476cfa4"
+    },
+    {
+      "file": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/codec-probe-final-2-ranks/collective.sdb",
+      "reference": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen/collective.sdb",
+      "same_wire_bytes_except_unused_page_space_and_its_crc": true,
+      "raw_identical": true,
+      "unused_ranges": [
+        {
+          "page": 1,
+          "type": "0x4001",
+          "unused_and_crc_ranges": [
+            [
+              128,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 2,
+          "type": "0x5001",
+          "unused_and_crc_ranges": [
+            [
+              28,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 34,
+          "type": "0x1001",
+          "unused_and_crc_ranges": [
+            [
+              40,
+              8152
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        }
+      ],
+      "size": 294912,
+      "sha256": "c3c0249242dddc568efcf4f121e00fefaac6056f75a6a0747e2ec45f07fc1935",
+      "normalized_sha256": "f3fab05d5184a744741e42c564af6860aac6d5624384c596c041423f6476cfa4"
+    },
+    {
+      "file": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/codec-probe-final-2-ranks/local-0.sdb",
+      "reference": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen/local.sdb",
+      "same_wire_bytes_except_unused_page_space_and_its_crc": true,
+      "raw_identical": false,
+      "unused_ranges": [
+        {
+          "page": 1,
+          "type": "0x4001",
+          "unused_and_crc_ranges": [
+            [
+              128,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 2,
+          "type": "0x5001",
+          "unused_and_crc_ranges": [
+            [
+              28,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 34,
+          "type": "0x1001",
+          "unused_and_crc_ranges": [
+            [
+              40,
+              8152
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        }
+      ],
+      "size": 294912,
+      "sha256": "c3c0249242dddc568efcf4f121e00fefaac6056f75a6a0747e2ec45f07fc1935",
+      "normalized_sha256": "f3fab05d5184a744741e42c564af6860aac6d5624384c596c041423f6476cfa4"
+    },
+    {
+      "file": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/codec-probe-final-2-ranks/local-1.sdb",
+      "reference": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/frozen/local.sdb",
+      "same_wire_bytes_except_unused_page_space_and_its_crc": true,
+      "raw_identical": false,
+      "unused_ranges": [
+        {
+          "page": 1,
+          "type": "0x4001",
+          "unused_and_crc_ranges": [
+            [
+              128,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 2,
+          "type": "0x5001",
+          "unused_and_crc_ranges": [
+            [
+              28,
+              8192
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "page": 34,
+          "type": "0x1001",
+          "unused_and_crc_ranges": [
+            [
+              40,
+              8152
+            ],
+            [
+              20,
+              24
+            ]
+          ]
+        }
+      ],
+      "size": 294912,
+      "sha256": "9ffed5d487e6b38f90d72d35e6b434b9cf3dcb66b1d6ed1067c0dcf8d32f93e5",
+      "normalized_sha256": "f3fab05d5184a744741e42c564af6860aac6d5624384c596c041423f6476cfa4"
+    }
+  ]
+}

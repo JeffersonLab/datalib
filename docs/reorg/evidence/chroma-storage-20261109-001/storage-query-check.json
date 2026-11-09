@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/opt/homebrew/bin/cmake",
+    "-P",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/storage-query-check.cmake"
+  ],
+  "returncode": 0,
+  "scope": "Exact updated CMake execute_process/separate_arguments query loop. The full tested stack uses Autotools."
+}

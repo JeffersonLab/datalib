@@ -1,0 +1,13 @@
+{
+  "status": "removed and verified",
+  "commit": "39cdadc6246a48bc68d42ac41361c3e050f34944",
+  "removed_files": [
+    "lib/meas/inline/hadron/inline_stoch_hadron_w.cc",
+    "lib/meas/inline/hadron/inline_stoch_hadron_w.h"
+  ],
+  "reason": "Explicit user direction; no further support or modernization.",
+  "historical_changelog_retained": true,
+  "archive_member_absent": true,
+  "executable_symbols_absent": true,
+  "installed_header_absent": true
+}

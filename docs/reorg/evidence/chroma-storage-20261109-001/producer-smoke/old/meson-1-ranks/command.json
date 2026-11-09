@@ -1,0 +1,13 @@
+[
+  "/opt/homebrew/bin/mpirun",
+  "-n",
+  "1",
+  "/usr/bin/sandbox-exec",
+  "-f",
+  "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+  "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/chroma/bin/chroma",
+  "-i",
+  "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/meson-1-ranks/input.xml",
+  "-o",
+  "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/producer-smoke/old/meson-1-ranks/output.xml"
+]

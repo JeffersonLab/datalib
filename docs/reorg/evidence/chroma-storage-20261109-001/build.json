@@ -1,0 +1,543 @@
+[
+  {
+    "step": "datalib-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 5.360279625000002,
+    "finished_utc": "2026-11-09T19:24:01.894140+00:00"
+  },
+  {
+    "step": "datalib-core-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-core",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-core",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 5.552217792,
+    "finished_utc": "2026-11-09T19:24:07.447512+00:00"
+  },
+  {
+    "step": "datalib-core-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 8.042347875,
+    "finished_utc": "2026-11-09T19:24:15.490324+00:00"
+  },
+  {
+    "step": "datalib-core-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 4.465285166999998,
+    "finished_utc": "2026-11-09T19:24:19.956093+00:00"
+  },
+  {
+    "step": "datalib-core-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 1.0399945420000023,
+    "finished_utc": "2026-11-09T19:24:20.996584+00:00"
+  },
+  {
+    "step": "datalib-filedb-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 13.118589333000003,
+    "finished_utc": "2026-11-09T19:24:34.115891+00:00"
+  },
+  {
+    "step": "datalib-filedb-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 31.6643295,
+    "finished_utc": "2026-11-09T19:25:05.780864+00:00"
+  },
+  {
+    "step": "datalib-filedb-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 8.989385208000002,
+    "finished_utc": "2026-11-09T19:25:14.770821+00:00"
+  },
+  {
+    "step": "datalib-filedb-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 1.9874790000000075,
+    "finished_utc": "2026-11-09T19:25:16.758825+00:00"
+  },
+  {
+    "step": "adat-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 7.6067213339999995,
+    "finished_utc": "2026-11-09T19:25:24.366927+00:00"
+  },
+  {
+    "step": "chroma-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 13.400635666,
+    "finished_utc": "2026-11-09T19:25:30.160812+00:00"
+  },
+  {
+    "step": "adat-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/adat/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/adat/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 17.50300566700001,
+    "finished_utc": "2026-11-09T19:25:41.870569+00:00"
+  },
+  {
+    "step": "chroma-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 29.332365291000002,
+    "finished_utc": "2026-11-09T19:25:59.494858+00:00"
+  },
+  {
+    "step": "adat-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 81.84916775,
+    "finished_utc": "2026-11-09T19:27:03.720170+00:00"
+  },
+  {
+    "step": "adat-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 14.28876408299999,
+    "finished_utc": "2026-11-09T19:27:18.009887+00:00"
+  },
+  {
+    "step": "adat-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 10.78136575000002,
+    "finished_utc": "2026-11-09T19:27:28.791873+00:00"
+  },
+  {
+    "step": "colorvec-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 2.4416442079999854,
+    "finished_utc": "2026-11-09T19:27:31.234177+00:00"
+  },
+  {
+    "step": "colorvec-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/colorvec/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/colorvec/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 6.471093582999998,
+    "finished_utc": "2026-11-09T19:27:37.706111+00:00"
+  },
+  {
+    "step": "colorvec-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 47.51555829199998,
+    "finished_utc": "2026-11-09T19:28:25.222365+00:00"
+  },
+  {
+    "step": "colorvec-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 0.26000666600003797,
+    "finished_utc": "2026-11-09T19:28:25.483216+00:00"
+  },
+  {
+    "step": "colorvec-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 0.6403485829999909,
+    "finished_utc": "2026-11-09T19:28:26.124288+00:00"
+  },
+  {
+    "step": "redstar-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 2.53105666700003,
+    "finished_utc": "2026-11-09T19:28:28.656579+00:00"
+  },
+  {
+    "step": "redstar-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/redstar/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/colorvec"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/redstar/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/colorvec"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 8.057992542000022,
+    "finished_utc": "2026-11-09T19:28:36.715337+00:00"
+  },
+  {
+    "step": "redstar-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 76.21586470799997,
+    "finished_utc": "2026-11-09T19:29:52.931969+00:00"
+  },
+  {
+    "step": "redstar-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 9.403357540999991,
+    "finished_utc": "2026-11-09T19:30:02.336311+00:00"
+  },
+  {
+    "step": "redstar-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 6.693810541999994,
+    "finished_utc": "2026-11-09T19:30:09.030799+00:00"
+  },
+  {
+    "step": "chroma-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 868.3576512909999,
+    "finished_utc": "2026-11-09T19:40:27.900553+00:00"
+  },
+  {
+    "step": "chroma-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 47.49981570800014,
+    "finished_utc": "2026-11-09T19:41:15.401887+00:00"
+  }
+]

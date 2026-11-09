@@ -1,0 +1,59 @@
+[
+  {
+    "step": "removal-bootstrap",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "returncode": 0,
+    "seconds": 13.828942709000003
+  },
+  {
+    "step": "removal-configure",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "returncode": 0,
+    "seconds": 15.888918125000004
+  },
+  {
+    "step": "removal-build",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+      "make",
+      "-j3"
+    ],
+    "returncode": 0,
+    "seconds": 24.291282792000004
+  },
+  {
+    "step": "removal-install",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/chroma.sb",
+      "make",
+      "install"
+    ],
+    "returncode": 0,
+    "seconds": 49.40847491700001
+  }
+]

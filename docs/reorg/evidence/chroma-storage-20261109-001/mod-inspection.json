@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "source": "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod",
+  "source_sha256": "5aadbfe5573a70a0abaad4ba868085e8246dc7ff3c3080820970fd426e43b2ce",
+  "unchanged_source": true,
+  "results": {
+    "old": {
+      "meta": {
+        "command": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb/bin/dbutil",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod",
+          "meta"
+        ],
+        "stdout_sha256": "6986926e95e41914c67fbaaea47cc02ea3f387996d251972a2bc12698eb85871"
+      },
+      "keys": {
+        "command": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb/bin/dbutil",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod",
+          "keys"
+        ],
+        "stdout_sha256": "230acb9271ab308c0c34ff7649c3b6baf729d344ada7fbe614fde6f901eb31b2"
+      },
+      "keysxml": {
+        "command": [
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/datalib-filedb/bin/dbutil",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod",
+          "keysxml",
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/mod-old-keysxml.xml"
+        ],
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "xml_sha256": "b8d80ccbc5203977ccbfd618a7b2f55cf873f14970a2d0667a72d2070b8566ef",
+        "key_count": 160
+      }
+    },
+    "new": {
+      "meta": {
+        "command": [
+          "/usr/bin/sandbox-exec",
+          "-f",
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb/bin/dbutil",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod",
+          "meta"
+        ],
+        "stdout_sha256": "6986926e95e41914c67fbaaea47cc02ea3f387996d251972a2bc12698eb85871"
+      },
+      "keys": {
+        "command": [
+          "/usr/bin/sandbox-exec",
+          "-f",
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb/bin/dbutil",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod",
+          "keys"
+        ],
+        "stdout_sha256": "230acb9271ab308c0c34ff7649c3b6baf729d344ada7fbe614fde6f901eb31b2"
+      },
+      "keysxml": {
+        "command": [
+          "/usr/bin/sandbox-exec",
+          "-f",
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/datalib.sb",
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/datalib-filedb/bin/dbutil",
+          "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod",
+          "keysxml",
+          "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/mod-new-keysxml.xml"
+        ],
+        "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "xml_sha256": "b8d80ccbc5203977ccbfd618a7b2f55cf873f14970a2d0667a72d2070b8566ef",
+        "key_count": 160
+      }
+    }
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "lib/meas/inline/glue/inline_glue_diag_matelem_colorvec.cc": {
+    "classes": [
+      "StorageGlue"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/glue/inline_glue_matelem_colorvec.cc": {
+    "classes": [
+      "StorageGlue"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/glue/inline_glueball_ops.cc": {
+    "classes": [
+      "StorageGlue"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_annih_prop_matelem_colorvec_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_barspec_db_w.cc": {
+    "classes": [
+      "StorageRecords"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1,
+      "close": 1
+    },
+    "value_bindings": 2
+  },
+  "lib/meas/inline/hadron/inline_baryon_matelem_colorvec_superb_w.cc": {
+    "classes": [
+      "StorageBaryon"
+    ],
+    "collective_primary_boundary": false,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_baryon_matelem_colorvec_w.cc": {
+    "classes": [
+      "StorageBaryon"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 2
+  },
+  "lib/meas/inline/hadron/inline_disco_eigcg_w.cc": {
+    "classes": [
+      "StorageDisco"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 1,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 4
+  },
+  "lib/meas/inline/hadron/inline_disco_eo_eigcg_w.cc": {
+    "classes": [
+      "StorageDisco"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 1,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 4
+  },
+  "lib/meas/inline/hadron/inline_disco_eoprec_w.cc": {
+    "classes": [
+      "StorageDisco"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 1,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 4
+  },
+  "lib/meas/inline/hadron/inline_disco_prob_3d_defl_superb_w.cc": {
+    "classes": [
+      "StorageDisco"
+    ],
+    "collective_primary_boundary": false,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 1,
+      "insertUserdata": 1,
+      "insert": 1,
+      "close": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_disco_prob_defl_superb_w.cc": {
+    "classes": [
+      "StorageDisco"
+    ],
+    "collective_primary_boundary": false,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 1,
+      "insertUserdata": 1,
+      "insert": 1,
+      "close": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_disco_prob_defl_w.cc": {
+    "classes": [
+      "StorageDisco"
+    ],
+    "collective_primary_boundary": false,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 1,
+      "insertUserdata": 1,
+      "insert": 1,
+      "close": 1
+    },
+    "value_bindings": 4
+  },
+  "lib/meas/inline/hadron/inline_disco_w.cc": {
+    "classes": [
+      "StorageDisco"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 1,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 4
+  },
+  "lib/meas/inline/hadron/inline_eigenvalues_superb_w.cc": {
+    "classes": [
+      "StorageRecords"
+    ],
+    "collective_primary_boundary": false,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 1,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 2
+  },
+  "lib/meas/inline/hadron/inline_genprop_matelem_colorvec_w.cc": {
+    "classes": [
+      "StorageGenprop4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 2
+  },
+  "lib/meas/inline/hadron/inline_genprop_matelem_da_colorvec_w.cc": {
+    "classes": [
+      "StorageGenprop4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 2
+  },
+  "lib/meas/inline/hadron/inline_genprop_matelem_pt_colorvec_w.cc": {
+    "classes": [
+      "StorageGenprop4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 2
+  },
+  "lib/meas/inline/hadron/inline_matelem_distillation_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_meson_matelem_colorvec_superb_w.cc": {
+    "classes": [
+      "StorageMeson"
+    ],
+    "collective_primary_boundary": false,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_meson_matelem_colorvec_w.cc": {
+    "classes": [
+      "StorageMeson"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 2
+  },
+  "lib/meas/inline/hadron/inline_prop_and_matelem_colorvec_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_prop_and_matelem_distillation2_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 2
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_prop_and_matelem_distillation_superb_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_prop_and_matelem_distillation_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_prop_matelem_colorvec_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_prop_matelem_lm_colorvec_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_prop_matelem_pt_colorvec_w.cc": {
+    "classes": [
+      "StorageProp4"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1
+    },
+    "value_bindings": 0
+  },
+  "lib/meas/inline/hadron/inline_stoch_hadron_w.cc": {
+    "classes": [
+      "StorageBaryon",
+      "StorageMeson"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 2,
+      "open": 2,
+      "insertUserdata": 2,
+      "insert": 5
+    },
+    "value_bindings": 7
+  },
+  "lib/meas/inline/hadron/inline_unsmeared_hadron_node_distillation_superb_w.cc": {
+    "classes": [
+      "StorageGenprop4",
+      "StorageMeson"
+    ],
+    "collective_primary_boundary": false,
+    "operations": {
+      "setNumberBuckets": 2,
+      "setMaxUserInfoLen": 2,
+      "open": 4,
+      "insertUserdata": 2,
+      "insert": 2
+    },
+    "value_bindings": 4
+  },
+  "lib/meas/inline/hadron/inline_unsmeared_hadron_node_distillation_w.cc": {
+    "classes": [
+      "StorageMeson"
+    ],
+    "collective_primary_boundary": true,
+    "operations": {
+      "setMaxUserInfoLen": 1,
+      "open": 2,
+      "insertUserdata": 1,
+      "insert": 1,
+      "close": 1
+    },
+    "value_bindings": 4
+  }
+}

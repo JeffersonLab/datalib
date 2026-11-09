@@ -1,0 +1,13 @@
+from pathlib import Path
+import subprocess,json,shlex,sys
+r=Path('/Users/admin/Downloads/macos-datalib-reorg');e=r/'evidence/chroma-storage-20261109-001';phase=sys.argv[1];assert phase in ('before','after');old=r/'evidence/tools-filedb-20261109-001';cfg=(old if phase=='before' else e)/'install/chroma/bin/chroma-config';env=json.loads((e/'environments.json').read_text())['chroma'];folder=e/('storage-abi-'+phase);folder.mkdir()
+headers=['meson_superb.h','baryon_superb.h','prop_superb.h','genprop4.h','disco_superb.h','glueball_superb.h','tetraquark_superb.h'];classes=['StorageMeson','StorageBaryon','StorageProp4','StorageGenprop4','StorageDisco','StorageGlue','StorageTetraQuark'];inc=''.join('#include <datalib/superb/'+h+'>\n' for h in headers);body='return {'+','.join('sizeof(Datalib::TensorStorage::'+c+')' for c in classes)+'};'
+(folder/'reader.cc').write_text('#define USE_SUPERBBLAS\n#define USE_SUPERBBLAS_WITH_GPU_SUPPORT\n#include <array>\n'+inc+'std::array<std::size_t,7> reader(){'+body+'}\n')
+(folder/'writer.cc').write_text('#include "util/ferm/storage_io.h"\n#include <array>\n'+inc+'std::array<std::size_t,7> writer(){'+body+'}\n')
+(folder/'main.cc').write_text('#include <array>\n#include <iostream>\nstd::array<std::size_t,7> reader();std::array<std::size_t,7> writer();int main(){auto a=reader(),b=writer();for(int i=0;i<7;++i)std::cout<<a[i]<<" "<<b[i]<<"\\n";return a==b?0:1;}\n')
+def flags(n):return shlex.split(subprocess.check_output([str(cfg),'--'+n],text=True))
+extra=[]
+if phase=='before':extra=['-I'+str(r/'chroma/lib'),'-I'+str(r/'datalib/include'),'-I'+str(e/'install/datalib-filedb/include'),'-I'+str(r.parent/'redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi/include')]
+cmd=['/opt/homebrew/bin/mpicxx',*extra,*flags('cxxflags'),*[str(folder/(n+'.cc')) for n in ('reader','writer','main')],'-o',str(folder/'probe'),*flags('ldflags'),*flags('libs')]
+with (folder/'build.log').open('w') as f:subprocess.run(cmd,env=env,stdout=f,stderr=subprocess.STDOUT,check=True)
+p=subprocess.run([str(folder/'probe')],stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True);(folder/'run.log').write_text(p.stdout);rows=[dict(storage=cls,reader=int(line.split()[0]),writer=int(line.split()[1])) for cls,line in zip(classes,p.stdout.splitlines())];(e/('storage-abi-'+phase+'.json')).write_text(json.dumps({'command':cmd,'returncode':p.returncode,'profiles':rows,'scope':'Separate translation units model CORR reader and legacy Chroma writer profiles; class layouts must agree within one executable.'},indent=2)+'\n');assert p.returncode==(1 if phase=='before' else 0),p.stdout;print(phase,p.stdout)

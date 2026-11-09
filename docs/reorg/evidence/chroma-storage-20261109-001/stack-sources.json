@@ -1,0 +1,34 @@
+{
+  "datalib": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/datalib",
+    "commit": "16d226c683449299672a0d9d22bb6565220b306c",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "chroma": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/chroma",
+    "commit": "39cdadc6246a48bc68d42ac41361c3e050f34944",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": "",
+    "initial_clean_checkout_commit": "a74d6d52f1e77df08bd4743a84f8b3670f3586c7",
+    "final_source_update": "Tracked source fast-forwards, normal dependency rebuilds and relinking for tensor-storage ABI; STOCH_HADRON then removed from source, factory, build/archive and new empty installation. No copied overlays."
+  },
+  "adat": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/adat",
+    "commit": "20dd155b47984ca86a6b72cdf3a8bb773586d7a3",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "colorvec": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/colorvec",
+    "commit": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  },
+  "redstar": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/sources/redstar",
+    "commit": "150b97eb678b31b6509758235512a795db4b484d",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": ""
+  }
+}

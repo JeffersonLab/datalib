@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "core_checks": 5,
+  "storage_checks": 8,
+  "source_distribution": "passed",
+  "storage_abi": "passed for 7 reader/writer/direct-client types",
+  "obsolete_stoch_hadron": "removed and verified",
+  "old_new_producer_comparisons": 6,
+  "paired_cases": 30,
+  "npt_only_cases": 3,
+  "full_audit": "passed",
+  "superseded_attempts": "Initial metadata gate expected raw metadata equality; corrected to validate run date, MPI geometry and the documented automatic meson batch default separately. Numerical gate unchanged."
+}

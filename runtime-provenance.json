@@ -1,6 +1,6 @@
 {
   "graph_format": 4,
-  "graph_api": "datalib/graph/process_corrs.h",
+  "graph_api": "datalib/graph/corr_graph.h",
   "legacy_graph_fixture_use": "rejection tests",
   "adapters": {
     "experimental_adat": "817f7e200aa29fa4474c7ac4eeda0658af08869d",

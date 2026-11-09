@@ -78,5 +78,10 @@ SuperbBLAS communication configuration; ADAT is not a dependency. Datalib's
 `--with-superbblas` option enables the separate standalone dbutil tensor backend.
 
 [FILEDB ownership and full CORR_SUPERB regression](docs/reorg/FILEDB-TOOLS-REGRESSIONS.md)
-records the tested stack, unchanged old Chroma measurement sources and retained
-QDP++ platform-test limitations.
+records the earlier ownership checkpoint and its retained platform-test limits.
+
+[Direct Chroma storage and full regression](docs/reorg/CHROMA-STORAGE-REGRESSIONS.md)
+records the subsequent writer migration, removal of temporary wrappers and
+STOCH_HADRON, consistent SuperbBLAS storage profiles, and the lib/ source layout.
+Datalib has no QDP or ADAT configure dependency. Chroma retains its own QDP/MPI
+coordination and matching SuperbBLAS configuration.
