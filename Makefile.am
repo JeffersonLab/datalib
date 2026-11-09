@@ -642,3 +642,17 @@ EXTRA_DIST += \
     docs/reorg/evidence/tools-filedb-20261109-001/publication.json
 
 EXTRA_DIST += docs/reorg/evidence/tools-filedb-20261109-001/filedb-worktree-cleanup.json
+
+if WITH_FILEDB
+nobase_datalibheaders_HEADERS += include/datalib/storage/record_store.h
+endif
+
+if WITH_FILEDB
+check_PROGRAMS += records_probe
+records_probe_SOURCES = tests/records_probe.cc
+records_probe_CPPFLAGS = $(AM_CPPFLAGS) @FILEDB_CXXFLAGS@
+records_probe_LDFLAGS = @FILEDB_LDFLAGS@
+records_probe_LDADD = @FILEDB_LIBS@
+TESTS += tests/check-records.sh
+endif
+EXTRA_DIST += tests/check-records.sh tests/fixtures/chroma-records.json tests/fixtures/chroma-prop-key.bin tests/fixtures/chroma-prop-value.bin

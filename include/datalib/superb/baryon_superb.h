@@ -1,3 +1,4 @@
+#include "datalib/storage/record_store.h"
 // -*- C++ -*-
 /*! \file
  * \brief Baryon elemental superbblas database
@@ -53,7 +54,7 @@ namespace Datalib::TensorStorage
 {
   //! ConfDataStoreMultipleDB compatible class supporting the two baryon storage formats
 
-  class StorageBaryon
+  class StorageBaryon : public StorageRecords
   {
   public:
     using T = std::complex<double>; // storage number type

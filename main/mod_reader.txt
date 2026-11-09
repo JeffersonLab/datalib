@@ -5,7 +5,7 @@ Read-only MapObjectDisk inspection with dbutil
   dbutil eigenvectors.mod keys
   dbutil eigenvectors.mod keysxml eigenvector_keys.xml
 
-MOD detection uses the QDP++ file magic, before the usual adat database-type
+MOD detection uses the QDP++ file magic, before the usual datalib database-type
 lookup. Metadata is printed verbatim (with a final newline), without parsing
 XML or reading the index. For keys, /MODMetaData/id selects the decoder:
 
@@ -35,9 +35,9 @@ Reference: JeffersonLab/harom devel, commit
 mainprogs/main/modmeta.cc, lib/util/ferm/modtype.cc and key definitions;
 QDP++ qdp_map_obj_disk.h and qdp_io.cc supply the wire format.
 
-Build with the normal adat build. Independent binary-format integration tests:
+Build with the normal datalib build. Independent binary-format integration tests:
 
-  python3 main/dbutil/tests/test_mod_reader.py build/main/dbutil/dbutil
+  python3 tests/test_mod_reader.py /path/to/datalib/install/bin/dbutil
 
 Tests cover both key types, XML escaping, empty maps, unknown types, malformed
 and truncated indices, CRC errors, unsupported versions, value-command

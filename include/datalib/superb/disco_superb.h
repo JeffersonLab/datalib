@@ -1,3 +1,4 @@
+#include "datalib/storage/record_store.h"
 // -*- C++ -*-
 /*! \file
  * \brief Disconnected loops superbblas database
@@ -20,7 +21,7 @@ namespace Datalib::TensorStorage
 {
   //! ConfDataStoreMultipleDB compatible class supporting legacy FILEDB, single-mass rank-4 and multi-mass rank-5 storage
 
-  class StorageDisco
+  class StorageDisco : public StorageRecords
   {
   public:
     using T = std::complex<double>; // storage number type

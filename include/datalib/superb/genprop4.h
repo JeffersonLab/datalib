@@ -1,3 +1,4 @@
+#include "datalib/storage/record_store.h"
 // -*- C++ -*-
 /*! \file
  * \brief Unsmeared meson elemental superbblas database
@@ -62,7 +63,7 @@ namespace Datalib::TensorStorage
   //! ConfDataStoreMultipleDB compatible class supporting the three genprop storage formats
   //! but providing a Genprop4 interface
 
-  class StorageGenprop4
+  class StorageGenprop4 : public StorageRecords
   {
   public:
     using T = std::complex<double>; // storage number type

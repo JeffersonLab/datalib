@@ -20,7 +20,7 @@ The core library builds independently of ADAT, QDP and MPI.
 Run `autoreconf -fi` and configure from a separate build directory:
 
 ```sh
-/path/to/datalib/configure --prefix=/path/to/install --without-qdp \
+/path/to/datalib/configure --prefix=/path/to/install \
   --with-libxml2=/path/to/libxml2 \
   --enable-openmp
 make
@@ -30,8 +30,8 @@ make install
 
 Set `OPENMP_CXXFLAGS` and `OPENMP_LIBS` for the selected toolchain.
 Use `--with-filedb=PREFIX` for an external installation, or `--without-filedb`
-for the independent core and graph tools. `datalib-config --filedb-cxxflags`,
-`--filedb-ldflags` and `--filedb-libs` export the selected provider.
+for the independent core and graph tools. `datalib-config --storage-cxxflags`,
+`--storage-ldflags` and `--storage-libs` export the selected provider.
 `view_corr_graph` and `dump_corr_graph` are installed by datalib. FILEDB builds
 also install `dbutil`; `--with-superbblas=PREFIX` enables its serial tensor
 backend. Link that tool with the selected SuperbBLAS BLAS/runtime dependencies

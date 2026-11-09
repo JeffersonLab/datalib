@@ -1,0 +1,8 @@
+{
+  "provenance": "Chroma b067c360c3ff629b8927589b3cc3ca8588485d2d installed at tools-filedb-20261109-001, frozen before wrapper removal",
+  "source": "docs/reorg/evidence/chroma-storage-20261109-001/freeze.cc",
+  "sha256": {
+    "chroma-prop-key.bin": "eb282359722d41f09161eacdb7f0badb4ddf950f1ca31b0b641a4d78b849a158",
+    "chroma-prop-value.bin": "71178bb67b413de25ce7412b6dc77e0df6864e0b054d68f17205d35baf2c45cf"
+  }
+}

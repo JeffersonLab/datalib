@@ -4,9 +4,6 @@ AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_PROG_CXX
 AC_PROG_RANLIB
 AC_LANG([C++])
-AC_ARG_WITH([qdp],AS_HELP_STRING([--without-qdp],[Serial build; QDP is not implemented in this checkpoint]),[],[with_qdp=no])
-AS_IF([test "x$with_qdp" != xno],[AC_MSG_ERROR([QDP integration is on hold])])
-AC_ARG_WITH([qdpxx],AS_HELP_STRING([--with-qdpxx=DIR],[Reserved; QDP integration is on hold]),[AC_MSG_ERROR([QDP integration is on hold])])
 AC_ARG_VAR([OPENMP_CXXFLAGS],[Compiler flags enabling OpenMP])
 AC_ARG_VAR([OPENMP_LIBS],[OpenMP runtime link flags])
 AC_ARG_ENABLE([openmp],AS_HELP_STRING([--enable-openmp],[Require OpenMP (default yes)]),[],[enable_openmp=yes])

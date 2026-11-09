@@ -1,6 +1,6 @@
 // Read-only QDP++ MapObjectDisk inspection. No QDP/Chroma or lattice values.
-#ifndef ADAT_DBUTIL_MOD_READER_H
-#define ADAT_DBUTIL_MOD_READER_H
+#ifndef DATALIB_DBUTIL_MOD_READER_H
+#define DATALIB_DBUTIL_MOD_READER_H
 
 #include <datalib/codec/byteorder.h>
 #include <datalib/io/serial_xml.h>

@@ -1,3 +1,4 @@
+#include "datalib/storage/record_store.h"
 #ifndef ADAT_GLUEBALL_SUPERB_H
 #define ADAT_GLUEBALL_SUPERB_H
 #include "datalib/superb/types.h"
@@ -11,7 +12,7 @@
 namespace Datalib::TensorStorage {
 // Diagonal glue elementals. Schema v1 uses vector-fastest ntdm axes;
 // left/right are zero, with explicit normalized displacement/momentum lists.
-class StorageGlue {
+class StorageGlue : public StorageRecords {
  using K=Hadron::KeyGlueElementalOperator_t;using V=Hadron::ValGlueElementalOperator_t;using T=std::complex<double>;
  FILEDB::ConfDataStoreMultipleDB<SerialDBKey<K>,SerialDBData<V>> legacy;
 #ifdef USE_SUPERBBLAS

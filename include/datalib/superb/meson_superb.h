@@ -1,3 +1,4 @@
+#include "datalib/storage/record_store.h"
 // -*- C++ -*-
 /*! \file
  * \brief Meson elemental superbblas database
@@ -45,7 +46,7 @@ namespace Datalib::TensorStorage
 {
   //! ConfDataStoreMultipleDB compatible class supporting the two meson storage formats
 
-  class StorageMeson
+  class StorageMeson : public StorageRecords
   {
   public:
     using T = std::complex<double>; // storage number type

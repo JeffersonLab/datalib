@@ -1,3 +1,4 @@
+#include "datalib/storage/record_store.h"
 // -*- C++ -*-
 /*! \file
  * \brief Propagator elemental superbblas database
@@ -52,7 +53,7 @@ namespace Datalib::TensorStorage
   //! ConfDataStoreMultipleDB compatible class supporting the two prop storage formats
   //! but providing a Prop4 interface
 
-  class StorageProp4
+  class StorageProp4 : public StorageRecords
   {
   public:
     using T = std::complex<double>; // storage number type

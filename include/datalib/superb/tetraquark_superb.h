@@ -1,3 +1,4 @@
+#include "datalib/storage/record_store.h"
 #ifndef ADAT_TETRAQUARK_SUPERB_H
 #define ADAT_TETRAQUARK_SUPERB_H
 #include "datalib/superb/types.h"
@@ -11,7 +12,7 @@
 namespace Datalib::TensorStorage {
 // Both formats expose the same typed keys. Tensor storage v1 uses i-fastest
 // ijkltmc axes and explicit momentum/color dictionaries; missing blocks fail.
-class StorageTetraQuark {
+class StorageTetraQuark : public StorageRecords {
  using K=Hadron::KeyTetraQuarkElementalOperator_t;
  using V=Hadron::ValTetraQuarkElementalOperator_t;
  using T=std::complex<double>;
