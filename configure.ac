@@ -1,5 +1,5 @@
 AC_INIT([datalib],[0.1],[local-reorg])
-AC_CONFIG_SRCDIR([src/binary.cc])
+AC_CONFIG_SRCDIR([lib/binary.cc])
 AM_INIT_AUTOMAKE([foreign subdir-objects])
 AC_PROG_CXX
 AC_PROG_RANLIB

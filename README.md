@@ -17,6 +17,9 @@ keys and adapters used by Redstar and Chroma. The header-only evaluator
 uses the consumer's SuperbBLAS build and its MPI configuration.
 The core library builds independently of ADAT, QDP and MPI.
 
+Implementation sources live in `lib/`, public headers in `include/datalib/`,
+and command-line tools in `main/`.
+
 Run `autoreconf -fi` and configure from a separate build directory:
 
 ```sh

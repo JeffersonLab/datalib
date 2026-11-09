@@ -9,7 +9,7 @@
   },
   {
     "source": "lib/io/adat_xmlio.cc",
-    "destination": "src/serial_xml.cc",
+    "destination": "lib/serial_xml.cc",
     "base_commit": "161bc77dac89c1f7474a370ecbef5b8846b0b0b5",
     "source_sha256": "44d54e905b75eeb80479d6b64e1142a51a85b4cb529a57714211a7b9c43fd2ea",
     "extracted_sha256": "e97b0ab912ad5156ce913cf2e19df9670aff4b851003b8e339a3566873d3f6c2",
@@ -25,7 +25,7 @@
   },
   {
     "source": "lib/io/adat_io.cc",
-    "destination": "src/binary.cc",
+    "destination": "lib/binary.cc",
     "base_commit": "161bc77dac89c1f7474a370ecbef5b8846b0b0b5",
     "source_sha256": "f2dc28fc00aafac652ecf37168467f6e60a056d04328e2002a8603c9f655fd57",
     "extracted_sha256": "bd9e38e7cbe6dd4381a2cae51d19ed3d7e63d395887da959dd655ac7a660f819",
@@ -41,7 +41,7 @@
   },
   {
     "source": "lib/io/adat_byteorder.cc",
-    "destination": "src/byteorder.cc",
+    "destination": "lib/byteorder.cc",
     "base_commit": "161bc77dac89c1f7474a370ecbef5b8846b0b0b5",
     "source_sha256": "0aa84b83517d0e5996b512ad6cb16b162bcf94de8f3070819eeb7540af9cb3b3",
     "extracted_sha256": "6afaccc4900d5b71d085e0fe2ac0c6cfa0591c386d8700ba748907b296f13cba",
@@ -65,7 +65,7 @@
   },
   {
     "source": "lib/io/adat_crc32.cc",
-    "destination": "src/crc32.cc",
+    "destination": "lib/crc32.cc",
     "base_commit": "161bc77dac89c1f7474a370ecbef5b8846b0b0b5",
     "source_sha256": "4737ab7134c8713a317d37d89aeb7052b53899bad804d95274720ac677edbfb7",
     "extracted_sha256": "527bf50a869f7577a0e63d396b50fc2d435c7a006905c80b4c57adbcb81c0a86",

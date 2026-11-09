@@ -5,7 +5,7 @@ SUBDIRS = .
 endif
 AM_CXXFLAGS = -I$(srcdir)/include @DATALIB_XML_CFLAGS@
 lib_LIBRARIES = libdatalib_serial.a
-libdatalib_serial_a_SOURCES = src/binary.cc src/byteorder.cc src/serial_xml.cc src/crc32.cc
+libdatalib_serial_a_SOURCES = lib/binary.cc lib/byteorder.cc lib/serial_xml.cc lib/crc32.cc
 nobase_datalibheaders_HEADERS = include/datalib/io/serial_xml.h include/datalib/codec/binary.h include/datalib/codec/byteorder.h include/datalib/model/arrays.h include/datalib/model/arraynd.h
 datalibheadersdir = $(prefix)
 bin_SCRIPTS = datalib-config
@@ -20,20 +20,20 @@ EXTRA_DIST += tests/check-codec.sh tests/fixtures/manifest.json tests/fixtures/p
 EXTRA_DIST += tests/fixtures/graph-v3.bin tests/fixtures/graph-v4.bin
 
 libdatalib_serial_a_SOURCES += \
-    src/cgc_irrep_mom.cc \
-    src/cgc_su3.cc \
-    src/corr_graph.cc \
-    src/graph_momentum.cc \
-    src/hadron_adj_map.cc \
-    src/hadron_class_npart_npt_conn_graph.cc \
-    src/hadron_diagram_time.cc \
-    src/hadron_disp_vertex.cc \
-    src/hadron_sun_class_npart_irrep.cc \
-    src/hadron_sun_class_npart_irrep_op.cc \
-    src/hadron_sun_class_npart_npt_corr.cc \
-    src/hadron_timeslice.cc \
-    src/particle_class_op.cc \
-    src/single_hadron_coeffs.cc
+    lib/cgc_irrep_mom.cc \
+    lib/cgc_su3.cc \
+    lib/corr_graph.cc \
+    lib/graph_momentum.cc \
+    lib/hadron_adj_map.cc \
+    lib/hadron_class_npart_npt_conn_graph.cc \
+    lib/hadron_diagram_time.cc \
+    lib/hadron_disp_vertex.cc \
+    lib/hadron_sun_class_npart_irrep.cc \
+    lib/hadron_sun_class_npart_irrep_op.cc \
+    lib/hadron_sun_class_npart_npt_corr.cc \
+    lib/hadron_timeslice.cc \
+    lib/particle_class_op.cc \
+    lib/single_hadron_coeffs.cc
 nobase_datalibheaders_HEADERS += \
     include/datalib/graph/corr_graph.h \
     include/datalib/graph/hadron_class_npart_npt_conn_graph.h \
@@ -81,18 +81,18 @@ EXTRA_DIST += filedb-provenance.json tests/check-filedb.sh tests/filedb_probe.cc
     tests/fixtures/filedb-reference.json tests/fixtures/filedb-key.bin \
     tests/fixtures/filedb-legacy-key.bin tests/fixtures/filedb-value.bin
 
-libdatalib_serial_a_SOURCES += src/corr_output.cc
+libdatalib_serial_a_SOURCES += lib/corr_output.cc
 nobase_datalibheaders_HEADERS += include/datalib/storage/corr_keys.h include/datalib/storage/corr_output.h
 
 if WITH_FILEDB
 AM_CPPFLAGS = @FILEDB_CXXFLAGS@
-libdatalib_serial_a_SOURCES += src/baryon_elem_type.cc src/meson_elem_type.cc src/prop_elem_type.cc src/unsmeared_genprop4_elem.cc src/unsmeared_meson_elem.cc src/unsmeared_twoquark_disco.cc src/twoquark_gamma_util.cc src/twoquark_operators_util.cc src/glueball_elem_type.cc src/tetraquark_elem_type.cc
+libdatalib_serial_a_SOURCES += lib/baryon_elem_type.cc lib/meson_elem_type.cc lib/prop_elem_type.cc lib/unsmeared_genprop4_elem.cc lib/unsmeared_meson_elem.cc lib/unsmeared_twoquark_disco.cc lib/twoquark_gamma_util.cc lib/twoquark_operators_util.cc lib/glueball_elem_type.cc lib/tetraquark_elem_type.cc
 nobase_datalibheaders_HEADERS += include/datalib/superb/baryon_elem_type.h include/datalib/superb/baryon_superb.h include/datalib/superb/colorvec_matelem_type.h include/datalib/superb/disco_superb.h include/datalib/superb/genprop4.h include/datalib/superb/glueball_elem_type.h include/datalib/superb/glueball_superb.h include/datalib/superb/tetraquark_elem_type.h include/datalib/superb/tetraquark_superb.h include/datalib/superb/meson_elem_type.h include/datalib/superb/meson_superb.h include/datalib/superb/prop_elem_type.h include/datalib/superb/prop_superb.h include/datalib/superb/superb_aux.h include/datalib/superb/superb_contractions.h include/datalib/superb/superb_tensor.h include/datalib/superb/twoquark_gamma_util.h include/datalib/superb/twoquark_operators_util.h include/datalib/superb/types.h include/datalib/superb/unsmeared_genprop4_elem.h include/datalib/superb/unsmeared_meson_elem.h include/datalib/superb/unsmeared_twoquark_disco.h
 endif
 
-libdatalib_serial_a_SOURCES += src/xml/basic_xpath_reader.cc src/xml/xml_simplewriter.cc src/xml/attribute.cc
+libdatalib_serial_a_SOURCES += lib/xml/basic_xpath_reader.cc lib/xml/xml_simplewriter.cc lib/xml/attribute.cc
 nobase_datalibheaders_HEADERS += include/datalib/io/detail/basic_xpath_reader.h include/datalib/io/detail/xml_document.h include/datalib/io/detail/xml_simplewriter.h include/datalib/io/detail/xml_attribute.h
-EXTRA_DIST += COPYING.xpath_reader src/xml/README.md
+EXTRA_DIST += COPYING.xpath_reader lib/xml/README.md
 
 EXTRA_DIST += runtime-provenance.json
 
@@ -335,7 +335,7 @@ EXTRA_DIST += \
     docs/reorg/evidence/arrays-owned-20261108-001/xpath-upstream-first-run.log.gz
 
 # Shared models and diagnostic tools.
-libdatalib_serial_a_SOURCES += src/legacy_hadron_1pt_corr.cc src/legacy_hadron_2pt_corr.cc src/legacy_hadron_3pt_corr.cc src/legacy_particle_op.cc src/legacy_hadron_npart_irrep_op.cc src/legacy_hadron_npart_irrep.cc src/legacy_hadron_npart_npt_corr.cc src/naming.cc src/operator_name.cc src/filenames.cc
+libdatalib_serial_a_SOURCES += lib/legacy_hadron_1pt_corr.cc lib/legacy_hadron_2pt_corr.cc lib/legacy_hadron_3pt_corr.cc lib/legacy_particle_op.cc lib/legacy_hadron_npart_irrep_op.cc lib/legacy_hadron_npart_irrep.cc lib/legacy_hadron_npart_npt_corr.cc lib/naming.cc lib/operator_name.cc lib/filenames.cc
 nobase_datalibheaders_HEADERS += include/datalib/legacy/hadron_1pt_corr.h include/datalib/legacy/hadron_2pt_corr.h include/datalib/legacy/hadron_3pt_corr.h include/datalib/legacy/particle_op.h include/datalib/legacy/hadron_npart_irrep_op.h include/datalib/legacy/hadron_npart_irrep.h include/datalib/legacy/hadron_npart_npt_corr.h include/datalib/graph/naming.h include/datalib/graph/operator_name.h include/datalib/graph/filenames.h
 bin_PROGRAMS = view_corr_graph dump_corr_graph
 view_corr_graph_SOURCES = main/view_corr_graph.cc
