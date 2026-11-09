@@ -1,0 +1,17 @@
+{
+  "adat_source": "d3d14bf60a5fc3e5801b219c4e43b5ac4fa23575",
+  "redstar_source": "ed355701fb651626ca8b241bc2f6f326ed9326e5",
+  "qdpxx_adapter_source": "c1e9b5209f89d232af064a60004f8ac7c9a5c734",
+  "filedb_gitlink": "db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693",
+  "frozen_before_changes": {
+    "legacy-2pt.bin": "d6d37a8664602820482939d3b34b42353e0dee56ebd519c48f2ae9f3d736c049",
+    "legacy-su2-npt.bin": "7a6126fb1faa3a7274ffc8d0d30e056485e436e42d611dd71f8423f617ad0999",
+    "legacy-1pt.bin": "cdfae2ab2f52bace48941bc495da117954f114be2077a03d0a27220a7d313f09",
+    "legacy-3pt.bin": "fab43854e693ea64ffbb244b71e9461426e07dcb70da2fd6a351af28b67874b2",
+    "legacy-filenames.txt": "f3d2d199d6ed1f8ed175cfa64d602831f1a82459c3200a9d4025de430c470cd9",
+    "legacy-vector.bin": "47fa22cbc77c54f968547f6557376b1f82de13ccd5cd30676b71f1c7e9e4ae58"
+  },
+  "scope": "dbutil executable, metadata and shared readers/name/codecs; ENSEM-specific database programs remain in ADAT",
+  "chroma_qdp_adapter": "lib/util/ferm/filedb_qdp.h; same local and collective algorithms, namespace Chroma",
+  "preserved_old_filedb_worktree": "/Users/admin/Downloads/macos-datalib-reorg/adat/other_libs/filedb"
+}

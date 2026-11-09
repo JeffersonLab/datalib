@@ -1,4 +1,4 @@
-#include "datalib/graph/process_corrs.h"
+#include "datalib/graph/corr_graph.h"
 
 #include <fstream>
 #include <iterator>

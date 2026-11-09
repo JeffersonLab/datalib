@@ -22,14 +22,19 @@ DATALIB_DEP_LIBS="`$XML2_CONFIG --libs` $OPENMP_LIBS"
 AC_SUBST([DATALIB_XML_CFLAGS])
 AC_SUBST([DATALIB_DEP_LIBS])
 AC_ARG_WITH([filedb],
-  AS_HELP_STRING([--with-filedb=DIR],[Enable standalone FILEDB checks and export FILEDB component flags]),
-  [],[with_filedb=no])
+  AS_HELP_STRING([--with-filedb=bundled|DIR],[Build bundled FILEDB (default) or use an installed prefix; --without-filedb disables it]),
+  [],[with_filedb=bundled])
 FILEDB_CXXFLAGS=
 FILEDB_LDFLAGS=
 FILEDB_LIBS=
 AS_IF([test "x$with_filedb" != xno],[
   AS_IF([test "x$with_filedb" = xyes || test -z "$with_filedb"],
     [AC_MSG_ERROR([--with-filedb requires the FILEDB installation prefix])])
+  AS_IF([test "x$with_filedb" = xbundled],[
+    FILEDB_CXXFLAGS='-I$(top_srcdir)/other_libs/filedb/src -I$(top_srcdir)/other_libs/filedb/filehash'
+    FILEDB_LDFLAGS='-L$(top_builddir)/other_libs/filedb/src -L$(top_builddir)/other_libs/filedb/filehash'
+    FILEDB_LIBS="-lfiledb -lfilehash -lpthread"
+  ],[
   FILEDB_CXXFLAGS="-I$with_filedb/include"
   FILEDB_LDFLAGS="-L$with_filedb/lib"
   FILEDB_LIBS="-lfiledb -lfilehash -lpthread"
@@ -48,11 +53,21 @@ return ffdb_dbopen(bytes.c_str(), 0, 0, nullptr) == nullptr;]])],
   CPPFLAGS="$datalib_saved_CPPFLAGS"
   LDFLAGS="$datalib_saved_LDFLAGS"
   LIBS="$datalib_saved_LIBS"
+  ])
 ])
+AM_CONDITIONAL([BUNDLED_FILEDB],[test "x$with_filedb" = xbundled])
+AS_IF([test "x$with_filedb" = xbundled],[AC_CONFIG_SUBDIRS([other_libs/filedb])])
 AM_CONDITIONAL([WITH_FILEDB],[test "x$with_filedb" != xno])
 AC_SUBST([FILEDB_CXXFLAGS])
 AC_SUBST([FILEDB_LDFLAGS])
 AC_SUBST([FILEDB_LIBS])
+AC_ARG_WITH([superbblas],AS_HELP_STRING([--with-superbblas=DIR],[Serial SuperbBLAS installation for tensor dbutil operations]),[AS_IF([test "x$with_filedb" = xno],[AC_MSG_ERROR([--with-superbblas requires FILEDB support])]); AS_IF([test ! -f "$withval/lib/pkgconfig/superbblas.pc"],[AC_MSG_ERROR([superbblas.pc not found])]); SUPERBBLAS_CXXFLAGS="-DUSE_SUPERBBLAS -I$withval/include `pkg-config --variable=superbblas_config "$withval/lib/pkgconfig/superbblas.pc"`"; SUPERBBLAS_LDFLAGS="-L$withval/lib"; SUPERBBLAS_LIBS="-lsuperbblas"],[SUPERBBLAS_CXXFLAGS=; SUPERBBLAS_LDFLAGS=; SUPERBBLAS_LIBS=])
+AC_SUBST([SUPERBBLAS_CXXFLAGS])
+AC_SUBST([SUPERBBLAS_LDFLAGS])
+AC_SUBST([SUPERBBLAS_LIBS])
+AS_IF([test "x$with_filedb" = xbundled],[datalib_export_prefix="$prefix"; AS_IF([test "x$datalib_export_prefix" = xNONE],[datalib_export_prefix="$ac_default_prefix"]);FILEDB_EXPORT_CXXFLAGS="-I$datalib_export_prefix/include";FILEDB_EXPORT_LDFLAGS="-L$datalib_export_prefix/lib"],[FILEDB_EXPORT_CXXFLAGS="$FILEDB_CXXFLAGS";FILEDB_EXPORT_LDFLAGS="$FILEDB_LDFLAGS"])
+AC_SUBST([FILEDB_EXPORT_CXXFLAGS])
+AC_SUBST([FILEDB_EXPORT_LDFLAGS])
 AC_CONFIG_FILES([Makefile datalib-config])
 AC_CONFIG_COMMANDS([config-executable],[chmod +x datalib-config])
 AC_OUTPUT

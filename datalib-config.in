@@ -9,8 +9,8 @@ case "$1" in
      exit 1
    fi
    case "$1" in
-     --filedb-cxxflags) echo '@FILEDB_CXXFLAGS@';;
-     --filedb-ldflags) echo '@FILEDB_LDFLAGS@';;
+     --filedb-cxxflags) echo '@FILEDB_EXPORT_CXXFLAGS@';;
+     --filedb-ldflags) echo '@FILEDB_EXPORT_LDFLAGS@';;
      --filedb-libs) echo '@FILEDB_LIBS@';;
    esac;;
  --prefix) echo '@prefix@';;

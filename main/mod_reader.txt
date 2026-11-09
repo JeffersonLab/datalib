@@ -1,0 +1,44 @@
+Read-only MapObjectDisk inspection with dbutil
+============================================
+
+  dbutil eigenvectors.mod meta
+  dbutil eigenvectors.mod keys
+  dbutil eigenvectors.mod keysxml eigenvector_keys.xml
+
+MOD detection uses the QDP++ file magic, before the usual adat database-type
+lookup. Metadata is printed verbatim (with a final newline), without parsing
+XML or reading the index. For keys, /MODMetaData/id selects the decoder:
+
+  eigenVecsTimeSlice: t_slice, colorvec (two signed 32-bit integers)
+  propDistillation: t_source, t_slice, colorvec_src, spin_src, spin_snk,
+                    mass (five signed 32-bit integers and a descriptor string)
+
+Text keys use the original harom field names; keysxml writes <Keys><elem>...
+using the Chroma key XML schema. Ordering follows the on-disk unordered map;
+it has no numerical ordering guarantee. Unknown MOD types still support meta.
+Commands that require values are rejected for MOD files.
+
+Only version 1 is supported. The reader checks descriptor lengths, index and
+value offsets, key sizes, and the CRC32 over the serialized index. It seeks
+directly from the header to the index and never reads lattice values. Metadata
+inspection works even when the index is missing or corrupt. Index validation
+does not validate the lattice payloads or their individual checksums.
+
+Format: big-endian descriptor(magic), uint32 version, descriptor(metadata),
+16-byte big-endian index offset; opaque values; uint32 key count, then repeated
+(descriptor(serialized key), 16-byte big-endian value offset), uint32 CRC32.
+Descriptors are an int32 byte count followed by that many bytes. Offsets larger
+than 64 bits are rejected. No QDP++, Chroma, or harom library is required.
+
+Reference: JeffersonLab/harom devel, commit
+0b40235635ed04ded984177e7c2f6971dc38e4d5, mainprogs/main/modkeys.cc,
+mainprogs/main/modmeta.cc, lib/util/ferm/modtype.cc and key definitions;
+QDP++ qdp_map_obj_disk.h and qdp_io.cc supply the wire format.
+
+Build with the normal adat build. Independent binary-format integration tests:
+
+  python3 main/dbutil/tests/test_mod_reader.py build/main/dbutil/dbutil
+
+Tests cover both key types, XML escaping, empty maps, unknown types, malformed
+and truncated indices, CRC errors, unsupported versions, value-command
+rejection, metadata independent of the index, and a sparse index beyond 4 GiB.

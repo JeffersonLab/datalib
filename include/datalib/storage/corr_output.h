@@ -1,6 +1,6 @@
 #pragma once
 
-#include "datalib/graph/process_corrs.h"
+#include "datalib/graph/corr_graph.h"
 
 namespace Datalib::Storage
 {

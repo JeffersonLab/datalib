@@ -1,3 +1,8 @@
+if BUNDLED_FILEDB
+SUBDIRS = other_libs/filedb .
+else
+SUBDIRS = .
+endif
 AM_CXXFLAGS = -I$(srcdir)/include @DATALIB_XML_CFLAGS@
 lib_LIBRARIES = libdatalib_serial.a
 libdatalib_serial_a_SOURCES = src/binary.cc src/byteorder.cc src/serial_xml.cc src/crc32.cc
@@ -30,7 +35,7 @@ libdatalib_serial_a_SOURCES += \
     src/particle_class_op.cc \
     src/single_hadron_coeffs.cc
 nobase_datalibheaders_HEADERS += \
-    include/datalib/graph/process_corrs.h \
+    include/datalib/graph/corr_graph.h \
     include/datalib/graph/hadron_class_npart_npt_conn_graph.h \
     include/datalib/graph/hadron_sun_class_npart_npt_corr.h \
     include/datalib/graph/hadron_timeslice.h \
@@ -328,3 +333,32 @@ EXTRA_DIST += \
     docs/reorg/evidence/arrays-owned-20261108-001/verify_stack.py \
     docs/reorg/evidence/arrays-owned-20261108-001/xpath-bundled-first-run.log.gz \
     docs/reorg/evidence/arrays-owned-20261108-001/xpath-upstream-first-run.log.gz
+
+# Shared models and diagnostic tools.
+libdatalib_serial_a_SOURCES += src/legacy_hadron_1pt_corr.cc src/legacy_hadron_2pt_corr.cc src/legacy_hadron_3pt_corr.cc src/legacy_particle_op.cc src/legacy_hadron_npart_irrep_op.cc src/legacy_hadron_npart_irrep.cc src/legacy_hadron_npart_npt_corr.cc src/naming.cc src/operator_name.cc src/filenames.cc
+nobase_datalibheaders_HEADERS += include/datalib/legacy/hadron_1pt_corr.h include/datalib/legacy/hadron_2pt_corr.h include/datalib/legacy/hadron_3pt_corr.h include/datalib/legacy/particle_op.h include/datalib/legacy/hadron_npart_irrep_op.h include/datalib/legacy/hadron_npart_irrep.h include/datalib/legacy/hadron_npart_npt_corr.h include/datalib/graph/naming.h include/datalib/graph/operator_name.h include/datalib/graph/filenames.h
+bin_PROGRAMS = view_corr_graph dump_corr_graph
+view_corr_graph_SOURCES = main/view_corr_graph.cc
+view_corr_graph_LDADD = libdatalib_serial.a @DATALIB_DEP_LIBS@
+dump_corr_graph_SOURCES = main/dump_corr_graph.cc
+dump_corr_graph_LDADD = libdatalib_serial.a @DATALIB_DEP_LIBS@
+if WITH_FILEDB
+nobase_datalibheaders_HEADERS += include/datalib/storage/dbtype.h include/datalib/storage/corr_reader.h
+bin_PROGRAMS += dbutil
+dbutil_SOURCES = main/dbutil.cc main/mod_reader.h
+dbutil_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbutil_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbutil_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+endif
+EXTRA_DIST += tests/test_mod_reader.py main/mod_reader.txt
+
+check_PROGRAMS += dbtools_probe
+dbtools_probe_SOURCES = tests/dbtools_probe.cc
+dbtools_probe_LDADD = libdatalib_serial.a @DATALIB_DEP_LIBS@
+TESTS += tests/check-dbtools.sh
+if WITH_FILEDB
+TESTS += tests/check-mod.sh
+endif
+EXTRA_DIST += tests/check-dbtools.sh tests/check-mod.sh tests/fixtures/dbtools/manifest.json tests/fixtures/dbtools/legacy-1pt.bin tests/fixtures/dbtools/legacy-2pt.bin tests/fixtures/dbtools/legacy-3pt.bin tests/fixtures/dbtools/legacy-su2-npt.bin tests/fixtures/dbtools/legacy-vector.bin tests/fixtures/dbtools/legacy-filenames.txt
+
+EXTRA_DIST += tools-provenance.json

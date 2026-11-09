@@ -2,16 +2,17 @@
 
 Datalib provides standalone serial XML and binary I/O, the version-4
 correlation graph map and its codecs, the version-0 correlator container,
-and an optional FILEDB adapter. The graph API is in
-`<datalib/graph/process_corrs.h>`. Format 4 uses connected graphs directly
+and FILEDB storage adapters. The graph API is in
+`<datalib/graph/corr_graph.h>`. Format 4 uses connected graphs directly
 and omits the per-graph stitching records. Regenerate older graph files
 with the matching Redstar graph generator.
 
 The serial build needs libxml2, a C++20 compiler, and OpenMP. The array
 headers are installed under `<datalib/model/xml_array*.h>` and retain the
 existing `XMLArray` public types; no xpath_reader installation is needed.
-Its XML parser and writer are compiled into datalib under a separate namespace. The optional FILEDB adapter needs a FILEDB
-installation. The FILEDB component also provides the typed tensor storage
+Its XML parser and writer are compiled into datalib under a separate namespace. FILEDB is a pinned submodule in `other_libs/filedb` and is built by default.
+Use `git submodule update --init --recursive` before bootstrapping.
+An external FILEDB installation remains supported. The FILEDB component also provides the typed tensor storage
 keys and adapters used by Redstar and Chroma. The header-only evaluator
 uses the consumer's SuperbBLAS build and its MPI configuration.
 The core library builds independently of ADAT, QDP and MPI.
@@ -28,8 +29,14 @@ make install
 ```
 
 Set `OPENMP_CXXFLAGS` and `OPENMP_LIBS` for the selected toolchain.
-Use `--with-filedb=PREFIX` to enable the adapter checks and export its
-separate flags. Use `datalib-config` to obtain installed build flags.
+Use `--with-filedb=PREFIX` for an external installation, or `--without-filedb`
+for the independent core and graph tools. `datalib-config --filedb-cxxflags`,
+`--filedb-ldflags` and `--filedb-libs` export the selected provider.
+`view_corr_graph` and `dump_corr_graph` are installed by datalib. FILEDB builds
+also install `dbutil`; `--with-superbblas=PREFIX` enables its serial tensor
+backend. Link that tool with the selected SuperbBLAS BLAS/runtime dependencies
+through `LDFLAGS` and `LIBS`, using the same compiler and OpenMP runtime.
+The core library does not link a SuperbBLAS runtime or a QDP adapter.
 
 Frozen fixtures check primitive codecs, format-4 binary and XML graph
 serialization, correlator storage and FILEDB records. Format-3 fixtures
@@ -52,3 +59,8 @@ and successful cache-capped rerun under the unchanged process-memory guard.
 The [bundled-array regression report](docs/reorg/ARRAYS-OWNED-REGRESSIONS.md)
 records the xpath_reader dependency removal, format fixtures, provider
 coexistence checks and complete native-double numerical sweep.
+
+Shared metadata and correlator readers are available through
+`<datalib/storage/dbtype.h>` and `<datalib/storage/corr_reader.h>`.
+Legacy key models/codecs live under `<datalib/legacy/>`; ENSEM adapters stay
+in ADAT. Operator filename formatting is in `<datalib/graph/filenames.h>`.

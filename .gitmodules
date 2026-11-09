@@ -1,0 +1,3 @@
+[submodule "other_libs/filedb"]
+	path = other_libs/filedb
+	url = https://github.com/usqcd-software/filedb.git

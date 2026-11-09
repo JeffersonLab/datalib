@@ -1,5 +1,5 @@
 /*! Shared version-4 no-Stich graph format, used by Redstar and redstar-datalib. */
-#include "datalib/graph/process_corrs.h"
+#include "datalib/graph/corr_graph.h"
 #include <stdexcept>
 namespace Hadron {
   //! Read a MapObject via binary

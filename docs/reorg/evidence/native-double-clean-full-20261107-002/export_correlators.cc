@@ -1,6 +1,6 @@
 // Safe numbered-file export of current SUNClass correlators through ADAT StorageCorrFunc.
 #include <datalib/graph/hadron_sun_class_npart_npt_corr.h>
-#include "hadron/ensem_filenames.h"
+#include <datalib/graph/filenames.h>
 #include "io/superb_kv.h"
 #include <datalib/io/serial_xml.h>
 #include <complex>

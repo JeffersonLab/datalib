@@ -243,7 +243,7 @@ trace of active vertices:
 #include "datalib/graph/hadron_adj_map.h"
 #include "datalib/graph/hadron_diagram_time.h"
 
-#include "datalib/graph/process_corrs.h"
+#include "datalib/graph/corr_graph.h"
 #include "datalib/graph/single_hadron_coeffs.h"
 #include "datalib/superb/twoquark_gamma_util.h"
 #include "datalib/superb/twoquark_operators_util.h"

@@ -1,5 +1,5 @@
 #include <datalib/codec/binary.h>
-#include <datalib/graph/process_corrs.h>
+#include <datalib/graph/corr_graph.h>
 #include <datalib/io/serial_xml.h>
 #include <datalib/model/map_obj.h>
 #include <datalib/storage/filedb.h>
