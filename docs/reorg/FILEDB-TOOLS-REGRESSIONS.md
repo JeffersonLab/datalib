@@ -43,11 +43,15 @@ come from `datalib-config --filedb-cxxflags`, `--filedb-ldflags` and
 `--filedb-libs`. `--with-superbblas=PREFIX` enables the standalone dbutil's
 serial tensor backend. ADAT and Chroma obtain FILEDB through these exports.
 
-The inactive original dirty ADAT FILEDB worktree is retained locally at
-`adat/other_libs/filedb` and excluded locally. Its gitlink, recursive build
-and include paths are removed. Clean ADAT checkouts contain no FILEDB
-submodule. The standalone source distribution includes the pinned FILEDB
-source.
+The original dirty ADAT FILEDB worktree and its Git history/local edits are
+archived at `evidence/tools-filedb-20261109-001/preserved-adat-filedb-worktree`.
+The old `adat/other_libs/filedb` directory is removed. Its gitlink, recursive
+build, `.gitmodules` entry and include paths are also absent. Payload hashes,
+file modes, symlinks, HEAD, Git status and the complete local diff were checked
+before/after the move. See
+[worktree cleanup evidence](evidence/tools-filedb-20261109-001/filedb-worktree-cleanup.json).
+The original validation-time inventory remains historical evidence.
+The standalone source distribution includes the pinned FILEDB source.
 
 ## CORR_SUPERB configuration
 

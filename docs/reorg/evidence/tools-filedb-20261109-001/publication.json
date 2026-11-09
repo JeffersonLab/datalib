@@ -1,6 +1,6 @@
 {
   "report": "docs/reorg/FILEDB-TOOLS-REGRESSIONS.md",
-  "report_sha256": "00f3e406780fbc2a70d42e8ff205245a5017b22f37e12ac531abfcd0b44232a5",
+  "report_sha256": "a9341016ec6f3ff9b88248dba52906716889453f8215d4563082a14cca0eed10",
   "files": {
     "adapter-1-ranks.log.gz": "aef28f575e83fa40a012a77708d3b391251b2ff1574392a7ff4885887d358afd",
     "adapter-2-ranks.log.gz": "eefccd4c963936c5b8e78d4ee44770049f3e3f7347b87ee931663b031f4f9c94",
@@ -274,6 +274,7 @@
     "tensor-configure.log.gz": "e8379716a54abc77952a21d9580f92ed1d4c2dd431d47001ce4e0f291f88226c",
     "tensor-install.log.gz": "40b650a7bf12d4f0b59ca492544d56edf7f2fb19f5eb018ebdf238874b3dd4cd",
     "verify_tools-driver.log.gz": "078766d774f7195da5bc522a12ade495cc0f2d39f6e2df8fc47285adb372603d",
-    "verify_tools.py": "a3b104662890d6b96e156f218162371fd2e34f700962e0a87d144b07dd579925"
+    "verify_tools.py": "a3b104662890d6b96e156f218162371fd2e34f700962e0a87d144b07dd579925",
+    "filedb-worktree-cleanup.json": "97fd035d6822a7c87574e008d5020ab6958feee80822b42fbf8012778dad7a5e"
   }
 }

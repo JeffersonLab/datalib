@@ -640,3 +640,5 @@ EXTRA_DIST += \
     docs/reorg/evidence/tools-filedb-20261109-001/verify_tools-driver.log.gz \
     docs/reorg/evidence/tools-filedb-20261109-001/verify_tools.py \
     docs/reorg/evidence/tools-filedb-20261109-001/publication.json
+
+EXTRA_DIST += docs/reorg/evidence/tools-filedb-20261109-001/filedb-worktree-cleanup.json

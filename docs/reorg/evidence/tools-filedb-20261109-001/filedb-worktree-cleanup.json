@@ -1,0 +1,15 @@
+{
+  "original_path": "/Users/admin/Downloads/macos-datalib-reorg/adat/other_libs/filedb",
+  "archived_path": "/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/preserved-adat-filedb-worktree",
+  "head": "db2a795aaf6cc57b6eefe2ef634fdc91ee7b3693",
+  "status": " M INSTALL\n M config/ar-lib\n M config/compile\n M config/config.guess\n M config/config.sub\n M config/depcomp\n M config/install-sh\n M config/missing\n",
+  "diff_sha256": "74cc17d9df4c6bd3d50a0412d5d5f3b5d9c35472f167515ad07ff188deaed805",
+  "payload_files": 102,
+  "payload_manifest_sha256": "0eb12d9011a333eb32e39c8d85ed8c74f9202ce4559f8e928a947f209ab09eed",
+  "payload_modes_hashes_and_symlinks_preserved": true,
+  "git_history_and_local_edits_preserved": true,
+  "adat_worktree_removed": true,
+  "adat_tracked_submodule_absent": true,
+  "original_gitlink_file": null,
+  "original_git_database_retained_as_inactive_cache": null
+}
