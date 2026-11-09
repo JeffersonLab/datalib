@@ -150,7 +150,7 @@ namespace Hadron
 
 
   // Get lattice size
-  std::vector<int> getLattSize(const std::string& dbfile)
+  inline std::vector<int> getLattSize(const std::string& dbfile)
   {
     Layout::Layout_t layout(getDBLayout(dbfile));
 
