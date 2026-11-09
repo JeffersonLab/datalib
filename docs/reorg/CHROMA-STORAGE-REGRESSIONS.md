@@ -120,6 +120,14 @@ verified; both evaluators link libomp.
 The source distribution contains `lib/` and no `src/` implementation directory.
 Its unpacked core independently built and passed all five checks under the
 dependency-denying sandbox. See the [package check](evidence/chroma-storage-20261109-001/package-check.json).
+The final distribution from documentation checkpoint `5b24ce1` also contains
+this report and the full bounded regression evidence; see the
+[publication package record](evidence/chroma-storage-20261109-001/publication-package.json).
+Generate archives with the normal bundled-provider configuration. A separate
+`make dist` attempt from a `--without-filedb` build failed because its recursive
+FILEDB distribution directory was not configured. That packaging limitation
+is retained in the evidence; the unpacked core build and its five checks passed.
+
 All 37 removed ADAT compatibility headers remain absent from source and fresh
 installation; the direct qualified API probe passes.
 

@@ -947,3 +947,11 @@ EXTRA_DIST += \
     docs/reorg/evidence/chroma-storage-20261109-001/verify_stack.py \
     docs/reorg/evidence/chroma-storage-20261109-001/wire_layout.py \
     docs/reorg/evidence/chroma-storage-20261109-001/publication.json
+
+# Final distribution proof and retained core-only distribution limitation.
+EXTRA_DIST += \
+    docs/reorg/evidence/chroma-storage-20261109-001/publication-package.json \
+    docs/reorg/evidence/chroma-storage-20261109-001/publication_package_resume.py \
+    docs/reorg/evidence/chroma-storage-20261109-001/publication-dist.log.gz \
+    docs/reorg/evidence/chroma-storage-20261109-001/publication-storage-configure.log.gz \
+    docs/reorg/evidence/chroma-storage-20261109-001/publication-storage-dist.log.gz

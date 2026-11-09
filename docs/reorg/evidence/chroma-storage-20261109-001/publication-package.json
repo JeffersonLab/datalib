@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "source_commit": "5b24ce1b85f95669edf84bec28667b8ae54d3ee0",
+  "archive": "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/build/publication-package-storage/datalib-0.1.tar.gz",
+  "archive_sha256": "2b12fa7e7920faf2ce81daabf278c13de0aa1541eadfaa7acead80604145115c",
+  "files": 1132,
+  "steps": [
+    {
+      "step": "configure",
+      "command": [
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/publication-source/datalib/configure",
+        "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/publication-package-storage",
+        "--with-libxml2=/opt/homebrew/opt/libxml2"
+      ],
+      "returncode": 0
+    },
+    {
+      "step": "dist",
+      "command": [
+        "make",
+        "dist"
+      ],
+      "returncode": 0
+    }
+  ],
+  "qualification": "Distribution uses the normal bundled-provider configuration so its recursive distribution target has a configured FILEDB subdirectory; the earlier core-only distribution attempt is retained in publication-dist.log. Core builds from the archive passed previously."
+}
