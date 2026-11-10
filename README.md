@@ -36,8 +36,9 @@ Use `--with-filedb=PREFIX` for an external installation, or `--without-filedb`
 for the independent core and graph tools. `datalib-config --storage-cxxflags`,
 `--storage-ldflags` and `--storage-libs` export the selected provider.
 `view_corr_graph` and `dump_corr_graph` are installed by datalib. FILEDB builds
-also install `dbutil`; `--with-superbblas=PREFIX` enables its serial tensor
-backend. Link that tool with the selected SuperbBLAS BLAS/runtime dependencies
+also install `dbutil` and the [standalone database tools](docs/database-tools.md)
+extracted from ADAT; `--with-superbblas=PREFIX` enables their serial tensor
+backends. Link that tool with the selected SuperbBLAS BLAS/runtime dependencies
 through `LDFLAGS` and `LIBS`, using the same compiler and OpenMP runtime.
 The core library does not link a SuperbBLAS runtime or a QDP adapter.
 
@@ -75,7 +76,7 @@ Configure Chroma with `--with-datalib=PREFIX` and
 FILEDB-enabled datalib installation already provides its shared graph, key,
 codec, storage and evaluator headers. Chroma uses its own matching QDP/QMP and
 SuperbBLAS communication configuration; ADAT is not a dependency. Datalib's
-`--with-superbblas` option enables the separate standalone dbutil tensor backend.
+`--with-superbblas` option enables the separate standalone database-tool tensor backends.
 
 [FILEDB ownership and full CORR_SUPERB regression](docs/reorg/FILEDB-TOOLS-REGRESSIONS.md)
 records the earlier ownership checkpoint and its retained platform-test limits.
@@ -85,3 +86,6 @@ records the subsequent writer migration, removal of temporary wrappers and
 STOCH_HADRON, consistent SuperbBLAS storage profiles, and the lib/ source layout.
 Datalib has no QDP or ADAT configure dependency. Chroma retains its own QDP/MPI
 coordination and matching SuperbBLAS configuration.
+
+[Database-tool extraction and regression](docs/reorg/DBTOOLS-EXTRACTION-REGRESSIONS.md)
+records the moved utilities, preserved formats and full validated stack.

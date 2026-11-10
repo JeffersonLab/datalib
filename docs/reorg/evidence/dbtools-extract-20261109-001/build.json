@@ -1,0 +1,543 @@
+[
+  {
+    "step": "datalib-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/datalib",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 5.299595,
+    "finished_utc": "2026-11-09T20:56:47.700789+00:00"
+  },
+  {
+    "step": "datalib-core-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-core",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-core",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--without-filedb"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 6.019715541,
+    "finished_utc": "2026-11-09T20:56:53.721361+00:00"
+  },
+  {
+    "step": "datalib-core-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 8.909922542,
+    "finished_utc": "2026-11-09T20:57:02.631869+00:00"
+  },
+  {
+    "step": "datalib-core-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 4.617415167000004,
+    "finished_utc": "2026-11-09T20:57:07.249767+00:00"
+  },
+  {
+    "step": "datalib-core-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-core",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 1.152265374999999,
+    "finished_utc": "2026-11-09T20:57:08.402536+00:00"
+  },
+  {
+    "step": "datalib-filedb-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb",
+      "--enable-openmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 13.093366791000001,
+    "finished_utc": "2026-11-09T20:57:21.496705+00:00"
+  },
+  {
+    "step": "datalib-filedb-build",
+    "command": [
+      "make",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "make",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 32.829933417,
+    "finished_utc": "2026-11-09T20:57:54.327512+00:00"
+  },
+  {
+    "step": "datalib-filedb-check",
+    "command": [
+      "make",
+      "check",
+      "-j6"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "make",
+      "check",
+      "-j6"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 9.490035333999998,
+    "finished_utc": "2026-11-09T20:58:03.818195+00:00"
+  },
+  {
+    "step": "datalib-filedb-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-filedb",
+    "environment": "datalib",
+    "returncode": 0,
+    "seconds": 2.2152363750000035,
+    "finished_utc": "2026-11-09T20:58:06.033997+00:00"
+  },
+  {
+    "step": "adat-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 7.34180087499999,
+    "finished_utc": "2026-11-09T20:58:13.376878+00:00"
+  },
+  {
+    "step": "chroma-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 12.901855291999993,
+    "finished_utc": "2026-11-09T20:58:18.936972+00:00"
+  },
+  {
+    "step": "adat-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/adat/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/adat/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/adat",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 15.626366415999996,
+    "finished_utc": "2026-11-09T20:58:29.003981+00:00"
+  },
+  {
+    "step": "chroma-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/macos-datalib-reorg/evidence/tools-filedb-20261109-001/install/qdpxx-mpi",
+      "--with-superbblas=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 25.459572375000008,
+    "finished_utc": "2026-11-09T20:58:44.398116+00:00"
+  },
+  {
+    "step": "adat-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 42.404835250000005,
+    "finished_utc": "2026-11-09T20:59:11.409993+00:00"
+  },
+  {
+    "step": "adat-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 11.211747874999986,
+    "finished_utc": "2026-11-09T20:59:22.622493+00:00"
+  },
+  {
+    "step": "adat-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/adat",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 5.2800550419999865,
+    "finished_utc": "2026-11-09T20:59:27.903283+00:00"
+  },
+  {
+    "step": "colorvec-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 2.31330679200002,
+    "finished_utc": "2026-11-09T20:59:30.217629+00:00"
+  },
+  {
+    "step": "colorvec-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/colorvec/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/colorvec/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/colorvec",
+      "--with-adat=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/adat",
+      "--with-hadron=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/install/hadron"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 5.732558333000014,
+    "finished_utc": "2026-11-09T20:59:35.951099+00:00"
+  },
+  {
+    "step": "colorvec-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 46.902521167,
+    "finished_utc": "2026-11-09T21:00:22.854972+00:00"
+  },
+  {
+    "step": "colorvec-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 0.25510587499999815,
+    "finished_utc": "2026-11-09T21:00:23.110716+00:00"
+  },
+  {
+    "step": "colorvec-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/colorvec",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 0.6856872090000081,
+    "finished_utc": "2026-11-09T21:00:23.797069+00:00"
+  },
+  {
+    "step": "redstar-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "executed_command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 2.419944541999996,
+    "finished_utc": "2026-11-09T21:00:26.217821+00:00"
+  },
+  {
+    "step": "redstar-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/redstar/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/colorvec"
+    ],
+    "executed_command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/redstar/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar",
+      "--with-colorvec=/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/colorvec"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 6.587712957999997,
+    "finished_utc": "2026-11-09T21:00:32.806488+00:00"
+  },
+  {
+    "step": "redstar-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 73.22192758299997,
+    "finished_utc": "2026-11-09T21:01:46.030103+00:00"
+  },
+  {
+    "step": "redstar-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "executed_command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 9.956809041999975,
+    "finished_utc": "2026-11-09T21:01:55.987804+00:00"
+  },
+  {
+    "step": "redstar-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/redstar",
+    "environment": "downstream",
+    "returncode": 0,
+    "seconds": 6.98769058299996,
+    "finished_utc": "2026-11-09T21:02:02.976409+00:00"
+  },
+  {
+    "step": "chroma-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma.sb",
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 858.7888352499999,
+    "finished_utc": "2026-11-09T21:13:03.200213+00:00"
+  },
+  {
+    "step": "chroma-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "executed_command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/chroma",
+    "environment": "chroma",
+    "returncode": 0,
+    "seconds": 50.80491591599991,
+    "finished_utc": "2026-11-09T21:13:54.007293+00:00"
+  }
+]

@@ -49,3 +49,7 @@ The later 9 November storage checkpoint supersedes the earlier deferred
 legacy-writer modernization. Chroma uses datalib storage directly; temporary
 wrappers and STOCH_HADRON are removed. Datalib sources use lib/, and no QDP
 configure switch remains. See the latest report above for the full rerun.
+
+[Standalone dbtools extraction and full regression](DBTOOLS-EXTRACTION-REGRESSIONS.md)
+records single ownership, frozen legacy formats, standalone builds, utility
+comparisons and the complete native-double matrix.

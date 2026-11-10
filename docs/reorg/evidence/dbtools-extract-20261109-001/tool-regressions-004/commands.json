@@ -1,0 +1,563 @@
+[
+  {
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/datalib.sb",
+      "/usr/bin/clang++",
+      "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/include",
+      "-O1",
+      "-std=c++20",
+      "-isysroot",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xpreprocessor",
+      "-fopenmp",
+      "-I/opt/homebrew/opt/libomp/include",
+      "-I/opt/homebrew/opt/libxml2/include/libxml2",
+      "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/include",
+      "/tmp/dbtools-extract/tools_fixture.cc",
+      "-o",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/lib",
+      "-isysroot",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-framework",
+      "Accelerate",
+      "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/lib",
+      "-ldatalib_serial",
+      "-L/opt/homebrew/opt/libxml2/lib",
+      "-lxml2",
+      "-L/usr/lib",
+      "-lz",
+      "-L/opt/homebrew/opt/icu4c@76/lib",
+      "-licuuc",
+      "-liconv",
+      "-L/opt/homebrew/opt/libomp/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/libomp/lib",
+      "-lomp",
+      "-lfiledb",
+      "-lfilehash",
+      "-lpthread"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "create",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/standalone-inputs",
+      "/Users/admin/Downloads/macos-datalib-reorg/datalib/tests/fixtures/dbtools"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-one-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/one.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/one.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/one.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-one-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/one.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/one.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/one.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-one-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-one-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbbin-mozilla-20261109-001/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-one-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/one.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-one-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/one.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-one-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-one-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-two-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/two.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/two.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/two.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-two-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/two.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/two.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/two.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-two-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-two-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbbin-mozilla-20261109-001/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-two-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/two.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-two-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/two.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-two-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-two-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-three-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/three.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/three.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/three.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-three-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/three.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/three.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/three.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-three-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-three-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbbin-mozilla-20261109-001/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-three-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/three.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-three-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/three.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-three-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-three-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-su2-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-su2-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-su2-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-su2-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbbin-mozilla-20261109-001/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-su2-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-su2-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-su2-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-su2-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-sun-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbavgcors",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-sun-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-sun-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbavgcors-sun-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbbin-mozilla-20261109-001/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-sun-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbbin",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-sun-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb",
+      "2"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-sun-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbbin-sun-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbwick_rescale",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbwick_rescale-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbwick_rescale",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbwick_rescale-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbwick_rescale-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbwick_rescale-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbiso_wick_rescale",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbiso_wick_rescale-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbiso_wick_rescale",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbiso_wick_rescale-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbiso_wick_rescale-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbiso_wick_rescale-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbcanon_mom",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbcanon_mom-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbcanon_mom",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbcanon_mom-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbcanon_mom-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbcanon_mom-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-dbconvert-fixed",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbconvert_corr_util-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbconvert_corr_util",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbconvert_corr_util-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/su2.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbconvert_corr_util-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/dbconvert_corr_util-feature.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/db_transform_corrs",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/db_transform_corrs-baseline.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/db_transform_corrs",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/db_transform_corrs-feature.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/db_transform_corrs-baseline.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/db_transform_corrs-feature.sdb"
+    ],
+    "returncode": 0
+  }
+]

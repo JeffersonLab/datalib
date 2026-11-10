@@ -955,3 +955,223 @@ EXTRA_DIST += \
     docs/reorg/evidence/chroma-storage-20261109-001/publication-dist.log.gz \
     docs/reorg/evidence/chroma-storage-20261109-001/publication-storage-configure.log.gz \
     docs/reorg/evidence/chroma-storage-20261109-001/publication-storage-dist.log.gz
+
+# Standalone legacy database utilities extracted from ADAT.
+libdatalib_serial_a_SOURCES += lib/hadron_sun_npart_irrep_op.cc lib/hadron_sun_npart_irrep.cc lib/hadron_sun_npart_npt_corr.cc lib/hadron_convert_corr_util.cc
+nobase_datalibheaders_HEADERS += include/datalib/legacy/hadron_sun_npart_irrep_op.h include/datalib/legacy/hadron_sun_npart_irrep.h include/datalib/legacy/hadron_sun_npart_npt_corr.h include/datalib/legacy/hadron_convert_corr_util.h
+bin_PROGRAMS += dbconvert_ops_util
+dbconvert_ops_util_SOURCES = main/dbconvert_ops_util.cc
+dbconvert_ops_util_LDADD = libdatalib_serial.a @DATALIB_DEP_LIBS@
+if WITH_FILEDB
+bin_PROGRAMS += dbreplicate dbmerge dbmeta dbcombine dbavg dbavg_disco dbavgcors dbbin dbavgsrc dbprop_diag_t0 dbprop_t0fix dbmeson_t0fix dbcanon_mom dbwick_rescale dbiso_wick_rescale dbconvert_corr_util dbgaus_corr db_rephase_corrs db_transform_corrs
+dbreplicate_SOURCES = main/dbreplicate.cc
+dbreplicate_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbreplicate_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbreplicate_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbmerge_SOURCES = main/dbmerge.cc
+dbmerge_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbmerge_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbmerge_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbmeta_SOURCES = main/dbmeta.cc
+dbmeta_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbmeta_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbmeta_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbcombine_SOURCES = main/dbcombine.cc
+dbcombine_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbcombine_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbcombine_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbavg_SOURCES = main/dbavg.cc
+dbavg_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbavg_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbavg_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbavg_disco_SOURCES = main/dbavg_disco.cc
+dbavg_disco_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbavg_disco_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbavg_disco_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbavgcors_SOURCES = main/dbavgcors.cc
+dbavgcors_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbavgcors_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbavgcors_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbbin_SOURCES = main/dbbin.cc
+dbbin_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbbin_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbbin_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbavgsrc_SOURCES = main/dbavgsrc.cc
+dbavgsrc_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbavgsrc_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbavgsrc_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbprop_diag_t0_SOURCES = main/dbprop_diag_t0.cc
+dbprop_diag_t0_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbprop_diag_t0_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbprop_diag_t0_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbprop_t0fix_SOURCES = main/dbprop_t0fix.cc
+dbprop_t0fix_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbprop_t0fix_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbprop_t0fix_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbmeson_t0fix_SOURCES = main/dbmeson_t0fix.cc
+dbmeson_t0fix_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbmeson_t0fix_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbmeson_t0fix_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbcanon_mom_SOURCES = main/dbcanon_mom.cc
+dbcanon_mom_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbcanon_mom_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbcanon_mom_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbwick_rescale_SOURCES = main/dbwick_rescale.cc
+dbwick_rescale_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbwick_rescale_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbwick_rescale_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbiso_wick_rescale_SOURCES = main/dbiso_wick_rescale.cc
+dbiso_wick_rescale_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbiso_wick_rescale_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbiso_wick_rescale_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbconvert_corr_util_SOURCES = main/dbconvert_corr_util.cc
+dbconvert_corr_util_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbconvert_corr_util_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbconvert_corr_util_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+dbgaus_corr_SOURCES = main/dbgaus_corr.cc
+dbgaus_corr_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+dbgaus_corr_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+dbgaus_corr_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+db_rephase_corrs_SOURCES = main/db_rephase_corrs.cc
+db_rephase_corrs_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+db_rephase_corrs_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+db_rephase_corrs_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+db_transform_corrs_SOURCES = main/db_transform_corrs.cc
+db_transform_corrs_CPPFLAGS = $(AM_CPPFLAGS) @SUPERBBLAS_CXXFLAGS@
+db_transform_corrs_LDFLAGS = @FILEDB_LDFLAGS@ @SUPERBBLAS_LDFLAGS@
+db_transform_corrs_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @SUPERBBLAS_LIBS@ @DATALIB_DEP_LIBS@
+EXTRA_PROGRAMS = dbcorr_read
+dbcorr_read_SOURCES = main/dbcorr_read.cc
+dbcorr_read_CPPFLAGS = $(AM_CPPFLAGS)
+dbcorr_read_LDFLAGS = @FILEDB_LDFLAGS@
+dbcorr_read_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @DATALIB_DEP_LIBS@
+endif
+EXTRA_DIST += main/dbtools_support.h docs/dbbin.md docs/dbreplicate.md tests/dbbin_fixture.cc tests/test_dbbin.py tests/dbreplicate_fixture.cc tests/test_dbreplicate.py
+
+# Frozen nonempty ADAT codecs remain available in the independent core build.
+check_PROGRAMS += legacy_sun_probe
+legacy_sun_probe_SOURCES = tests/legacy_sun_probe.cc
+legacy_sun_probe_LDADD = libdatalib_serial.a @DATALIB_DEP_LIBS@
+TESTS += tests/check-legacy-sun.sh
+EXTRA_DIST += tests/check-legacy-sun.sh tests/fixtures/dbtools/extracted-models.json
+EXTRA_DIST += tests/fixtures/dbtools/legacy-sun.bin tests/fixtures/dbtools/legacy-sun.xml tests/fixtures/dbtools/su2-populated.bin tests/fixtures/dbtools/su2-populated.xml tests/fixtures/dbtools/converted.bin tests/fixtures/dbtools/converted.xml
+if WITH_FILEDB
+check_PROGRAMS += dbbin_fixture legacy_tools_fixture
+dbbin_fixture_SOURCES = tests/dbbin_fixture.cc
+dbbin_fixture_CPPFLAGS = $(AM_CPPFLAGS)
+dbbin_fixture_LDFLAGS = @FILEDB_LDFLAGS@
+dbbin_fixture_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @DATALIB_DEP_LIBS@
+legacy_tools_fixture_SOURCES = tests/legacy_tools_fixture.cc
+legacy_tools_fixture_CPPFLAGS = $(AM_CPPFLAGS)
+legacy_tools_fixture_LDFLAGS = @FILEDB_LDFLAGS@
+legacy_tools_fixture_LDADD = libdatalib_serial.a @FILEDB_LIBS@ @DATALIB_DEP_LIBS@
+TESTS += tests/check-dbbin.sh
+endif
+EXTRA_DIST += tests/check-dbbin.sh
+
+if WITH_FILEDB
+TESTS += tests/check-legacy-tools.sh
+endif
+EXTRA_DIST += tests/check-legacy-tools.sh tests/test_legacy_tools.py tests/fixtures/dbtools/legacy-tools-reference.json
+
+EXTRA_DIST += .clang-format docs/database-tools.md
+
+EXTRA_DIST += dbtools-provenance.json
+
+# Standalone dbtools extraction verification; no database payloads or binaries.
+EXTRA_DIST += \
+    docs/reorg/DBTOOLS-EXTRACTION-REGRESSIONS.md \
+    docs/reorg/evidence/dbtools-extract-20261109-001/adat-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/adat-check.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/adat-configure.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/adat-install.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/audit_full.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/audit_helpers.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/baseline-dbconvert-fixed-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/baseline-dbconvert-fixed.cc \
+    docs/reorg/evidence/dbtools-extract-20261109-001/baseline-fixture-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/baseline-fixture-generator.cc \
+    docs/reorg/evidence/dbtools-extract-20261109-001/baseline-programs.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/before.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/build.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/build_stack.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/chroma-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/chroma-configure.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/chroma-dynamic-libraries.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/chroma-executor.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/chroma-install.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/chroma.sb \
+    docs/reorg/evidence/dbtools-extract-20261109-001/colorvec-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/colorvec-check.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/colorvec-configure.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/colorvec-install.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/compressed-diagnostics.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-basic-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-basic-check.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-basic-configure.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-basic-install.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-core-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-core-check.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-core-configure.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-core-expanded-check-final.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-core-expanded-check.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-core-install.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-filedb-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-filedb-check.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-filedb-configure.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-filedb-expanded-check-final.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-filedb-expanded-check.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib-filedb-install.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/datalib.sb \
+    docs/reorg/evidence/dbtools-extract-20261109-001/dbcorr-read-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/devel-after.log \
+    docs/reorg/evidence/dbtools-extract-20261109-001/devel-before.log \
+    docs/reorg/evidence/dbtools-extract-20261109-001/distribution-bootstrap-package.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/distribution-bootstrap.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/distribution-create-package.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/distribution-create.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/distribution-driver.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/distribution-package-driver.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/distribution.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/environments.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/exporter-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/commands.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/results.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/extra_checks_final.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/extract-corr-baseline-syntax.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/extract-corr-reorg-syntax.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/extract-corr-status.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/extraction.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/fix_conversion.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/graph-executors.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/independent-audit.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/metadata-checks.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/npt-only/command.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/npt-only/suite/results.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/openmp-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/openmp-check.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/openmp.cc \
+    docs/reorg/evidence/dbtools-extract-20261109-001/openmp_check.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/paired/command.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/paired/suite/results.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/policy-runner-library.sha256 \
+    docs/reorg/evidence/dbtools-extract-20261109-001/prop-diag-check/commands.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/prop-diag-check/results.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/prop_check.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/prop_fixture.cc \
+    docs/reorg/evidence/dbtools-extract-20261109-001/redstar-build.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/redstar-check.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/redstar-configure.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/redstar-dynamic-libraries.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/redstar-install.log.gz \
+    docs/reorg/evidence/dbtools-extract-20261109-001/report.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/run_full.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/sandbox-canaries.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/source-audit.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/source-sha256.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/source_audit.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/stack-sources.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/commands.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/tool-regressions-004/results.json \
+    docs/reorg/evidence/dbtools-extract-20261109-001/tool_tests.py \
+    docs/reorg/evidence/dbtools-extract-20261109-001/toolchain.json

@@ -1,0 +1,26 @@
+{
+  "dbgaus_corr-width-0": {
+    "identical": true,
+    "keys": 9
+  },
+  "dbgaus_corr-width-0.125": {
+    "identical": true,
+    "keys": 9
+  },
+  "dbcorr_read": {
+    "keys": 9,
+    "standalone": true
+  },
+  "dbreplicate": {
+    "passed": true,
+    "keys": 2,
+    "samples": 4096,
+    "factor": 0.01,
+    "standardized_noise_mean": 2.6431734260886062e-05,
+    "standardized_noise_stddev": 1.001815414287095,
+    "zero_noise_matches_dbmerge": true,
+    "metadata_preserved": true,
+    "seed_reproducible": true,
+    "invalid_input_and_overwrite_checks": true
+  }
+}

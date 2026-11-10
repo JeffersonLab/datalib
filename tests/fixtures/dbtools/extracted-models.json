@@ -1,0 +1,30 @@
+{
+  "origin": "Generated with previously validated ADAT f76d314b137520fa392aa536c982902fb91e8105 and matching datalib 0dc9b275cb7fce4c6f31d3189fd60d4917a41178; synthetic software fixtures, not physics data.",
+  "generator": "tests/legacy_tools_fixture.cc (BASELINE_ADAT variant retained in reorg evidence)",
+  "files": {
+    "legacy-sun.bin": {
+      "bytes": 402,
+      "sha256": "6b25f38b172788c5121abf9e85a457d72f4da6efa50cd6a8e4efa6a888f733f2"
+    },
+    "legacy-sun.xml": {
+      "bytes": 2216,
+      "sha256": "c075d58f409f1cb6fdb52b189a61f665e4942cdbb29d923fc5d8da7af60ed61a"
+    },
+    "converted.xml": {
+      "bytes": 3100,
+      "sha256": "0c0ba920f8b3c9a5250e168cd2d22aa6a7f30cdfa7329b38883bd2502221b5a3"
+    },
+    "su2-populated.bin": {
+      "bytes": 593,
+      "sha256": "2a81a529fec12e755f32f5ba3380ac84eab660b69c9423332f12fe7cc57d29fb"
+    },
+    "converted.bin": {
+      "bytes": 612,
+      "sha256": "571ae5bde65315d3fb8fb866d462de3460a8bbe8aa84bd27bc9b304758e0123f"
+    },
+    "su2-populated.xml": {
+      "bytes": 2849,
+      "sha256": "d03d73fabc8b131987e8575f4f9cc494f0f417e8c48f3398f4bbaa6071ecd90b"
+    }
+  }
+}

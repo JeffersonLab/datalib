@@ -1,0 +1,6 @@
+{
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "formatter": "clang-format version 23.1.5\n",
+  "style_path": "/Users/admin/.clang-format",
+  "style_sha256": "a3c37d019d81b4d97a24c1a6fe44f95ec09e559dbe31495b6955ce2726db68d6"
+}

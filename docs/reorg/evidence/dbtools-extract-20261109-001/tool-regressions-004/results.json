@@ -1,0 +1,113 @@
+{
+  "passed": true,
+  "populated_binary_xml_codecs_identical": true,
+  "input_hashes_preserved": true,
+  "comparisons": [
+    {
+      "case": "dbavgcors-one",
+      "keys": 2,
+      "values": 30,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbbin-one",
+      "keys": 2,
+      "values": 18,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbavgcors-two",
+      "keys": 2,
+      "values": 30,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbbin-two",
+      "keys": 2,
+      "values": 18,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbavgcors-three",
+      "keys": 2,
+      "values": 30,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbbin-three",
+      "keys": 2,
+      "values": 18,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbavgcors-su2",
+      "keys": 3,
+      "values": 45,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbbin-su2",
+      "keys": 3,
+      "values": 27,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbavgcors-sun",
+      "keys": 9,
+      "values": 135,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbbin-sun",
+      "keys": 9,
+      "values": 81,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbwick_rescale",
+      "keys": 3,
+      "values": 45,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbiso_wick_rescale",
+      "keys": 3,
+      "values": 45,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbcanon_mom",
+      "keys": 3,
+      "values": 45,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "dbconvert_corr_util",
+      "keys": 3,
+      "values": 45,
+      "max_absolute_error": 0.0,
+      "metadata_and_encoded_keys_equal": true
+    },
+    {
+      "case": "db_transform_corrs",
+      "keys": 9,
+      "values": 135,
+      "max_absolute_error": 2.278173318171838e-13,
+      "metadata_and_encoded_keys_equal": true
+    }
+  ],
+  "baseline_db_bin": "Corrected ENSEM dbbin from preceding checkpoint"
+}

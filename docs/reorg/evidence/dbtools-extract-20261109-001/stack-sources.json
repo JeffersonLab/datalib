@@ -1,0 +1,37 @@
+{
+  "datalib": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/datalib",
+    "commit": "0dc9b275cb7fce4c6f31d3189fd60d4917a41178",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": " M Makefile.am\n?? .clang-format\n?? docs/dbbin.md\n?? docs/dbreplicate.md\n?? include/datalib/legacy/hadron_convert_corr_util.h\n?? include/datalib/legacy/hadron_sun_npart_irrep.h\n?? include/datalib/legacy/hadron_sun_npart_irrep_op.h\n?? include/datalib/legacy/hadron_sun_npart_npt_corr.h\n?? lib/hadron_convert_corr_util.cc\n?? lib/hadron_sun_npart_irrep.cc\n?? lib/hadron_sun_npart_irrep_op.cc\n?? lib/hadron_sun_npart_npt_corr.cc\n?? main/db_rephase_corrs.cc\n?? main/db_transform_corrs.cc\n?? main/dbavg.cc\n?? main/dbavg_disco.cc\n?? main/dbavgcors.cc\n?? main/dbavgsrc.cc\n?? main/dbbin.cc\n?? main/dbcanon_mom.cc\n?? main/dbcombine.cc\n?? main/dbconvert_corr_util.cc\n?? main/dbconvert_ops_util.cc\n?? main/dbcorr_read.cc\n?? main/dbgaus_corr.cc\n?? main/dbiso_wick_rescale.cc\n?? main/dbmerge.cc\n?? main/dbmeson_t0fix.cc\n?? main/dbmeta.cc\n?? main/dbprop_diag_t0.cc\n?? main/dbprop_t0fix.cc\n?? main/dbreplicate.cc\n?? main/dbtools_support.h\n?? main/dbwick_rescale.cc\n?? tests/dbbin_fixture.cc\n?? tests/dbreplicate_fixture.cc\n?? tests/test_dbbin.py\n?? tests/test_dbreplicate.py\n",
+    "source_overlay": true
+  },
+  "chroma": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/chroma",
+    "commit": "830be31ca5c775cb11276a67a48666f2b5921bc6",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": "",
+    "source_overlay": true
+  },
+  "adat": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/adat",
+    "commit": "f76d314b137520fa392aa536c982902fb91e8105",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": " M .clang-format\n M lib/CMakeLists.txt\n M lib/Makefile.am\n D lib/hadron/hadron_convert_corr_util.cc\n D lib/hadron/hadron_convert_corr_util.h\n D lib/hadron/hadron_sun_npart_irrep.cc\n D lib/hadron/hadron_sun_npart_irrep.h\n D lib/hadron/hadron_sun_npart_irrep_op.cc\n D lib/hadron/hadron_sun_npart_irrep_op.h\n D lib/hadron/hadron_sun_npart_npt_corr.cc\n D lib/hadron/hadron_sun_npart_npt_corr.h\n M main/dbtools/CMakeLists.txt\n M main/dbtools/Makefile.am\n M main/dbtools/check_corr_graph.cc\n D main/dbtools/db_rephase_corrs.cc\n D main/dbtools/db_transform_corrs.cc\n D main/dbtools/dbavg.cc\n D main/dbtools/dbavg_disco.cc\n D main/dbtools/dbavgcors.cc\n D main/dbtools/dbavgsrc.cc\n D main/dbtools/dbbin.cc\n D main/dbtools/dbcanon_mom.cc\n D main/dbtools/dbcombine.cc\n D main/dbtools/dbconvert_corr_util.cc\n D main/dbtools/dbconvert_ops_util.cc\n D main/dbtools/dbcorr_read.cc\n D main/dbtools/dbgaus_corr.cc\n D main/dbtools/dbiso_wick_rescale.cc\n D main/dbtools/dbmerge.cc\n D main/dbtools/dbmeson_t0fix.cc\n D main/dbtools/dbmeta.cc\n D main/dbtools/dbprop_diag_t0.cc\n D main/dbtools/dbprop_t0fix.cc\n D main/dbtools/dbreplicate.cc\n D main/dbtools/dbreplicate.txt\n D main/dbtools/dbwick_rescale.cc\n M main/dbtools/extract_corr.cc\n D main/dbtools/tests/dbreplicate_fixture.cc\n D main/dbtools/tests/test_dbreplicate.py\n",
+    "source_overlay": true
+  },
+  "colorvec": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/colorvec",
+    "commit": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": "",
+    "source_overlay": true
+  },
+  "redstar": {
+    "source": "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/sources/redstar",
+    "commit": "38a5e2b1a19b25e5028a74dd19e24d85c8eaa33a",
+    "branch": "rge/devel-datalib-reorg",
+    "status_before_bootstrap": " M lib/do_not_use/generate_nonint_spectrum.cc\n M lib/filetest_redstar.h\n M lib/generate_hadron_xml.cc\n M lib/projected_ops.cc\n M src/convert_corr_util.cc\n M src/convert_proj_weights_util.cc\n M src/do_not_use/generate_nonint_spectrum.cc\n M src/do_not_use/redstar_gen_graph.cc\n M src/do_not_use/redstar_hadron_node.cc\n M src/extract_ops_util.cc\n M src/filetest_redstar.h\n M src/redstar_corr_graph.cc\n M src/reweight_insertions_DA.cc\n",
+    "source_overlay": true
+  }
+}

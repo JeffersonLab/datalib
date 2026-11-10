@@ -1,0 +1,26 @@
+[
+  {
+    "archive": "paired/suite/no_1pt/33/npt.log.gz",
+    "original_bytes": 150260621,
+    "original_sha256": "64ca71765946883d9c521db2a4f619c279c7d0ad7fce38e7bf2eeced1db2a368",
+    "archive_bytes": 11240807
+  },
+  {
+    "archive": "paired/suite/no_1pt/3pi/npt.log.gz",
+    "original_bytes": 232258024,
+    "original_sha256": "a2d3defbc01bd8f6a7afed7f8c995ba4e60065b72e99d952b0c8cd48c8e85eeb",
+    "archive_bytes": 17780772
+  },
+  {
+    "archive": "paired/suite/no_1pt/h8/npt.log.gz",
+    "original_bytes": 131159227,
+    "original_sha256": "91168685bf576be97d854367fa3ae671d9c9e10f6ec3856841e796757465918e",
+    "archive_bytes": 13004757
+  },
+  {
+    "archive": "paired/suite/no_1pt/rho_rho_3pt/npt.log.gz",
+    "original_bytes": 639719319,
+    "original_sha256": "d3dc324c3f074f204c8b2fa74f7ee481737b691d6df00f9bbfff7019de5ed146",
+    "archive_bytes": 48422094
+  }
+]

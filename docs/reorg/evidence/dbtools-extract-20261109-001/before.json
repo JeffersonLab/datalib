@@ -1,0 +1,43 @@
+{
+  "adat": {
+    "head": "f76d314b137520fa392aa536c982902fb91e8105",
+    "status": " M .clang-format\n M main/dbtools/Makefile.am\n M main/dbtools/check_corr_graph.cc\n M main/dbtools/dbbin.cc\n m other_libs/minuit\n m other_libs/xpath_reader\n?? main/dbtools/dbbin.txt\n?? main/dbtools/tests/dbbin_fixture.cc\n?? main/dbtools/tests/test_dbbin.py\n",
+    "index": "",
+    "devel": null
+  },
+  "datalib": {
+    "head": "0dc9b275cb7fce4c6f31d3189fd60d4917a41178",
+    "status": " m other_libs/filedb\n?? configure~\n",
+    "index": "",
+    "devel": null
+  },
+  "redstar": {
+    "head": "38a5e2b1a19b25e5028a74dd19e24d85c8eaa33a",
+    "status": "",
+    "index": "",
+    "devel": "b194fdfcfe93742ba6887e4374fd5a32a002415f refs/heads/devel\n"
+  },
+  "chroma": {
+    "head": "830be31ca5c775cb11276a67a48666f2b5921bc6",
+    "status": "",
+    "index": "",
+    "devel": "e1ac530e0bd50dbeac75a1e94d62a981308fe251 refs/heads/devel\n"
+  },
+  "colorvec": {
+    "head": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+    "status": "?? configure~\n",
+    "index": "",
+    "devel": "bab4ff2f050f3b91cf10d2fc394c74aa42faa7c0 refs/heads/devel\n"
+  },
+  "qdpxx": {
+    "head": "aae8052692246089c52f44b67a6e9fe2b0f1ce27",
+    "status": "",
+    "index": "",
+    "devel": "c1e9b5209f89d232af064a60004f8ac7c9a5c734 refs/heads/devel\n"
+  },
+  "kanoni": {
+    "head": "117b7011b5e9536eba7c975df561fee17ecf7b71",
+    "status": " M README.md\n M docs/README.md\n M docs/development-summary.md\n M docs/no1pt-clean-build.json\n M docs/no1pt-clean-build.md\n M docs/redstar-primer.md\n M docs/regressions.md\n?? .DS_Store\n?? docs/datalib-dependency-inventory.json\n?? docs/datalib-extraction-plan.md\n?? docs/datalib-serial-checkpoint.md\n",
+    "diff": "160ff001756df8efab6b436300ddc40adb563dd37a0685bbd8396ec5dfc7022a"
+  }
+}

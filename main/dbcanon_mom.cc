@@ -1,0 +1,114 @@
+#include <complex>
+#include <vector>
+/*! \file
+ * \brief Canonically order the mom_type
+ */
+
+#include "AllConfStoreDB.h"
+#include "DBString.h"
+#include <datalib/graph/naming.h>
+#include <datalib/legacy/hadron_npart_npt_corr.h>
+#include <datalib/legacy/hadron_sun_npart_npt_corr.h>
+#include <datalib/storage/filedb.h>
+
+using namespace Hadron;
+
+int main(int argc, char **argv) {
+  // Parse the arguments
+  if (argc != 3) {
+    std::cerr << "Usage: " << argv[0] << " <new dbasename> <old db>"
+              << std::endl;
+    return -1;
+  }
+
+  try {
+    // Get bored typing this so much
+    typedef Hadron::KeyHadronNPartNPtCorr_t K;
+
+    // Old db
+    FILEDB::AllConfStoreDB<
+        Datalib::Storage::SerialDBKey<K>,
+        Datalib::Storage::SerialDBData<std::vector<std::complex<double>>>>
+        dbold;
+    if (dbold.open(argv[2], O_RDONLY, 0400) != 0) {
+      std::cerr << __func__ << ": error opening dbase= " << argv[2]
+                << std::endl;
+      exit(1);
+    }
+
+    std::string meta;
+    dbold.getUserdata(meta);
+
+    // Open DB
+    int nbins = dbold.size();
+    std::vector<int> cfgs(nbins);
+
+    for (int i = 0; i < nbins; ++i) {
+      cfgs[i] = i;
+    }
+
+    // New db
+    FILEDB::AllConfStoreDB<
+        Datalib::Storage::SerialDBKey<K>,
+        Datalib::Storage::SerialDBData<std::vector<std::complex<double>>>>
+        dbnew(cfgs);
+
+    // Setup for the new DB
+    dbnew.setMaxUserInfoLen(meta.size());
+
+    // Open it
+    if (dbnew.open(argv[1], O_RDWR | O_TRUNC | O_CREAT, 0664) != 0) {
+      std::cerr << __func__ << ": error opening dbase= " << argv[1]
+                << std::endl;
+      exit(1);
+    }
+
+    // Insert new DB-meta
+    dbnew.insertUserdata(meta);
+
+    // Get keys and canonically order the mom_type
+    std::vector<Datalib::Storage::SerialDBKey<K>> keys;
+    dbold.keys(keys);
+
+    for (int i = 0; i < keys.size(); ++i) {
+      // Get the old value
+      std::vector<
+          Datalib::Storage::SerialDBData<std::vector<std::complex<double>>>>
+          val;
+      int ret;
+
+      if ((ret = dbold.get(keys[i], val)) != 0) {
+        std::cerr << __func__ << ": key not found\n";
+        exit(1);
+      }
+
+      // Canonically order the key
+      K canon_key = keys[i].key();
+
+      for (std::vector<Hadron::KeyHadronNPartNPtCorr_t::NPoint_t>::iterator
+               npt = canon_key.npoint.ref().begin();
+           npt != canon_key.npoint.ref().end(); ++npt) {
+        for (std::vector<KeyParticleOp_t>::iterator op =
+                 npt->irrep.op.ops.ref().begin();
+             op != npt->irrep.op.ops.ref().end(); ++op) {
+          op->mom_type = canonicalOrder(op->mom_type);
+        }
+      }
+
+      // Insert the new key
+      if ((ret = dbnew.insert(Datalib::Storage::SerialDBKey<K>(canon_key),
+                              val)) != 0) {
+        std::cerr << __func__ << ": error inserting key\n";
+        exit(1);
+      }
+    }
+
+    // close it
+    dbnew.close();
+  } catch (const std::string &e) {
+    std::cerr << argv[0] << ": error message: " << e << std::endl;
+    exit(1);
+  }
+
+  return 0;
+}

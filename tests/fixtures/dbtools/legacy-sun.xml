@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+
+<Key>
+  <NPoint>
+    <elem>
+      <t_slice>-2</t_slice>
+      <Irrep>
+        <creation_op>false</creation_op>
+        <smearedP>true</smearedP>
+        <flavor>
+          <twoI>1</twoI>
+          <threeY>3</threeY>
+          <twoI_z>1</twoI_z>
+        </flavor>
+        <irmom>
+          <row>1</row>
+          <mom>0 0 0</mom>
+        </irmom>
+        <Op>
+          <Operators>
+            <elem>
+              <name>Nucleon_test_J1o2_H1o2D2E</name>
+              <smear>fixture</smear>
+              <mom_type>0 0 0</mom_type>
+            </elem>
+            <elem>
+              <name>pion_test_J0_H0D2A2</name>
+              <smear>fixture</smear>
+              <mom_type>0 0 0</mom_type>
+            </elem>
+          </Operators>
+          <CGs>
+            <elem>
+              <left>1</left>
+              <right>2</right>
+              <target>
+                <slot>12</slot>
+                <F>2,1</F>
+                <irrep>Hg,2</irrep>
+                <mom_type>0 0 0</mom_type>
+              </target>
+            </elem>
+          </CGs>
+        </Op>
+      </Irrep>
+    </elem>
+    <elem>
+      <t_slice>1</t_slice>
+      <Irrep>
+        <creation_op>true</creation_op>
+        <smearedP>true</smearedP>
+        <flavor>
+          <twoI>1</twoI>
+          <threeY>3</threeY>
+          <twoI_z>1</twoI_z>
+        </flavor>
+        <irmom>
+          <row>1</row>
+          <mom>0 0 0</mom>
+        </irmom>
+        <Op>
+          <Operators>
+            <elem>
+              <name>Nucleon_test_J1o2_H1o2D2E</name>
+              <smear>fixture</smear>
+              <mom_type>0 0 0</mom_type>
+            </elem>
+            <elem>
+              <name>pion_test_J0_H0D2A2</name>
+              <smear>fixture</smear>
+              <mom_type>0 0 0</mom_type>
+            </elem>
+          </Operators>
+          <CGs>
+            <elem>
+              <left>1</left>
+              <right>2</right>
+              <target>
+                <slot>12</slot>
+                <F>2,1</F>
+                <irrep>Hg,2</irrep>
+                <mom_type>0 0 0</mom_type>
+              </target>
+            </elem>
+          </CGs>
+        </Op>
+      </Irrep>
+    </elem>
+  </NPoint>
+</Key>

@@ -1,0 +1,140 @@
+[
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbgaus_corr",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/noise-0-old.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun-single.sdb",
+      "4",
+      "0"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbgaus_corr",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/noise-0-new.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun-single.sdb",
+      "4",
+      "0"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/noise-0-old.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/noise-0-new.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/install/adat/bin/dbgaus_corr",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/noise-0.125-old.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun-single.sdb",
+      "4",
+      "0.125"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbgaus_corr",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/noise-0.125-new.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun-single.sdb",
+      "4",
+      "0.125"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/noise-0.125-old.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/standalone-tools-fixture",
+      "dump",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/noise-0.125-new.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/build/datalib-filedb/dbcorr_read",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/baseline-inputs/sun.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/usr/bin/clang++",
+      "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/include",
+      "-O1",
+      "-std=c++20",
+      "-isysroot",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xpreprocessor",
+      "-fopenmp",
+      "-I/opt/homebrew/opt/libomp/include",
+      "-I/opt/homebrew/opt/libxml2/include/libxml2",
+      "-I/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/include",
+      "/Users/admin/Downloads/macos-datalib-reorg/datalib/tests/dbreplicate_fixture.cc",
+      "-o",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/replica-fixture",
+      "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/lib",
+      "-isysroot",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-framework",
+      "Accelerate",
+      "-L/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/lib",
+      "-ldatalib_serial",
+      "-L/opt/homebrew/opt/libxml2/lib",
+      "-lxml2",
+      "-L/usr/lib",
+      "-lz",
+      "-L/opt/homebrew/opt/icu4c@76/lib",
+      "-licuuc",
+      "-liconv",
+      "-L/opt/homebrew/opt/libomp/lib",
+      "-Wl,-rpath,/opt/homebrew/opt/libomp/lib",
+      "-lomp",
+      "-lfiledb",
+      "-lfilehash",
+      "-lpthread"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/replica-fixture",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/chroma-storage-20261109-001/paired/suite/no_1pt/pion_3pt/output.sdb1",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/replica-input.sdb"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "/Users/admin/Downloads/macos-datalib-reorg/datalib/tests/test_dbreplicate.py",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbreplicate",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbmerge",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbutil",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/replica-input.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/extra-tool-checks-002/replicate-regression"
+    ],
+    "returncode": 0
+  }
+]

@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+
+<Key>
+  <NPoint>
+    <elem>
+      <t_slice>-2</t_slice>
+      <Irrep>
+        <creation_op>false</creation_op>
+        <smearedP>true</smearedP>
+        <flavor>
+          <twoI>2</twoI>
+          <threeY>0</threeY>
+          <twoI_z>0</twoI_z>
+        </flavor>
+        <irmom>
+          <row>1</row>
+          <mom>0 0 0</mom>
+        </irmom>
+        <Op>
+          <Operators>
+            <elem>
+              <name>pion_test_J0_A1</name>
+              <smear>fixture</smear>
+              <mom_class>0 0 0</mom_class>
+            </elem>
+            <elem>
+              <name>pion_test_J0_A1</name>
+              <smear>fixture</smear>
+              <mom_class>0 0 0</mom_class>
+            </elem>
+            <elem>
+              <name>pion_test_J0_A1</name>
+              <smear>fixture</smear>
+              <mom_class>0 0 0</mom_class>
+            </elem>
+          </Operators>
+          <CGs>
+            <elem>
+              <left>1</left>
+              <right>2</right>
+              <target>
+                <slot>12</slot>
+                <F>3,1</F>
+                <irrep>A1,1</irrep>
+                <mom_class>0 0 0</mom_class>
+              </target>
+            </elem>
+            <elem>
+              <left>12</left>
+              <right>3</right>
+              <target>
+                <slot>123</slot>
+                <F>3,1</F>
+                <irrep>A1,1</irrep>
+                <mom_class>0 0 0</mom_class>
+              </target>
+            </elem>
+          </CGs>
+        </Op>
+      </Irrep>
+    </elem>
+    <elem>
+      <t_slice>1</t_slice>
+      <Irrep>
+        <creation_op>true</creation_op>
+        <smearedP>true</smearedP>
+        <flavor>
+          <twoI>2</twoI>
+          <threeY>0</threeY>
+          <twoI_z>0</twoI_z>
+        </flavor>
+        <irmom>
+          <row>1</row>
+          <mom>0 0 0</mom>
+        </irmom>
+        <Op>
+          <Operators>
+            <elem>
+              <name>pion_test_J0_A1</name>
+              <smear>fixture</smear>
+              <mom_class>0 0 0</mom_class>
+            </elem>
+            <elem>
+              <name>pion_test_J0_A1</name>
+              <smear>fixture</smear>
+              <mom_class>0 0 0</mom_class>
+            </elem>
+            <elem>
+              <name>pion_test_J0_A1</name>
+              <smear>fixture</smear>
+              <mom_class>0 0 0</mom_class>
+            </elem>
+          </Operators>
+          <CGs>
+            <elem>
+              <left>1</left>
+              <right>2</right>
+              <target>
+                <slot>12</slot>
+                <F>3,1</F>
+                <irrep>A1,1</irrep>
+                <mom_class>0 0 0</mom_class>
+              </target>
+            </elem>
+            <elem>
+              <left>12</left>
+              <right>3</right>
+              <target>
+                <slot>123</slot>
+                <F>3,1</F>
+                <irrep>A1,1</irrep>
+                <mom_class>0 0 0</mom_class>
+              </target>
+            </elem>
+          </CGs>
+        </Op>
+      </Irrep>
+    </elem>
+  </NPoint>
+</Key>

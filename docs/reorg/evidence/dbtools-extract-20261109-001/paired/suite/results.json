@@ -1,0 +1,1744 @@
+{
+  "status": "passed",
+  "mode": "stored native tensors; full finite readback and strict per-value comparison",
+  "scope": "explicit user deferrals retained",
+  "requested_cases": [
+    "pion",
+    "1pt",
+    "33",
+    "3pi",
+    "a0.d3",
+    "a1_rhopi",
+    "d",
+    "delta_J1o2m",
+    "eta8eta8_F8",
+    "eta_eta_3pt",
+    "ff_3pt",
+    "fsq_3pt",
+    "glue",
+    "h8",
+    "hard.1_tslice.ini",
+    "nuc",
+    "nuc.p100",
+    "nuc_gA",
+    "nuc_nuc_3pt",
+    "nuc_nuc_ax_3pt",
+    "nuc_nuc_proj_3pt",
+    "nucnuc_small",
+    "nucpi",
+    "nucpi_I3o2",
+    "nucpi_J1o2m",
+    "nucpi_nucpi_J1o2m",
+    "pi",
+    "pi_pi_3pt",
+    "pion_3pt",
+    "pipi_i1",
+    "psi",
+    "rho",
+    "rho_rho_3pt",
+    "tetra_F27_S2"
+  ],
+  "requested_chain": "no_1pt",
+  "npt_only": false,
+  "experimental_no_1pt": true,
+  "cases": [
+    {
+      "case": "pion",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.1286535561155875e-11,
+        "per_value_failures": 0,
+        "max_abs_error": 9.041133121840199e-15,
+        "finite_complex_values": 48
+      },
+      "keys": 3,
+      "finite_complex_values": 48,
+      "CG_solves": 0
+    },
+    {
+      "case": "1pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 7.924289167172739e-16,
+        "per_value_failures": 0,
+        "max_abs_error": 8.61689244180633e-18,
+        "finite_complex_values": 48
+      },
+      "keys": 3,
+      "finite_complex_values": 48,
+      "CG_solves": 0
+    },
+    {
+      "case": "33",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.220836105571923e-12,
+        "per_value_failures": 0,
+        "max_abs_error": 7.236496387882353e-16,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "3pi",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 7.716613688409857e-11,
+        "per_value_failures": 0,
+        "max_abs_error": 1.2195766457225513e-13,
+        "finite_complex_values": 48
+      },
+      "keys": 3,
+      "finite_complex_values": 48,
+      "CG_solves": 0
+    },
+    {
+      "case": "a0.d3",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 4.1685535818862126e-17,
+        "per_value_failures": 0,
+        "max_abs_error": 4.647936526787833e-20,
+        "finite_complex_values": 1296
+      },
+      "keys": 324,
+      "finite_complex_values": 1296,
+      "CG_solves": 0
+    },
+    {
+      "case": "a1_rhopi",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 3.2785881807289077e-12,
+        "per_value_failures": 0,
+        "max_abs_error": 3.433114405811818e-15,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "d",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 2.5852952851848154e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 3.6638411145107034e-16,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "delta_J1o2m",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.32749598985502e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 1.1150912609939193e-16,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "eta8eta8_F8",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 6.560585299236937e-17,
+        "per_value_failures": 0,
+        "max_abs_error": 1.4202500883305642e-15,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "eta_eta_3pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1e-42,
+        "per_value_failures": 0,
+        "max_abs_error": 0.0,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "ff_3pt",
+      "chain": "no_1pt",
+      "status": "deferred_by_user",
+      "commands": []
+    },
+    {
+      "case": "fsq_3pt",
+      "chain": "no_1pt",
+      "status": "deferred_by_user",
+      "commands": []
+    },
+    {
+      "case": "glue",
+      "chain": "no_1pt",
+      "status": "deferred_by_user",
+      "commands": []
+    },
+    {
+      "case": "h8",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 9.098725026180966e-12,
+        "per_value_failures": 0,
+        "max_abs_error": 6.492617718943368e-15,
+        "finite_complex_values": 64
+      },
+      "keys": 4,
+      "finite_complex_values": 64,
+      "CG_solves": 0
+    },
+    {
+      "case": "hard.1_tslice.ini",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.661614906874848e-16,
+        "per_value_failures": 0,
+        "max_abs_error": 2.581623557302228e-19,
+        "finite_complex_values": 2116
+      },
+      "keys": 529,
+      "finite_complex_values": 2116,
+      "CG_solves": 0
+    },
+    {
+      "case": "nuc",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 3.500331677160213e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 2.220446049250313e-16,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "nuc.p100",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 3.500331677160213e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 2.120695015012297e-16,
+        "finite_complex_values": 14
+      },
+      "keys": 2,
+      "finite_complex_values": 14,
+      "CG_solves": 0
+    },
+    {
+      "case": "nuc_gA",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 7.508104179514808e-15,
+        "per_value_failures": 0,
+        "max_abs_error": 1.4267046007789674e-17,
+        "finite_complex_values": 7
+      },
+      "keys": 1,
+      "finite_complex_values": 7,
+      "CG_solves": 0
+    },
+    {
+      "case": "nuc_nuc_3pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 2.957762781871731e-14,
+        "per_value_failures": 0,
+        "max_abs_error": 4.1777673608052095e-17,
+        "finite_complex_values": 7
+      },
+      "keys": 1,
+      "finite_complex_values": 7,
+      "CG_solves": 0
+    },
+    {
+      "case": "nuc_nuc_ax_3pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.4636314458188547e-14,
+        "per_value_failures": 0,
+        "max_abs_error": 8.725934980155604e-17,
+        "finite_complex_values": 28
+      },
+      "keys": 4,
+      "finite_complex_values": 28,
+      "CG_solves": 0
+    },
+    {
+      "case": "nuc_nuc_proj_3pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 9.6703470771755e-17,
+        "per_value_failures": 0,
+        "max_abs_error": 2.6196744905295746e-19,
+        "finite_complex_values": 7
+      },
+      "keys": 1,
+      "finite_complex_values": 7,
+      "CG_solves": 0
+    },
+    {
+      "case": "nucnuc_small",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 2.583466850253429e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 7.983969392533412e-17,
+        "finite_complex_values": 8
+      },
+      "keys": 2,
+      "finite_complex_values": 8,
+      "CG_solves": 0
+    },
+    {
+      "case": "nucpi",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 2.468782940508076e-15,
+        "per_value_failures": 0,
+        "max_abs_error": 3.53916334140154e-17,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "nucpi_I3o2",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 4.4110691496316625e-14,
+        "per_value_failures": 0,
+        "max_abs_error": 3.332294980281256e-17,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "nucpi_J1o2m",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 8.687015810186314e-16,
+        "per_value_failures": 0,
+        "max_abs_error": 2.5086874334455788e-17,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 3.5440257321768203e-12,
+        "per_value_failures": 0,
+        "max_abs_error": 2.7755575615628914e-15,
+        "finite_complex_values": 32
+      },
+      "keys": 2,
+      "finite_complex_values": 32,
+      "CG_solves": 0
+    },
+    {
+      "case": "pi",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.6728773311545603e-12,
+        "per_value_failures": 0,
+        "max_abs_error": 1.2600130452682744e-15,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "pi_pi_3pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 4.2640876224509725e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 2.9326576526939265e-16,
+        "finite_complex_values": 6
+      },
+      "keys": 1,
+      "finite_complex_values": 6,
+      "CG_solves": 0
+    },
+    {
+      "case": "pion_3pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.7902118503664077e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 3.0184188481996443e-16,
+        "finite_complex_values": 7
+      },
+      "keys": 1,
+      "finite_complex_values": 7,
+      "CG_solves": 0
+    },
+    {
+      "case": "pipi_i1",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 4.021233326547847e-12,
+        "per_value_failures": 0,
+        "max_abs_error": 3.0201331455116262e-15,
+        "finite_complex_values": 16
+      },
+      "keys": 1,
+      "finite_complex_values": 16,
+      "CG_solves": 0
+    },
+    {
+      "case": "psi",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.095298874699222e-11,
+        "per_value_failures": 0,
+        "max_abs_error": 4.012085879858621e-15,
+        "finite_complex_values": 32
+      },
+      "keys": 2,
+      "finite_complex_values": 32,
+      "CG_solves": 0
+    },
+    {
+      "case": "rho",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.0693158323884517e-11,
+        "per_value_failures": 0,
+        "max_abs_error": 1.2440853988058506e-14,
+        "finite_complex_values": 48
+      },
+      "keys": 3,
+      "finite_complex_values": 48,
+      "CG_solves": 0
+    },
+    {
+      "case": "rho_rho_3pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "chroma",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat",
+            "-i",
+            "chroma.xml",
+            "-o",
+            "chroma.out.xml"
+          ],
+          "returncode": 0
+        }
+      ],
+      "dbutil_relative_only_diagnostic": null,
+      "strict_comparison": {
+        "relative_tolerance": 1e-09,
+        "absolute_floor": 1.263125174825876e-13,
+        "per_value_failures": 0,
+        "max_abs_error": 6.073553092204933e-16,
+        "finite_complex_values": 189
+      },
+      "keys": 27,
+      "finite_complex_values": 189,
+      "CG_solves": 0
+    },
+    {
+      "case": "tetra_F27_S2",
+      "chain": "no_1pt",
+      "status": "deferred_by_user",
+      "commands": []
+    }
+  ],
+  "build_qualification": "Standalone dbtools/codecs extracted from ADAT into datalib with standard-complex legacy arithmetic; format-4-only reorg stack, fresh ADAT/ColorVec/Redstar and ADAT-free Chroma builds using the same datalib installation; OpenMP Apple Clang/libomp; cached native-double tensors and explicit DISCO supplement, zero CG solves; existing deferrals and per-value gate unchanged; SB_CACHEGB_CPU=1, unchanged 8192 MiB RSS cap and 2 GiB planner; one MPI rank; Chroma executed in ADAT-denying sandbox",
+  "data_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/dataset-manifest.json": "01f7b0f2f9ff8d2863a97e82aa80046110963af5fff595a64bb6a1030098cc19",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod": "5aadbfe5573a70a0abaad4ba868085e8246dc7ff3c3080820970fd426e43b2ce",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/meson.sbt": "96a546300769e06eb15d0d7bfab95855ef9eacde4755ba56038699ac689eacb6",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.05.sbt": "312493548ae5c93bb954f2b580cb6c5ff39f377d390e602f1a7dc87c27898c6c",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.1.sbt": "cd241ee7740816ae74d6e397c4798973db17ff597f3d58ae5c6f8759d5c8957d",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.2.sbt": "ed2db91bf252a6f420001389eefa4cb9224b288f8cc56e610a09bf52020dee93",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.05.sbt": "ba6ac2f77f8ff1bea76079e52f94c435b4c9f248449a99a6ce5c15bc4f0a3eca",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.1.sbt": "40774ca534ecdd5f9b0fe02f4ca0a2c47881effcc31b72f2e020e8f5e9100f15",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/baryon.sbt": "a9e3c0f390fa000911f8aa5ba6d6ed12a28d3e133e29963e6524ad0ac7d74b26"
+  },
+  "disco_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/dataset-manifest.json": "dad89112a2c92f29503703b7167543dfedc390c901fd1a91241539ae87f5b968",
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/disco.sdb": "87a867c876e94f6e67b37097c0744c4b2d184f3f2e5e5a236e1c526e623a03be"
+  },
+  "program_sha256": {
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/chroma-without-adat": "fe285a35f5f51cf6095f60f137d03afc0b9db78354a8dd24f1ac11529a293b7f",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt": "2f228d93c14eb87349ae2cd90f0dec4746cef88cb007ceca5495fc3ca5573060",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/datalib-filedb/bin/dbutil": "d65c8ceda4298eb36a9c22585293e2b9b85d3c84c4672801f9fd9717e402f8e8",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/export-correlators": "37cb00808c2aac42c59b4f1c6324df46a97535cbaf51ad776f3c9e57c857b835",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/redstar_corr_graph": "d1cc62a03ba975ae9f66e1427845a43aad2642100fefd865b6f343d0f42b5e9a",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/graph-tools/view_corr_graph": "f3377a06bcd6bd978cc2ec1a140d8747309fe389468e0ae777b673d220d5f007"
+  }
+}

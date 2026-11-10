@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "input_keys": 64,
+  "output_keys": 32,
+  "spin_pairs": 16,
+  "times": 2,
+  "metadata_keys_values_identical_to_baseline": true,
+  "finite_matrix_shape": [
+    2,
+    2
+  ],
+  "input_hash_preserved": true
+}

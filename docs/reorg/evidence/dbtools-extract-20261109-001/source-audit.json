@@ -1,0 +1,123 @@
+{
+  "adat": {
+    "head": "f76d314b137520fa392aa536c982902fb91e8105",
+    "branch": "rge/devel-datalib-reorg",
+    "index_unchanged": true,
+    "devel_unchanged": true
+  },
+  "datalib": {
+    "head": "0dc9b275cb7fce4c6f31d3189fd60d4917a41178",
+    "branch": "rge/devel-datalib-reorg",
+    "index_unchanged": true,
+    "devel_unchanged": true
+  },
+  "redstar": {
+    "head": "38a5e2b1a19b25e5028a74dd19e24d85c8eaa33a",
+    "branch": "rge/devel-datalib-reorg",
+    "index_unchanged": true,
+    "devel_unchanged": true
+  },
+  "chroma": {
+    "head": "830be31ca5c775cb11276a67a48666f2b5921bc6",
+    "branch": "rge/devel-datalib-reorg",
+    "index_unchanged": true,
+    "devel_unchanged": true
+  },
+  "colorvec": {
+    "head": "6efed9b4d348f213b03f546ece272e517d8ae6bc",
+    "branch": "rge/devel-datalib-reorg",
+    "index_unchanged": true,
+    "devel_unchanged": true
+  },
+  "qdpxx": {
+    "head": "aae8052692246089c52f44b67a6e9fe2b0f1ce27",
+    "branch": "rge/devel-datalib-reorg",
+    "index_unchanged": true,
+    "devel_unchanged": true
+  },
+  "kanoni_unchanged": true,
+  "programs": {
+    "dbreplicate": {
+      "standalone": true,
+      "sha256": "5edf3e5dc15137e5c3c2aa8558f0de66d16848da6e329fe3ac3291a50d535e8b"
+    },
+    "dbmerge": {
+      "standalone": true,
+      "sha256": "2941df3a86c9d852c8d0eee9fbbfc7f5978b72086ff8023a0f6a50f22b8965c9"
+    },
+    "dbmeta": {
+      "standalone": true,
+      "sha256": "b0661ae1157e71bd27a9de31d1074a783e3e7f7a69a3e43a35634d09f045cf57"
+    },
+    "dbcombine": {
+      "standalone": true,
+      "sha256": "db9a59f97ef76df194a78d861cc21076aabc012ccc4651e774e9fbd545de66c9"
+    },
+    "dbavg": {
+      "standalone": true,
+      "sha256": "060fe7f420eefc33942d21237f5eb9e99e92fc996ebed5593badd17a95f9690c"
+    },
+    "dbavg_disco": {
+      "standalone": true,
+      "sha256": "0abab46eefa0cf5434d4ddc9d179734ba76f58af6315aa385e64822ae262a490"
+    },
+    "dbavgcors": {
+      "standalone": true,
+      "sha256": "f9718d45568e6fa2e1de5717698006835c7c95457cc394a81132874813ef98a1"
+    },
+    "dbbin": {
+      "standalone": true,
+      "sha256": "320fad8fff93febd695cf0376910ddfefcbcc1c57a6ea7e2a148576d9758cc11"
+    },
+    "dbavgsrc": {
+      "standalone": true,
+      "sha256": "427276861c018af113808b17ba46a49096400905eabddc45f6947989c6257b40"
+    },
+    "dbprop_diag_t0": {
+      "standalone": true,
+      "sha256": "cf3448e2d374ada58b3ae0aa989232abb5230766e5f02ccd400c4f57d8c4161c"
+    },
+    "dbprop_t0fix": {
+      "standalone": true,
+      "sha256": "a51d47c2b5d72dba5defc355400a4280d9813014aef4a1d1f0c19a67693d0ff7"
+    },
+    "dbmeson_t0fix": {
+      "standalone": true,
+      "sha256": "b9cbb53b09b609b5f724eb9b974ab25151ec160ba6cc2b49480f43c48f2fc150"
+    },
+    "dbcanon_mom": {
+      "standalone": true,
+      "sha256": "5124452d47dcf5a48b9b76691e4ce77338a13b929ac3597fd65342fa2d8bc9f4"
+    },
+    "dbwick_rescale": {
+      "standalone": true,
+      "sha256": "b962187e7663f9d0ab7dced89cc84ac9df0c9259e681c2f1daf07eda9a1d3a8c"
+    },
+    "dbiso_wick_rescale": {
+      "standalone": true,
+      "sha256": "a613a68693ae23923e4a8a206431a221a5b66b9569d9ccbba545e2d2b7c77f36"
+    },
+    "dbconvert_corr_util": {
+      "standalone": true,
+      "sha256": "c44515de54fc45ee7f618594ea8209313b9169834762917ed0b15ee0368fcd3d"
+    },
+    "dbgaus_corr": {
+      "standalone": true,
+      "sha256": "6eb1fab192b09985ec7521aa64d46f10fa51815bd413b2840de94e3de78567a3"
+    },
+    "db_rephase_corrs": {
+      "standalone": true,
+      "sha256": "c94df97bae1597f42eb2cbc042fff1d360aa248c6d265d6725b8c25a19c02391"
+    },
+    "dbconvert_ops_util": {
+      "standalone": true,
+      "sha256": "4b4545ec56abd5c933587a5f97273d99cd65c00d8c3f42b6c3aa19b9c63eb1fa"
+    },
+    "db_transform_corrs": {
+      "standalone": true,
+      "sha256": "3783231128a4fbdbd95775c53d988a51c0a390e8deb6407883f1baa6f4978654"
+    }
+  },
+  "extract_corr_retained_in_adat": true,
+  "source_implementations_match_built_snapshots": true
+}
