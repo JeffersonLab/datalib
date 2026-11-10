@@ -1,0 +1,39 @@
+[
+  {
+    "step": "superbblas-serial-generate",
+    "command": [
+      "make",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial/superbblas_lib",
+      "TARGET=cpu",
+      "BUILDDIR=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial",
+      "PREFIX=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/superbblas-serial",
+      "LIBRARY=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial/libsuperbblas.a",
+      "CXX=/usr/bin/clang++",
+      "CXXFLAGS=-O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -DSUPERBBLAS_USE_CBLAS",
+      "SUPERBBLAS_WITH_MPI=no",
+      "INSTALL_LINK_SOURCE=no",
+      "PYTHON=/opt/homebrew/bin/python3"
+    ],
+    "returncode": 0,
+    "seconds": 0.260545667
+  },
+  {
+    "step": "superbblas-serial-build-install",
+    "command": [
+      "make",
+      "install",
+      "-j2",
+      "TARGET=cpu",
+      "BUILDDIR=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial",
+      "PREFIX=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/superbblas-serial",
+      "LIBRARY=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial/libsuperbblas.a",
+      "CXX=/usr/bin/clang++",
+      "CXXFLAGS=-O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -DSUPERBBLAS_USE_CBLAS",
+      "SUPERBBLAS_WITH_MPI=no",
+      "INSTALL_LINK_SOURCE=no",
+      "PYTHON=/opt/homebrew/bin/python3"
+    ],
+    "returncode": 0,
+    "seconds": 4.861701833
+  }
+]

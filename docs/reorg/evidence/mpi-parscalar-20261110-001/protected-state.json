@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "published_heads_unchanged": {
+    "adat": "a934f3307bf68ba670a1043298e158697cecc845",
+    "redstar": "bca8a45c584c7aae588348579ca9af6bc512957e",
+    "datalib": "96d47257d7100a58047831c9f0a22612a028e937"
+  },
+  "indexes_unchanged": true,
+  "local_and_primary_devel_unchanged": true,
+  "kanoni_tracked_and_untracked_work_unchanged": true,
+  "new_mpi_report_uncommitted": true,
+  "local_documentation_correction": "datalib/docs/reorg/DBTOOLS-EXTRACTION-REGRESSIONS.md"
+}

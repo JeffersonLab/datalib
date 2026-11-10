@@ -1,0 +1,353 @@
+[
+  {
+    "step": "qmp-root-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/qmp",
+      "/Users/admin/Downloads/macos-datalib-reorg/qmp"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.28942875
+  },
+  {
+    "step": "superbblas-root-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/superbblas",
+      "/Users/admin/Downloads/macos-datalib-reorg/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.20966145799999997
+  },
+  {
+    "step": "qmp-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "--single-branch",
+      "--branch",
+      "rge/devel-datalib-reorg",
+      "/Users/admin/Downloads/macos-datalib-reorg/qmp",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/qmp"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.2798880840000001
+  },
+  {
+    "step": "superbblas-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "--single-branch",
+      "--branch",
+      "rge/devel-datalib-reorg",
+      "/Users/admin/Downloads/macos-datalib-reorg/superbblas",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/superbblas"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.17866608299999998
+  },
+  {
+    "step": "qdpxx-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "--single-branch",
+      "--branch",
+      "rge/devel-datalib-reorg",
+      "/Users/admin/Downloads/macos-datalib-reorg/qdpxx",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/qdpxx"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.628074416
+  },
+  {
+    "step": "qdpxx-submodules",
+    "command": [
+      "git",
+      "-c",
+      "protocol.file.allow=always",
+      "submodule",
+      "update",
+      "--init",
+      "--recursive"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/qdpxx",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 1.4121268340000002
+  },
+  {
+    "step": "datalib-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "--single-branch",
+      "--branch",
+      "rge/devel-datalib-reorg",
+      "/Users/admin/Downloads/macos-datalib-reorg/datalib",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/datalib"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.590119917
+  },
+  {
+    "step": "datalib-submodules",
+    "command": [
+      "git",
+      "-c",
+      "protocol.file.allow=always",
+      "submodule",
+      "update",
+      "--init",
+      "--recursive"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/datalib",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.2677166249999994
+  },
+  {
+    "step": "chroma-clone",
+    "command": [
+      "git",
+      "clone",
+      "--no-local",
+      "--single-branch",
+      "--branch",
+      "rge/devel-datalib-reorg",
+      "/Users/admin/Downloads/macos-datalib-reorg/chroma",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/chroma"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 2.6264645830000006
+  },
+  {
+    "step": "chroma-submodules",
+    "command": [
+      "git",
+      "-c",
+      "protocol.file.allow=always",
+      "submodule",
+      "update",
+      "--init",
+      "--recursive"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/chroma",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.6430624169999994
+  },
+  {
+    "step": "superbblas-serial-generate",
+    "command": [
+      "make",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial/superbblas_lib",
+      "TARGET=cpu",
+      "BUILDDIR=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial",
+      "PREFIX=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/superbblas-serial",
+      "LIBRARY=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial/libsuperbblas.a",
+      "CXX=/usr/bin/clang++",
+      "CXXFLAGS=-O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -DSUPERBBLAS_USE_CBLAS",
+      "SUPERBBLAS_WITH_MPI=no",
+      "INSTALL_LINK_SOURCE=no",
+      "PYTHON=/opt/homebrew/bin/python3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/superbblas/src",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 0.742994125000001
+  },
+  {
+    "step": "qmp-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/qmp",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 3.24385775
+  },
+  {
+    "step": "superbblas-serial-build-install",
+    "command": [
+      "make",
+      "install",
+      "-j2",
+      "TARGET=cpu",
+      "BUILDDIR=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial",
+      "PREFIX=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/superbblas-serial",
+      "LIBRARY=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-serial/libsuperbblas.a",
+      "CXX=/usr/bin/clang++",
+      "CXXFLAGS=-O1 -std=c++20 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -DSUPERBBLAS_USE_CBLAS",
+      "SUPERBBLAS_WITH_MPI=no",
+      "INSTALL_LINK_SOURCE=no",
+      "PYTHON=/opt/homebrew/bin/python3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/superbblas/src",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 6.662004999999999
+  },
+  {
+    "step": "superbblas-mpi-generate",
+    "command": [
+      "make",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-mpi/superbblas_lib",
+      "TARGET=cpu",
+      "BUILDDIR=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-mpi",
+      "PREFIX=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/superbblas-mpi",
+      "LIBRARY=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-mpi/libsuperbblas.a",
+      "CXX=/opt/homebrew/bin/mpicxx",
+      "CXXFLAGS=-O1 -std=c++20 -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/eigen/include/eigen3 -I/opt/homebrew/opt/gmp/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -DSUPERBBLAS_USE_MPI -DSUPERBBLAS_USE_CBLAS",
+      "SUPERBBLAS_WITH_MPI=yes",
+      "INSTALL_LINK_SOURCE=no",
+      "PYTHON=/opt/homebrew/bin/python3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/superbblas/src",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 0.8523633749999995
+  },
+  {
+    "step": "qmp-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/qmp/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/qmp",
+      "--with-qmp-comms-type=MPI"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/qmp",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 7.2622585829999995
+  },
+  {
+    "step": "qmp-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/qmp",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 0.9303106660000005
+  },
+  {
+    "step": "qmp-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/qmp",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 1.0150767500000022
+  },
+  {
+    "step": "qmp-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/qmp",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 0.2688483749999975
+  },
+  {
+    "step": "superbblas-mpi-build-install",
+    "command": [
+      "make",
+      "install",
+      "-j2",
+      "TARGET=cpu",
+      "BUILDDIR=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-mpi",
+      "PREFIX=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/superbblas-mpi",
+      "LIBRARY=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/superbblas-mpi/libsuperbblas.a",
+      "CXX=/opt/homebrew/bin/mpicxx",
+      "CXXFLAGS=-O1 -std=c++20 -Xpreprocessor -fopenmp -I/opt/homebrew/opt/libomp/include -I/opt/homebrew/opt/eigen/include/eigen3 -I/opt/homebrew/opt/gmp/include -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -DSUPERBBLAS_USE_MPI -DSUPERBBLAS_USE_CBLAS",
+      "SUPERBBLAS_WITH_MPI=yes",
+      "INSTALL_LINK_SOURCE=no",
+      "PYTHON=/opt/homebrew/bin/python3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/superbblas/src",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 5.779074999999999
+  },
+  {
+    "step": "qdpxx-bootstrap",
+    "command": [
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/qdpxx",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 13.279432541999999
+  },
+  {
+    "step": "qdpxx-configure",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/qdpxx/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/qdpxx",
+      "--enable-parallel-arch=parscalar",
+      "--enable-Nd=4",
+      "--enable-precision=double",
+      "--enable-openmp",
+      "--with-qmp=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/qmp",
+      "--with-libxml2=/opt/homebrew/opt/libxml2"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/qdpxx",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 24.510424375
+  },
+  {
+    "step": "qdpxx-build",
+    "command": [
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/qdpxx",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 12.588011999999999
+  },
+  {
+    "step": "qdpxx-check",
+    "command": [
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/qdpxx",
+    "environment": "mpi",
+    "returncode": 2,
+    "seconds": 18.85196483300001
+  }
+]

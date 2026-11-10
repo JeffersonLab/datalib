@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "scope": "Upstream architecture-specific SSE unit/benchmark programs on the generic Apple-arm64 parscalar build",
+  "reproduced_in_prior_reorg": true,
+  "missing_helpers": [
+    "vaxpy4",
+    "vaxpyz4",
+    "vaxmy4"
+  ],
+  "library_build_passed": true,
+  "test_sources_unchanged": true,
+  "not_an_MPI_runtime_result": true
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "case": "meson",
+    "ranks": 1,
+    "returncode": 0,
+    "input_sha256": "46207421b1071a4cdc0ff3f42220d0d2a5b21b1822fb5cb57592aa8763ebc308",
+    "database": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb"
+  },
+  {
+    "case": "meson",
+    "ranks": 2,
+    "returncode": 0,
+    "input_sha256": "46207421b1071a4cdc0ff3f42220d0d2a5b21b1822fb5cb57592aa8763ebc308",
+    "database": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb"
+  },
+  {
+    "case": "baryon",
+    "ranks": 1,
+    "returncode": 0,
+    "input_sha256": "68b4e3b218b3e65fcc6896fb71a9fcec4c4126b0cd811395bef0b2e9a82ceaa5",
+    "database": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb"
+  },
+  {
+    "case": "baryon",
+    "ranks": 2,
+    "returncode": 0,
+    "input_sha256": "68b4e3b218b3e65fcc6896fb71a9fcec4c4126b0cd811395bef0b2e9a82ceaa5",
+    "database": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb"
+  }
+]

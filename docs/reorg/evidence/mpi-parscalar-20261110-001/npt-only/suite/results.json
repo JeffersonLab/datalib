@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "mode": "stored native tensors; full finite readback and strict per-value comparison",
+  "scope": "explicit user deferrals retained",
+  "requested_cases": [
+    "fsq_3pt",
+    "glue",
+    "tetra_F27_S2"
+  ],
+  "requested_chain": "no_1pt",
+  "npt_only": true,
+  "experimental_no_1pt": true,
+  "cases": [
+    {
+      "case": "fsq_3pt",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "keys",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/datalib/bin/dbutil",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/fsq_3pt/output.sdb1",
+            "keysxml",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/fsq_3pt/npt-keys.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "export",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/export-correlators",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/fsq_3pt/output.sdb1",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/fsq_3pt/npt-export"
+          ],
+          "returncode": 0
+        }
+      ],
+      "npt_only": true,
+      "keys": 2,
+      "finite_complex_values": 32
+    },
+    {
+      "case": "glue",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "keys",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/datalib/bin/dbutil",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/glue/output.sdb1",
+            "keysxml",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/glue/npt-keys.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "export",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/export-correlators",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/glue/output.sdb1",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/glue/npt-export"
+          ],
+          "returncode": 0
+        }
+      ],
+      "npt_only": true,
+      "keys": 1,
+      "finite_complex_values": 16
+    },
+    {
+      "case": "tetra_F27_S2",
+      "chain": "no_1pt",
+      "status": "passed",
+      "commands": [
+        {
+          "stage": "graph",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/graph-tools/redstar_corr_graph",
+            "graph.xml",
+            "graph.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "view",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/graph-tools/view_corr_graph",
+            "corr_graph.bin"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "npt",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt",
+            "npt.xml",
+            "npt.out.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "keys",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/datalib/bin/dbutil",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/tetra_F27_S2/output.sdb1",
+            "keysxml",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/tetra_F27_S2/npt-keys.xml"
+          ],
+          "returncode": 0
+        },
+        {
+          "stage": "export",
+          "argv": [
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/export-correlators",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/tetra_F27_S2/output.sdb1",
+            "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/npt-only/suite/no_1pt/tetra_F27_S2/npt-export"
+          ],
+          "returncode": 0
+        }
+      ],
+      "npt_only": true,
+      "keys": 3,
+      "finite_complex_values": 48
+    }
+  ],
+  "build_qualification": "Fresh MPI QMP, parscalar double QDP/OpenMP, serial and MPI SuperbBLAS, standalone datalib and ADAT-free Chroma from matching reorg branches. Chroma executes with two MPI ranks and two OpenMP threads per rank, explicitly set by a per-rank executor; the unchanged runner sets the single-process NPT reference to one OpenMP worker. Each real Chroma rank is independently RSS-monitored, not just mpirun. Cached native-double tensors and explicit DISCO supplement; zero CG solves; original deferrals, 8192 MiB RSS cap per actual rank process, 2 GiB planner and SB_CACHEGB_CPU=1 unchanged. Legacy QDP SIMD unit-program compile failure is preserved separately and does not establish an MPI runtime failure.",
+  "data_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/dataset-manifest.json": "01f7b0f2f9ff8d2863a97e82aa80046110963af5fff595a64bb6a1030098cc19",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/colorvec.mod": "5aadbfe5573a70a0abaad4ba868085e8246dc7ff3c3080820970fd426e43b2ce",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/meson.sbt": "96a546300769e06eb15d0d7bfab95855ef9eacde4755ba56038699ac689eacb6",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.05.sbt": "312493548ae5c93bb954f2b580cb6c5ff39f377d390e602f1a7dc87c27898c6c",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.1.sbt": "cd241ee7740816ae74d6e397c4798973db17ff597f3d58ae5c6f8759d5c8957d",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/prop-U0.2.sbt": "ed2db91bf252a6f420001389eefa4cb9224b288f8cc56e610a09bf52020dee93",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.05.sbt": "ba6ac2f77f8ff1bea76079e52f94c435b4c9f248449a99a6ce5c15bc4f0a3eca",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/genprop-U0.1.sbt": "40774ca534ecdd5f9b0fe02f4ca0a2c47881effcc31b72f2e020e8f5e9100f15",
+    "/Users/admin/Downloads/redstar_kanoni.devel/runs/native-superb-rsd14-20261101-001/baryon.sbt": "a9e3c0f390fa000911f8aa5ba6d6ed12a28d3e133e29963e6524ad0ac7d74b26"
+  },
+  "disco_provenance": {
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/dataset-manifest.json": "dad89112a2c92f29503703b7167543dfedc390c901fd1a91241539ae87f5b968",
+    "/Users/admin/Downloads/redstar_kanoni.devel/data/disco-native-direct-20261101-001/disco.sdb": "87a867c876e94f6e67b37097c0744c4b2d184f3f2e5e5a236e1c526e623a03be"
+  },
+  "program_sha256": {
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma-without-adat": "2a7ba5fb5d4ba4ee7aa44b4074e1d7a205d49b1a17e676dbe667250e16eb6066",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/dbtools-extract-20261109-001/install/redstar/bin/redstar_npt": "2f228d93c14eb87349ae2cd90f0dec4746cef88cb007ceca5495fc3ca5573060",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/datalib/bin/dbutil": "d65c8ceda4298eb36a9c22585293e2b9b85d3c84c4672801f9fd9717e402f8e8",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/export-correlators": "37cb00808c2aac42c59b4f1c6324df46a97535cbaf51ad776f3c9e57c857b835",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/graph-tools/redstar_corr_graph": "d1cc62a03ba975ae9f66e1427845a43aad2642100fefd865b6f343d0f42b5e9a",
+    "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/graph-tools/view_corr_graph": "bb70e26e8aa26b02e2b34d7e2a72f17d067d47f0ea096a38cc97be65b31fb153"
+  }
+}

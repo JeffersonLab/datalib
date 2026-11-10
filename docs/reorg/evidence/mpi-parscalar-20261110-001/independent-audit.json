@@ -1,0 +1,3560 @@
+{
+  "status": "passed_with_existing_qdp_test_limitation",
+  "qmp_comms": "MPI",
+  "qdp_parallel_arch": "parscalar",
+  "paired": {
+    "passed": 30,
+    "deferred": [
+      "ff_3pt",
+      "fsq_3pt",
+      "glue",
+      "tetra_F27_S2"
+    ],
+    "keys": 925,
+    "values": 4197,
+    "cases": [
+      {
+        "case": "pion",
+        "keys": 3,
+        "graph_count": 1,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "failures": 0,
+        "max_abs_error": 9.041133121840199e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "1pt",
+        "keys": 3,
+        "graph_count": 13,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "failures": 0,
+        "max_abs_error": 8.61689244180633e-18,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "33",
+        "keys": 1,
+        "graph_count": 4446,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 7.236496387882353e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "3pi",
+        "keys": 3,
+        "graph_count": 6775,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "failures": 0,
+        "max_abs_error": 1.2195766457225513e-13,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "a0.d3",
+        "keys": 324,
+        "graph_count": 15988,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 1296,
+        "failures": 0,
+        "max_abs_error": 4.647936526787833e-20,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 1296,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 1296,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "a1_rhopi",
+        "keys": 1,
+        "graph_count": 66,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.433114405811818e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "d",
+        "keys": 1,
+        "graph_count": 144,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.6638411145107034e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "delta_J1o2m",
+        "keys": 1,
+        "graph_count": 6,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 1.1150912609939193e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "eta8eta8_F8",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 1.4202500883305642e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "eta_eta_3pt",
+        "keys": 1,
+        "graph_count": 0,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 1,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 0.0,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 1,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "h8",
+        "keys": 4,
+        "graph_count": 3504,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 64,
+        "failures": 0,
+        "max_abs_error": 6.492617718943368e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 64,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 64,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "hard.1_tslice.ini",
+        "keys": 529,
+        "graph_count": 3969,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 2116,
+        "failures": 0,
+        "max_abs_error": 2.581623557302228e-19,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 2116,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 2116,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 2.220446049250313e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc.p100",
+        "keys": 2,
+        "graph_count": 4,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 14,
+        "failures": 0,
+        "max_abs_error": 2.120695015012297e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 14,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 14,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc_gA",
+        "keys": 1,
+        "graph_count": 6,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 7,
+        "failures": 0,
+        "max_abs_error": 1.4267046007789674e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc_nuc_3pt",
+        "keys": 1,
+        "graph_count": 9,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 1,
+        "prior_npt_unevaluable_graphs": 1,
+        "npt_zero_channels": 0,
+        "values": 7,
+        "failures": 0,
+        "max_abs_error": 4.1777673608052095e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc_nuc_ax_3pt",
+        "keys": 4,
+        "graph_count": 24,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 28,
+        "failures": 0,
+        "max_abs_error": 8.725934980155604e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 28,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 28,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nuc_nuc_proj_3pt",
+        "keys": 1,
+        "graph_count": 6,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 7,
+        "failures": 0,
+        "max_abs_error": 2.6196744905295746e-19,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucnuc_small",
+        "keys": 2,
+        "graph_count": 8804,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 8,
+        "failures": 0,
+        "max_abs_error": 7.983969392533412e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 8,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 8,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucpi",
+        "keys": 1,
+        "graph_count": 10,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.53916334140154e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucpi_I3o2",
+        "keys": 1,
+        "graph_count": 208,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.332294980281256e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucpi_J1o2m",
+        "keys": 1,
+        "graph_count": 6,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 2.5086874334455788e-17,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "nucpi_nucpi_J1o2m",
+        "keys": 2,
+        "graph_count": 75,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 32,
+        "failures": 0,
+        "max_abs_error": 2.7755575615628914e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "pi",
+        "keys": 1,
+        "graph_count": 1,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 1.2600130452682744e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "pi_pi_3pt",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 6,
+        "failures": 0,
+        "max_abs_error": 2.9326576526939265e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 6,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 6,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "pion_3pt",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 7,
+        "failures": 0,
+        "max_abs_error": 3.0184188481996443e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 7,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "pipi_i1",
+        "keys": 1,
+        "graph_count": 4,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "failures": 0,
+        "max_abs_error": 3.0201331455116262e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "psi",
+        "keys": 2,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 32,
+        "failures": 0,
+        "max_abs_error": 4.012085879858621e-15,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "rho",
+        "keys": 3,
+        "graph_count": 3,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "failures": 0,
+        "max_abs_error": 1.2440853988058506e-14,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      },
+      {
+        "case": "rho_rho_3pt",
+        "keys": 27,
+        "graph_count": 20829,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 189,
+        "failures": 0,
+        "max_abs_error": 6.073553092204933e-16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 189,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "corr_zero_channels": 0,
+        "CG_solves": 0,
+        "corr_byte_identical": true,
+        "corr_vs_historical": {
+          "values": 189,
+          "failures": 0,
+          "max_abs_error": 0.0
+        },
+        "relative_only_diagnostic_flagged": false
+      }
+    ]
+  },
+  "npt_only": {
+    "passed": 3,
+    "deferred": [],
+    "keys": 6,
+    "values": 96,
+    "cases": [
+      {
+        "case": "fsq_3pt",
+        "keys": 2,
+        "graph_count": 3,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 2,
+        "prior_npt_unevaluable_graphs": 2,
+        "npt_zero_channels": 0,
+        "values": 32,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 32,
+          "failures": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "case": "glue",
+        "keys": 1,
+        "graph_count": 2,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 16,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 16,
+          "failures": 0,
+          "max_abs_error": 0.0
+        }
+      },
+      {
+        "case": "tetra_F27_S2",
+        "keys": 3,
+        "graph_count": 4,
+        "fake_data": false,
+        "npt_unevaluable_graphs": 0,
+        "prior_npt_unevaluable_graphs": 0,
+        "npt_zero_channels": 0,
+        "values": 48,
+        "npt_byte_identical": true,
+        "npt_vs_historical": {
+          "values": 48,
+          "failures": 0,
+          "max_abs_error": 0.0
+        }
+      }
+    ]
+  },
+  "mpi_ranks": 2,
+  "chroma_openmp_threads_per_rank": 2,
+  "npt_openmp_threads": 1,
+  "rank_resources": [
+    {
+      "case": "pion",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 7190,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36880,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.2965385,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pion",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 7192,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 37392,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.301664458,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "1pt",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 7241,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36864,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.298334083,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "1pt",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 7243,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 34960,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.2999967499999998,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "33",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 7420,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 3242336,
+      "rss_samples": 62,
+      "timeout_seconds": 850,
+      "seconds": 13.614391332999999,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "33",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 7422,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 3316368,
+      "rss_samples": 62,
+      "timeout_seconds": 850,
+      "seconds": 13.622338667,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "3pi",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 7883,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 2396096,
+      "rss_samples": 99,
+      "timeout_seconds": 850,
+      "seconds": 21.722546709,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "3pi",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 7885,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 2396256,
+      "rss_samples": 99,
+      "timeout_seconds": 850,
+      "seconds": 21.714136375000002,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "a0.d3",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8341,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 3360720,
+      "rss_samples": 53,
+      "timeout_seconds": 850,
+      "seconds": 11.6269885,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "a0.d3",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8343,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 2463920,
+      "rss_samples": 53,
+      "timeout_seconds": 850,
+      "seconds": 11.632778042,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "a1_rhopi",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8545,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 185728,
+      "rss_samples": 7,
+      "timeout_seconds": 850,
+      "seconds": 1.5179005,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "a1_rhopi",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8547,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 42160,
+      "rss_samples": 7,
+      "timeout_seconds": 850,
+      "seconds": 1.520612459,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "d",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8606,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 2599072,
+      "rss_samples": 16,
+      "timeout_seconds": 850,
+      "seconds": 3.510505083,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "d",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8611,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 41600,
+      "rss_samples": 16,
+      "timeout_seconds": 850,
+      "seconds": 3.5159502089999997,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "delta_J1o2m",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8691,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36608,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.310142375,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "delta_J1o2m",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8693,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36288,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.315283,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "eta8eta8_F8",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8740,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36080,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.3169564999999999,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "eta8eta8_F8",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8742,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 34576,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.306227709,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "eta_eta_3pt",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8795,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35696,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.3110732079999998,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "eta_eta_3pt",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8797,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35488,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.3167832080000001,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "h8",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8914,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 2447376,
+      "rss_samples": 40,
+      "timeout_seconds": 850,
+      "seconds": 8.757964542,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "h8",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 8916,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 2388912,
+      "rss_samples": 40,
+      "timeout_seconds": 850,
+      "seconds": 8.758319458,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "hard.1_tslice.ini",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9121,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 2303184,
+      "rss_samples": 26,
+      "timeout_seconds": 850,
+      "seconds": 5.684913,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "hard.1_tslice.ini",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9123,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 62496,
+      "rss_samples": 26,
+      "timeout_seconds": 850,
+      "seconds": 5.6900636250000005,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9232,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35632,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.29270825,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9234,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35008,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.297252375,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc.p100",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9282,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 34656,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.298426542,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc.p100",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9284,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 34064,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.2999425,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc_gA",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9329,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36416,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.321203416,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc_gA",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9331,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35216,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.308906667,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc_nuc_3pt",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9380,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36672,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.298829709,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc_nuc_3pt",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9382,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36544,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.302838959,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc_nuc_ax_3pt",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9426,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36320,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.321433833,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc_nuc_ax_3pt",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9428,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35392,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.3271745419999998,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc_nuc_proj_3pt",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9476,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35840,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.301871083,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nuc_nuc_proj_3pt",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9478,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36144,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.312326125,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucnuc_small",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9741,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 3932192,
+      "rss_samples": 84,
+      "timeout_seconds": 850,
+      "seconds": 18.43892,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucnuc_small",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 9743,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 3973280,
+      "rss_samples": 84,
+      "timeout_seconds": 850,
+      "seconds": 18.441500917,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucpi",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10032,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35456,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.3055180000000002,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucpi",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10033,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 34864,
+      "rss_samples": 7,
+      "timeout_seconds": 850,
+      "seconds": 1.515392375,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucpi_I3o2",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10088,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 929440,
+      "rss_samples": 10,
+      "timeout_seconds": 850,
+      "seconds": 2.163306583,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucpi_I3o2",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10090,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 42000,
+      "rss_samples": 10,
+      "timeout_seconds": 850,
+      "seconds": 2.171929958,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucpi_J1o2m",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10149,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35952,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.300291791,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucpi_J1o2m",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10151,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35472,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.300111625,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10199,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 1089568,
+      "rss_samples": 10,
+      "timeout_seconds": 850,
+      "seconds": 2.1730924999999996,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "nucpi_nucpi_J1o2m",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10201,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 39840,
+      "rss_samples": 10,
+      "timeout_seconds": 850,
+      "seconds": 2.177514542,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pi",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10257,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 37744,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.2995342909999998,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pi",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10259,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 34896,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.305966958,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pi_pi_3pt",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10306,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35472,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.303757125,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pi_pi_3pt",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10308,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36864,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.2897886250000001,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pion_3pt",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10353,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35296,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.295192417,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pion_3pt",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10355,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36192,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.296834292,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pipi_i1",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10404,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 36784,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.295703083,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "pipi_i1",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10406,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 37168,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.302749125,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "psi",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10453,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35408,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.313259791,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "psi",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10455,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 34640,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.303185167,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "rho",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10500,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 35376,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.29317275,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "rho",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 10502,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 34848,
+      "rss_samples": 6,
+      "timeout_seconds": 850,
+      "seconds": 1.29779975,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "rho_rho_3pt",
+      "rank": 0,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 11211,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 4281200,
+      "rss_samples": 90,
+      "timeout_seconds": 850,
+      "seconds": 19.806261125000002,
+      "omp_num_threads": 2,
+      "error": null
+    },
+    {
+      "case": "rho_rho_3pt",
+      "rank": 1,
+      "command": [
+        "/usr/bin/sandbox-exec",
+        "-f",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma/bin/chroma",
+        "-i",
+        "chroma.xml",
+        "-o",
+        "chroma.out.xml"
+      ],
+      "child_pid": 11213,
+      "returncode": 0,
+      "rss_limit_mb": 8192,
+      "peak_rss_kib": 3234352,
+      "rss_samples": 90,
+      "timeout_seconds": 850,
+      "seconds": 19.813358292,
+      "omp_num_threads": 2,
+      "error": null
+    }
+  ],
+  "rank_geometry": {
+    "pion": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "1pt": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "33": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "3pi": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "a0.d3": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "a1_rhopi": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "d": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "delta_J1o2m": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "eta8eta8_F8": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "eta_eta_3pt": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "h8": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "hard.1_tslice.ini": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nuc": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nuc.p100": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nuc_gA": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nuc_nuc_3pt": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nuc_nuc_ax_3pt": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nuc_nuc_proj_3pt": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nucnuc_small": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nucpi": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nucpi_I3o2": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nucpi_J1o2m": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "nucpi_nucpi_J1o2m": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "pi": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "pi_pi_3pt": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "pion_3pt": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "pipi_i1": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "psi": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "rho": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ],
+    "rho_rho_3pt": [
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      },
+      {
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ]
+      }
+    ]
+  },
+  "boundary_probes": [
+    {
+      "command": [
+        "/opt/homebrew/bin/mpirun",
+        "-n",
+        "1",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/boundary-probe",
+        "1"
+      ],
+      "returncode": 0,
+      "result": {
+        "mpi_ranks": 1,
+        "qmp_nodes": 1,
+        "global_lattice_sum": 1024,
+        "openmp_threads_per_rank": 2,
+        "qdp_xml_broadcast": true,
+        "datalib_rank_local_xml": true,
+        "mpi_thread_level": 3,
+        "local_values": [
+          37
+        ]
+      }
+    },
+    {
+      "command": [
+        "/opt/homebrew/bin/mpirun",
+        "-n",
+        "2",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/boundary-probe",
+        "2"
+      ],
+      "returncode": 0,
+      "result": {
+        "mpi_ranks": 2,
+        "qmp_nodes": 2,
+        "global_lattice_sum": 1024,
+        "openmp_threads_per_rank": 2,
+        "qdp_xml_broadcast": true,
+        "datalib_rank_local_xml": true,
+        "mpi_thread_level": 3,
+        "local_values": [
+          37,
+          38
+        ]
+      }
+    }
+  ],
+  "producers": [
+    {
+      "case": "meson",
+      "comparison": "old-new-1-rank",
+      "command": [
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+        "meson",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/meson-1-ranks/meson.sdb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb"
+      ],
+      "returncode": 0,
+      "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/meson-1-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+      "metadata": {
+        "status": "passed",
+        "exact_except_validated_execution_provenance": true,
+        "reference": {
+          "run_date": "10 Nov 26 09:20:38 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            16
+          ],
+          "subgrid_volume": 1024,
+          "ranks": 1,
+          "raw_sha256": "b2f4deb33fe25a3446b7812f1a1c14f19f128b02eda4342d175cb9e1d22f6902",
+          "automatic_timeslice_batch": 1
+        },
+        "candidate": {
+          "run_date": "10 Nov 26 09:31:51 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            16
+          ],
+          "subgrid_volume": 1024,
+          "ranks": 1,
+          "raw_sha256": "6306259e673be30502dcb884cfefecd6864067f7a2b0f85d9973e55b5137993d",
+          "automatic_timeslice_batch": 1
+        },
+        "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+      }
+    },
+    {
+      "case": "meson",
+      "comparison": "old-new-2-ranks",
+      "command": [
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+        "meson",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/meson-2-ranks/meson.sdb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb"
+      ],
+      "returncode": 0,
+      "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/meson-2-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+      "metadata": {
+        "status": "passed",
+        "exact_except_validated_execution_provenance": true,
+        "reference": {
+          "run_date": "10 Nov 26 09:20:38 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            8
+          ],
+          "subgrid_volume": 512,
+          "ranks": 2,
+          "raw_sha256": "19ba7523cacd3afc158bab87ff2c28742da579b9810a79a0680bbec2f48a2108",
+          "automatic_timeslice_batch": 2
+        },
+        "candidate": {
+          "run_date": "10 Nov 26 09:31:52 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            8
+          ],
+          "subgrid_volume": 512,
+          "ranks": 2,
+          "raw_sha256": "53a0c5cb8ea661127ec789e4f9650e6758855133171e279bb30df5a5e5a13741",
+          "automatic_timeslice_batch": 2
+        },
+        "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+      }
+    },
+    {
+      "case": "meson",
+      "comparison": "new-1-vs-2-ranks",
+      "command": [
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+        "meson",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb"
+      ],
+      "returncode": 0,
+      "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=0 max_abs_error=7.77156e-16 metadata=exported-for-independent-check\n",
+      "metadata": {
+        "status": "passed",
+        "exact_except_validated_execution_provenance": true,
+        "reference": {
+          "run_date": "10 Nov 26 09:31:51 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            16
+          ],
+          "subgrid_volume": 1024,
+          "ranks": 1,
+          "raw_sha256": "6306259e673be30502dcb884cfefecd6864067f7a2b0f85d9973e55b5137993d",
+          "automatic_timeslice_batch": 1
+        },
+        "candidate": {
+          "run_date": "10 Nov 26 09:31:52 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            8
+          ],
+          "subgrid_volume": 512,
+          "ranks": 2,
+          "raw_sha256": "53a0c5cb8ea661127ec789e4f9650e6758855133171e279bb30df5a5e5a13741",
+          "automatic_timeslice_batch": 2
+        },
+        "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+      }
+    },
+    {
+      "case": "baryon",
+      "comparison": "old-new-1-rank",
+      "command": [
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+        "baryon",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/baryon-1-ranks/baryon.sdb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb"
+      ],
+      "returncode": 0,
+      "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/baryon-1-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+      "metadata": {
+        "status": "passed",
+        "exact_except_validated_execution_provenance": true,
+        "reference": {
+          "run_date": "10 Nov 26 09:20:39 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            16
+          ],
+          "subgrid_volume": 1024,
+          "ranks": 1,
+          "raw_sha256": "3196361d539d2f512ad78206008a7985bc9fe9272ec1e9660419356427de9d2b"
+        },
+        "candidate": {
+          "run_date": "10 Nov 26 09:31:52 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            16
+          ],
+          "subgrid_volume": 1024,
+          "ranks": 1,
+          "raw_sha256": "e90036a9e39f43286d09c5df1ec01e44cae581a363ff7cb02f9bdfe1979c7163"
+        },
+        "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+      }
+    },
+    {
+      "case": "baryon",
+      "comparison": "old-new-2-ranks",
+      "command": [
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+        "baryon",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/baryon-2-ranks/baryon.sdb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb"
+      ],
+      "returncode": 0,
+      "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/baryon-2-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+      "metadata": {
+        "status": "passed",
+        "exact_except_validated_execution_provenance": true,
+        "reference": {
+          "run_date": "10 Nov 26 09:20:39 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            8
+          ],
+          "subgrid_volume": 512,
+          "ranks": 2,
+          "raw_sha256": "2f2f63f8718ff9b5223da42b6eeca7d6621c109562cb25c29341830c0c25b65f"
+        },
+        "candidate": {
+          "run_date": "10 Nov 26 09:31:52 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            8
+          ],
+          "subgrid_volume": 512,
+          "ranks": 2,
+          "raw_sha256": "77afe9cb1dc3bf336a54c73413a35c78946d6a0a25ef541fea81e67863fbb0ae"
+        },
+        "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+      }
+    },
+    {
+      "case": "baryon",
+      "comparison": "new-1-vs-2-ranks",
+      "command": [
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+        "baryon",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb",
+        "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb"
+      ],
+      "returncode": 0,
+      "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=0 max_abs_error=3.06904e-17 metadata=exported-for-independent-check\n",
+      "metadata": {
+        "status": "passed",
+        "exact_except_validated_execution_provenance": true,
+        "reference": {
+          "run_date": "10 Nov 26 09:31:52 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            16
+          ],
+          "subgrid_volume": 1024,
+          "ranks": 1,
+          "raw_sha256": "e90036a9e39f43286d09c5df1ec01e44cae581a363ff7cb02f9bdfe1979c7163"
+        },
+        "candidate": {
+          "run_date": "10 Nov 26 09:31:52 EST",
+          "logical_size": [
+            1,
+            1,
+            1,
+            2
+          ],
+          "subgrid_size": [
+            4,
+            4,
+            4,
+            8
+          ],
+          "subgrid_volume": 512,
+          "ranks": 2,
+          "raw_sha256": "77afe9cb1dc3bf336a54c73413a35c78946d6a0a25ef541fea81e67863fbb0ae"
+        },
+        "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+      }
+    }
+  ],
+  "max_paired_absolute_error": 1.2195766457225513e-13,
+  "max_rank_rss_kib": 4281200,
+  "existing_qdp_make_check_failure": {
+    "status": "failed",
+    "scope": "Upstream architecture-specific SSE unit/benchmark programs on the generic Apple-arm64 parscalar build",
+    "reproduced_in_prior_reorg": true,
+    "missing_helpers": [
+      "vaxpy4",
+      "vaxpyz4",
+      "vaxmy4"
+    ],
+    "library_build_passed": true,
+    "test_sources_unchanged": true,
+    "not_an_MPI_runtime_result": true
+  },
+  "devel_and_kanoni_unchanged": true
+}

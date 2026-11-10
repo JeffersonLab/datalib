@@ -1,0 +1,50 @@
+[
+  {
+    "rank": 0,
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/boundary-probe",
+      "1"
+    ],
+    "child_pid": 6875,
+    "returncode": 0,
+    "rss_limit_mb": 8192,
+    "peak_rss_kib": 800,
+    "rss_samples": 1,
+    "timeout_seconds": 850,
+    "seconds": 0.222477416,
+    "omp_num_threads": 2,
+    "error": null
+  },
+  {
+    "rank": 0,
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/boundary-probe",
+      "2"
+    ],
+    "child_pid": 6880,
+    "returncode": 0,
+    "rss_limit_mb": 8192,
+    "peak_rss_kib": 768,
+    "rss_samples": 1,
+    "timeout_seconds": 850,
+    "seconds": 0.21362379199999998,
+    "omp_num_threads": 2,
+    "error": null
+  },
+  {
+    "rank": 1,
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/boundary-probe",
+      "2"
+    ],
+    "child_pid": 6882,
+    "returncode": 0,
+    "rss_limit_mb": 8192,
+    "peak_rss_kib": 800,
+    "rss_samples": 1,
+    "timeout_seconds": 850,
+    "seconds": 0.213783625,
+    "omp_num_threads": 2,
+    "error": null
+  }
+]

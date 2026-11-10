@@ -89,3 +89,6 @@ coordination and matching SuperbBLAS configuration.
 
 [Database-tool extraction and regression](docs/reorg/DBTOOLS-EXTRACTION-REGRESSIONS.md)
 records the moved utilities, preserved formats and full validated stack.
+
+[Fresh MPI parscalar validation](docs/reorg/MPI-PARSCALAR-VALIDATION.md) records
+the two-rank builds, numerical checks, XML boundary and retained limitations.

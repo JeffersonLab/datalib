@@ -1,0 +1,326 @@
+[
+  {
+    "case": "meson",
+    "comparison": "old-new-1-rank",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+      "meson",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/meson-1-ranks/meson.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/meson-1-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "10 Nov 26 09:20:38 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "b2f4deb33fe25a3446b7812f1a1c14f19f128b02eda4342d175cb9e1d22f6902",
+        "automatic_timeslice_batch": 1
+      },
+      "candidate": {
+        "run_date": "10 Nov 26 09:31:51 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "6306259e673be30502dcb884cfefecd6864067f7a2b0f85d9973e55b5137993d",
+        "automatic_timeslice_batch": 1
+      },
+      "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+    }
+  },
+  {
+    "case": "meson",
+    "comparison": "old-new-2-ranks",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+      "meson",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/meson-2-ranks/meson.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/meson-2-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "10 Nov 26 09:20:38 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "19ba7523cacd3afc158bab87ff2c28742da579b9810a79a0680bbec2f48a2108",
+        "automatic_timeslice_batch": 2
+      },
+      "candidate": {
+        "run_date": "10 Nov 26 09:31:52 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "53a0c5cb8ea661127ec789e4f9650e6758855133171e279bb30df5a5e5a13741",
+        "automatic_timeslice_batch": 2
+      },
+      "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+    }
+  },
+  {
+    "case": "meson",
+    "comparison": "new-1-vs-2-ranks",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+      "meson",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-1-ranks/meson.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/meson-2-ranks/meson.sdb\nPASS kind=meson keys=32 values=128 byte_identical_values=0 max_abs_error=7.77156e-16 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "10 Nov 26 09:31:51 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "6306259e673be30502dcb884cfefecd6864067f7a2b0f85d9973e55b5137993d",
+        "automatic_timeslice_batch": 1
+      },
+      "candidate": {
+        "run_date": "10 Nov 26 09:31:52 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "53a0c5cb8ea661127ec789e4f9650e6758855133171e279bb30df5a5e5a13741",
+        "automatic_timeslice_batch": 2
+      },
+      "normalized_sha256": "ee7620cd9089dee4fa2ad486eba55494237128c1e3fb453639f726e5e59b6f27"
+    }
+  },
+  {
+    "case": "baryon",
+    "comparison": "old-new-1-rank",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+      "baryon",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/baryon-1-ranks/baryon.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/baryon-1-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "10 Nov 26 09:20:39 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "3196361d539d2f512ad78206008a7985bc9fe9272ec1e9660419356427de9d2b"
+      },
+      "candidate": {
+        "run_date": "10 Nov 26 09:31:52 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "e90036a9e39f43286d09c5df1ec01e44cae581a363ff7cb02f9bdfe1979c7163"
+      },
+      "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+    }
+  },
+  {
+    "case": "baryon",
+    "comparison": "old-new-2-ranks",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+      "baryon",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/baryon-2-ranks/baryon.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/old/baryon-2-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=32 max_abs_error=0 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "10 Nov 26 09:20:39 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "2f2f63f8718ff9b5223da42b6eeca7d6621c109562cb25c29341830c0c25b65f"
+      },
+      "candidate": {
+        "run_date": "10 Nov 26 09:31:52 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "77afe9cb1dc3bf336a54c73413a35c78946d6a0a25ef541fea81e67863fbb0ae"
+      },
+      "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+    }
+  },
+  {
+    "case": "baryon",
+    "comparison": "new-1-vs-2-ranks",
+    "command": [
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-readback",
+      "baryon",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb"
+    ],
+    "returncode": 0,
+    "output": "Open store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-1-ranks/baryon.sdb\nOpen store database /Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/producer-smoke/new/baryon-2-ranks/baryon.sdb\nPASS kind=baryon keys=32 values=256 byte_identical_values=0 max_abs_error=3.06904e-17 metadata=exported-for-independent-check\n",
+    "metadata": {
+      "status": "passed",
+      "exact_except_validated_execution_provenance": true,
+      "reference": {
+        "run_date": "10 Nov 26 09:31:52 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          16
+        ],
+        "subgrid_volume": 1024,
+        "ranks": 1,
+        "raw_sha256": "e90036a9e39f43286d09c5df1ec01e44cae581a363ff7cb02f9bdfe1979c7163"
+      },
+      "candidate": {
+        "run_date": "10 Nov 26 09:31:52 EST",
+        "logical_size": [
+          1,
+          1,
+          1,
+          2
+        ],
+        "subgrid_size": [
+          4,
+          4,
+          4,
+          8
+        ],
+        "subgrid_volume": 512,
+        "ranks": 2,
+        "raw_sha256": "77afe9cb1dc3bf336a54c73413a35c78946d6a0a25ef541fea81e67863fbb0ae"
+      },
+      "normalized_sha256": "f12ae964a06372adeaf0741d19eafdbcf023c13015cc7c049eed0e7bcf4d4dc6"
+    }
+  }
+]

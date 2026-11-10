@@ -53,3 +53,7 @@ configure switch remains. See the latest report above for the full rerun.
 [Standalone dbtools extraction and full regression](DBTOOLS-EXTRACTION-REGRESSIONS.md)
 records single ownership, frozen legacy formats, standalone builds, utility
 comparisons and the complete native-double matrix.
+
+[Fresh MPI parscalar validation](MPI-PARSCALAR-VALIDATION.md) records MPI QMP,
+parscalar QDP++, independent XML semantics and the full two-rank matrix. It
+retains the stock QDP SIMD-test limitation and clarifies actual OpenMP counts.

@@ -1,0 +1,23 @@
+{
+  "published": {
+    "datalib": {
+      "commit": "96d47257d7100a58047831c9f0a22612a028e937",
+      "remote_verified": true,
+      "remote_devel_unchanged": true,
+      "status": " m other_libs/filedb\n?? configure~\n"
+    },
+    "adat": {
+      "commit": "a934f3307bf68ba670a1043298e158697cecc845",
+      "remote_verified": true,
+      "remote_devel_unchanged": true,
+      "status": " m other_libs/minuit\n m other_libs/xpath_reader\n"
+    },
+    "redstar": {
+      "commit": "bca8a45c584c7aae588348579ca9af6bc512957e",
+      "remote_verified": true,
+      "remote_devel_unchanged": true,
+      "status": ""
+    }
+  },
+  "all_protected_state_unchanged": true
+}

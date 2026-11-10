@@ -1,0 +1,153 @@
+[
+  {
+    "step": "qdpxx-install",
+    "command": [
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/qdpxx",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 2.9690137919999997
+  },
+  {
+    "step": "datalib-bootstrap",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/datalib.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/datalib",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 5.111575209
+  },
+  {
+    "step": "datalib-configure",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/datalib.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/datalib/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/datalib",
+      "--enable-openmp",
+      "--with-filedb=bundled",
+      "--with-superbblas=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/superbblas-serial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/datalib",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 13.399324292
+  },
+  {
+    "step": "datalib-build",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/datalib.sb",
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/datalib",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 54.53127845899999
+  },
+  {
+    "step": "datalib-check",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/datalib.sb",
+      "make",
+      "check",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/datalib",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 20.711576291
+  },
+  {
+    "step": "datalib-install",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/datalib.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/datalib",
+    "environment": "serial",
+    "returncode": 0,
+    "seconds": 2.2275442079999976
+  },
+  {
+    "step": "chroma-bootstrap",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+      "autoreconf",
+      "-fi"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/chroma",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 14.075985708999994
+  },
+  {
+    "step": "chroma-configure",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/sources/chroma/configure",
+      "--prefix=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/chroma",
+      "--with-qdp=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/qdpxx",
+      "--with-superbblas=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/superbblas-mpi",
+      "--with-datalib=/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/install/datalib",
+      "--with-primme=/Users/admin/Downloads/redstar_kanoni.devel/runs/no1pt-clean-20261103-002/sources/primme",
+      "--enable-mgproton",
+      "--disable-cpp-wilson-dslash",
+      "--enable-testcase-runner=trivial",
+      "--with-libxml2=/opt/homebrew/opt/libxml2",
+      "--with-gmp=/opt/homebrew/opt/gmp"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/chroma",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 26.52811587500001
+  },
+  {
+    "step": "chroma-build",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+      "make",
+      "-j3"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/chroma",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 774.865348
+  },
+  {
+    "step": "chroma-install",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/chroma.sb",
+      "make",
+      "install"
+    ],
+    "cwd": "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/build/chroma",
+    "environment": "mpi",
+    "returncode": 0,
+    "seconds": 46.09641241600002
+  }
+]

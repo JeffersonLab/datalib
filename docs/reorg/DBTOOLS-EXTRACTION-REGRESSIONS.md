@@ -99,10 +99,12 @@ expected unevaluatable-graph accounting and the exactly-zero eta control.
 Existing ff_3pt deferrals and glue/tetra/gluonic-insertion CORR deferrals remain.
 The disconnected-loop supplement remains explicit and hash-pinned.
 
-This uses cached native-double tensors and zero CG solves, one MPI rank, four
-OpenMP workers, `SB_CACHEGB_CPU=1`, the unchanged 8192 MiB RSS cap and 2 GiB
-planner. It does not qualify on-demand GenProp, new CG solves, MPI scaling, GPU
-or latest-YLM builds. Existing historical qualifications remain in force.
+This uses cached native-double tensors and zero CG solves, one MPI rank and
+one OpenMP worker per process (forced by the regression runner),
+`SB_CACHEGB_CPU=1`, the unchanged 8192 MiB RSS cap and 2 GiB planner. The
+separate OpenMP team probe verified one and four workers. It does not qualify
+on-demand GenProp, new CG solves, MPI scaling, GPU or latest-YLM builds.
+Existing historical qualifications remain in force.
 
 ## Retained limitations and evidence
 

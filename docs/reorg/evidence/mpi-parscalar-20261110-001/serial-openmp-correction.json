@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "initial_build_preserved": true,
+  "fresh_build_and_install_with_openmp": true,
+  "reason": "Build-driver serial SuperbBLAS flags initially omitted OPENMP_CXXFLAGS. Corrected before datalib configuration, without overlays."
+}

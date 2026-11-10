@@ -1,0 +1,47 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/bin/mpirun",
+      "-n",
+      "1",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/boundary-probe",
+      "1"
+    ],
+    "returncode": 0,
+    "result": {
+      "mpi_ranks": 1,
+      "qmp_nodes": 1,
+      "global_lattice_sum": 1024,
+      "openmp_threads_per_rank": 2,
+      "qdp_xml_broadcast": true,
+      "datalib_rank_local_xml": true,
+      "mpi_thread_level": 3,
+      "local_values": [
+        37
+      ]
+    }
+  },
+  {
+    "command": [
+      "/opt/homebrew/bin/mpirun",
+      "-n",
+      "2",
+      "/Users/admin/Downloads/macos-datalib-reorg/evidence/mpi-parscalar-20261110-001/boundary-probe",
+      "2"
+    ],
+    "returncode": 0,
+    "result": {
+      "mpi_ranks": 2,
+      "qmp_nodes": 2,
+      "global_lattice_sum": 1024,
+      "openmp_threads_per_rank": 2,
+      "qdp_xml_broadcast": true,
+      "datalib_rank_local_xml": true,
+      "mpi_thread_level": 3,
+      "local_values": [
+        37,
+        38
+      ]
+    }
+  }
+]
